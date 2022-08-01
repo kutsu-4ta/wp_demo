@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  web:
+    container_name: 'wp_demo_web'
+    build: ./docker/web
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./htdocs:/var/www/html
+#    command: sh -c 'cd react && yarn start'
+    ports:
+      - '3000:80'
+    tty: true
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=test
+      - MYSQL_USER=test
+      - MYSQL_PASSWORD=test
+    volumes:
+      - ./data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=mysql
+      - PMA_USER=test
+      - PMA_PASSWORD=test
+    ports:
+      - '8888:80'
+    volumes:
+      - ./data/phpmyadmin/sessions:/sessions
