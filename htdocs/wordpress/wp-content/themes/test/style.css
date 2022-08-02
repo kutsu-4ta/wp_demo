@@ -2497,9 +2497,39 @@ h2.entry-title {
 	fill: currentColor;
 }
 
-/* 投稿記事のグリッドビュー */
+/* 新着情報 */
+.sentense-list {
+	list-style-type: none;
+	padding: 0;
+}
+.sentense-list li:first-child{
+border-top:1px solid #666;
+/* border-bottom:1px solid #666; */
+}
+.sentense-list li + li {
+	border-top:1px solid #666;
+}
+.sentense-list li:last-child{
+	/* border-top:1px solid #666; */
+	border-bottom:1px solid #666;
+}
+
+.sentense-list .date {
+	display:inline-block
+}
+.sentense-list .title {
+	display:inline-block
+}
+
+/* 投稿記事 */
 .grid-list {
 	display: flex;
+	list-style-type: none;
+}
+
+.grit-list-item {
+	width: 100px;
+	border: solid black;
 }
 
 .grid-list title {
