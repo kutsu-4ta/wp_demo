@@ -2524,26 +2524,23 @@ border-top:1px solid #666;
 /* 投稿記事 */
 .grid-list {
 	display: flex;
-	list-style-type: none;
+	/* list-style-type: none; */
 }
 
 .grit-list-item {
-	width: 100px;
-	border: solid black;
+	max-width: 100px;
 }
 
 .grid-list title {
 	text-overflow: ellipsis;
-	word-break: break-word;
-    word-wrap: break-word;
-    overflow: hidden;
+	white-space:nowrap;
+	overflow: hidden;
 }
 
 .grid-list .description {
 	text-overflow: ellipsis;
-	word-break: break-word;
-    word-wrap: break-word;
-    overflow: hidden;
+	white-space:nowrap;
+	overflow: hidden;
 }
 
 /* .grid-list .grid-list-image {
@@ -3019,7 +3016,7 @@ border-top:1px solid #666;
 }
 
 .wp-block-button.is-style-outline {
-	color: #cd2653;
+	color: #636363;
 }
 
 .is-style-outline .wp-block-button__link:not(.has-text-color) {

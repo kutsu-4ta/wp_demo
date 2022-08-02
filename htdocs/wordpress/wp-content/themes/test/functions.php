@@ -4,18 +4,34 @@
  *
  */
 
+function add_my_styles_and_scripts() {
+	//bootstrap.min.css の読み込み
+	wp_enqueue_style( 
+	  'my-template-bs-style', 
+	  '//stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' ,
+	  array(),
+	  '5.2.0'
+	);
+	
+	//スタイルシート style.css の読み込み
+	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+  	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array('parent-style'));
+
+  }
+  add_action( 'wp_enqueue_scripts', 'add_my_styles_and_scripts' );
+
+// function theme_enqueue_styles() {
+// 	// CSSを有効にする
+//   wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+//   wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array('parent-style'));
+// }
+// add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+
 function theme_setup() {
 	// アイキャッチ画像を有効にする
     add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'theme_setup');
-
-function theme_enqueue_styles() {
-	// CSSを有効にする
-  wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-  wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array('parent-style'));
-}
-add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
 // カスタム投稿タイプ
 function custom_register_news(){
