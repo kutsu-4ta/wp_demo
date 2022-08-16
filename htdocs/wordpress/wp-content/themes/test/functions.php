@@ -20,6 +20,20 @@ function add_my_styles_and_scripts() {
   }
   add_action( 'wp_enqueue_scripts', 'add_my_styles_and_scripts' );
 
+  $custom_header = array(
+    'default-image' => get_template_directory_uri().'/images/header-img.jpg',
+    'width' => 1000,
+    'height' => 400,
+    'flex-height' => true,
+    'flex-width' => false,
+    'uploads' => true,
+);
+  add_theme_support( 'custom-header', $custom_header);
+  if(function_exists('register_nav_menu')) {
+	register_nav_menu('global-menu',__( 'Global menu', 'tcd-w'));
+  }
+
+
 // function theme_enqueue_styles() {
 // 	// CSSを有効にする
 //   wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );

@@ -1301,9 +1301,11 @@ ul.social-icons li {
 }
 
 .header-inner {
-	max-width: 168rem;
-	padding: 3.15rem 0;
-	z-index: 100;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 45px;
+	top: 0; position: fixed;
+	width: 100%;
 }
 
 /* Header Titles ----------------------------- */
@@ -5686,16 +5688,16 @@ a.to-the-top > * {
 	}
 
 	.header-inner {
-		align-items: center;
-		display: flex;
-		justify-content: space-between;
-		padding: 2.8rem 0;
+		/*align-items: center;*/
+		/*display: flex;*/
+		/*justify-content: space-between;*/
+		/*padding: 2.8rem 0;*/
 	}
 
 	.header-titles-wrapper {
 		margin-right: 4rem;
 		max-width: 50%;
-		padding: 0;
+		padding-left: 0;
 		text-align: left;
 	}
 
@@ -5704,7 +5706,7 @@ a.to-the-top > * {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-start;
-		margin: -1rem 0 0 -2.4rem;
+		/*margin: -1rem 0 0 -2.4rem;*/
 	}
 
 	.header-titles .site-title,
