@@ -94,6 +94,13 @@ class WPZOOM_Instagram_General_Settings {
 				'wpzoom-instagram-general-settings',
 				'wpzoom_instagram_general_settings_section'
 		);
+		add_settings_field(
+				'wpzoom_instagram_general_settings_enable_unsafe_requests',
+				esc_html__( 'Enable Insecure API Requests', 'instagram-widget-by-wpzoom'), 
+				array( $this, 'settings_field_enable_unsafe_requests' ),
+				'wpzoom-instagram-general-settings',
+				'wpzoom_instagram_general_settings_section'
+		);
 	}
 
 	/**
@@ -128,6 +135,27 @@ class WPZOOM_Instagram_General_Settings {
        <p class="description" id="insta-global-assets-description"><?php _e( 'The plugin loads the CSS/JS assets only if an Instagram block, widget or shortcode is detected on a page. If this doesn\'t happen, enable this option to load the assets on all pages.', 'instagram-widget-by-wpzoom' ); ?></p>
 
 
+		<?php
+	}
+
+	public function settings_field_enable_unsafe_requests() {
+		$settings = get_option( 'wpzoom-instagram-general-settings' );
+
+		$enable_unsafe_requests = ! empty( $settings['enable-unsafe-requests'] ) ? wp_validate_boolean( $settings['enable-unsafe-requests'] ) : false;
+		?>
+		<input class="regular-text code"
+			   id="wpzoom-instagram-widget-settings_enable-unsafe-requests"
+			   name="wpzoom-instagram-general-settings[enable-unsafe-requests]"
+			<?php checked( true, $enable_unsafe_requests ); ?>
+			   value="1"
+			   type="checkbox">
+
+		<p class="description">
+			<?php esc_html_e( 'Allows insecure requests to the Instagram API. Normally this should be disabled, but it may be required for the plugin to work, depending on the server configuration.', 'instagram-widget-by-wpzoom' ); ?>
+			<span class="notice notice-warning">
+				<?php _e( '<strong>Potential security risk!</strong> Only enable if you&rsquo;re having issues.', 'instagram-widget-by-wpzoom' ); ?>
+			</span>
+		</p>
 		<?php
 	}
 

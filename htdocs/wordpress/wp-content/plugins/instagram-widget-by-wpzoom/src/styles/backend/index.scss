@@ -200,6 +200,10 @@
 			color: $red-color;
 		}
 
+		.featured-off {
+			display: none !important;
+		}
+
 		.pro-only {
 			position: absolute;
 			top: 0;
@@ -210,6 +214,12 @@
 			padding: 0 4px;
 			border-radius: 2px;
 			transform: translate(50%, -50%);
+		}
+
+		.notice-warning {
+			display: block;
+			padding: 11px 15px;
+			margin: 10px 0 0;
 		}
 
 		> .wrap {
@@ -718,6 +728,59 @@
 
 					&:last-child {
 						text-align: right;
+					}
+				}
+			}
+
+			.wpz-insta_image-select {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+				margin: 5px 0 0;
+
+				&.hidden {
+					display: none;
+				}
+
+				label {
+					text-align: center;
+					color: $blue-grey-color;
+					transition: all .3s ease;
+
+					&:hover {
+						color: $darker-blue-grey-color;
+
+						svg {
+							color: $darker-blue-grey-color;
+							fill: $darker-blue-grey-color;
+						}
+					}
+
+					input {
+						display: none;
+
+						&:checked {
+							& + span {
+								color: $primary-color;
+								fill: $primary-color;
+
+								svg {
+									color: $primary-color;
+									fill: $primary-color;
+								}
+							}
+						}
+					}
+
+					span {
+						display: block;
+					}
+
+					svg {
+						display: block;
+						color: $blue-grey-color;
+						fill: $blue-grey-color;
+						transition: all .3s ease;
 					}
 				}
 			}
@@ -1289,7 +1352,8 @@
 				}
 
 				&:not(.show-pro) {
-					.wpz-insta_pro-only {
+					.wpz-insta_pro-only:not(.wpz-insta_feed-layout),
+					.wpz-insta_pro-only > .wpz-insta_feed-layout-pro {
 						/*opacity: 0;
 						max-height: 0;
 						overflow: hidden;
@@ -1745,6 +1809,15 @@
 							line-height: 30px;
 							width: 50%;
 
+							&.table-cell-special {
+								display: flex;
+								align-items: center;
+
+								label {
+									width: 50%;
+								}
+							}
+
 							input {
 								margin: 0;
 							}
@@ -1752,6 +1825,31 @@
 
 						> input[type='checkbox'] {
 							margin: 0 1em 0 0;
+						}
+					}
+
+					.wpz-insta_sub-wrapper {
+						display: flex;
+						flex-direction: column;
+						gap: 10px;
+						position: relative;
+						border-left: 1px solid $main-font-color;
+						padding: 10px 0 0 15px;
+						margin: -20px 0 0;
+
+						input {
+							margin-left: 0.5em;
+							margin-right: 0.5em;
+						}
+
+						.wpz-insta_table-cell {
+							&:first-child {
+								width: calc(50% - 9px);
+							}
+
+							&:last-child {
+								width: calc(50% + 9px);
+							}
 						}
 					}
 				}
@@ -1803,6 +1901,10 @@
 					> label {
 						opacity: 0.5;
 					}
+				}
+
+				.pro-only-wrapper {
+					opacity: 0.5;
 				}
 
 				&.wpz-insta_sidebar-section-token,
@@ -1951,7 +2053,7 @@
 					transition: all 0.3s ease;
 
 					&.wpz-insta_widget-preview-size-desktop .wpz-insta_widget-preview-view-inner {
-						max-width: 500px;
+						// max-width: 500px;
 					}
 
 					&.wpz-insta_widget-preview-size-tablet .wpz-insta_widget-preview-view-inner {
@@ -2128,6 +2230,7 @@
 						display: flex;
 						flex-direction: column;
 						min-width: 350px;
+                        flex: 1;
 						padding: 20px;
 						border: 1px solid $light-grey-color;
 						border-radius: 3px;
@@ -2180,7 +2283,8 @@
 							font-weight: 600;
 							line-height: 1;
 							color: #fff;
-							background: $primary-color;
+							// background: #E4405F;
+                            background: $primary-color;
 							background-position: center left;
 							background-repeat: no-repeat;
 							width: 100%;
@@ -2193,13 +2297,18 @@
 
 							&:hover,
 							&:focus {
-								background-color: $secondary-color;
+								// background-color: $secondary-color;
+                                opacity: .8;
 							}
 
 							&.disabled {
 								pointer-events: none;
 								opacity: 0.5;
 							}
+
+                            &.facebook {
+                                background: #1877F2;
+                            }
 
 							svg {
 								margin: 0 16px 0 0;

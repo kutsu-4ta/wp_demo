@@ -19,6 +19,9 @@
 	<!-- TODO:これいるのか？ -->
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
+
+    <!--  jsの読み込み  -->
+    <script src="<?php echo get_template_directory_uri(); ?>/functions.js" type="text/javaScript" charset="utf-8"></script>
 </head>
 
 <body <?php body_class(); ?>>

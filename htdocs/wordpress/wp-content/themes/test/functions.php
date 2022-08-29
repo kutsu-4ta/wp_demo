@@ -33,6 +33,25 @@ function add_my_styles_and_scripts() {
 	register_nav_menu('global-menu',__( 'Global menu', 'tcd-w'));
   }
 
+function my_scripts_method() {
+    wp_enqueue_script(
+        'custom_script',
+        get_template_directory_uri() . '/functions.js',
+    );
+}
+add_action('wp_enqueue_scripts', 'my_scripts_method');
+
+//
+//function add_defer( $tag ) {
+//    if (is_admin()){
+//        return $tag;
+//    }
+//    if ( strpos( $tag, 'jquery.js' ) ){
+//        return $tag;
+//    }
+//    return str_replace( 'src', 'defer src', $tag );
+//}
+//add_filter( 'script_loader_tag', 'add_defer', 10 );
 
 // function theme_enqueue_styles() {
 // 	// CSSを有効にする

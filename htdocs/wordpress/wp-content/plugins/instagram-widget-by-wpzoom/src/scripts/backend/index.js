@@ -201,14 +201,45 @@ jQuery( function( $ ) {
 
 	$( '.wpz-insta_sidebar-section-layout input[name="_wpz-insta_layout"]' ).on( 'change', function() {
 		const $colNumOption    = $( this ).closest( '.wpz-insta_sidebar-section-layout' ).find( 'input[name="_wpz-insta_col-num"]' ).closest( '.wpz-insta_table-row' ),
+		      $perPageOption   = $( this ).closest( '.wpz-insta_sidebar-section-layout' ).find( 'input[name="_wpz-insta_perpage-num"]' ).closest( '.wpz-insta_table-row' ),
+		      $featOption      = $( this ).closest( '.wpz-insta_sidebar-section-layout' ).find( '.wpz-insta_table-row-featured-layout' ),
+		      $featOptionWrap  = $featOption.closest( '.wpz-insta_feed-only-pro' ),
 		      $parentLeftSect  = $( this ).closest( '.wpz-insta_sidebar-left-section' ),
 		      $proFieldset     = $parentLeftSect.find( '.wpz-insta_sidebar-section-feed .wpz-insta_show-on-hover fieldset.wpz-insta_feed-only-pro.wpz-insta_pro-only' ),
 		      $loadMoreOptions = $parentLeftSect.find( '.wpz-insta_sidebar-section-load-more' ),
 		      $toggleItems     = $colNumOption.add( $proFieldset ).add( $loadMoreOptions );
 
-		$toggleItems.toggleClass( 'hidden', $( this ).val() == '1' );
-		
+		$toggleItems.toggleClass( 'hidden', $( this ).val() == '1' || $( this ).val() == '3' );
+
 		$( '.wpz-insta-admin .wpz-insta_widget-preview .wpz-insta_widget-preview-view' ).toggleClass( 'layout-fullwidth', $( this ).val() == '1' );
+
+		$featOption.toggleClass( 'hidden', $( this ).val() != '0' );
+		if ( ! $( '.wpz-insta_sidebar .wpz-insta_sidebar-left' ).hasClass( '.is-pro' ) ) $featOptionWrap.toggleClass( 'hidden', $( this ).val() != '0' );
+		$perPageOption.toggleClass( 'hidden', $( this ).val() != '3' );
+	} );
+
+	$( '.wpz-insta_sidebar-section-layout input[name="_wpz-insta_col-num"]' ).on( 'input', function() {
+		if ( $( '.wpz-insta_sidebar-section-layout input[name="_wpz-insta_layout"]:checked' ).val() == '0' ) {
+			const colNum               = parseInt( $( this ).closest( '.wpz-insta_sidebar-section-layout' ).find( 'input[name="_wpz-insta_col-num"]' ).val() ),
+			      $featuredLayouts     = $( this ).closest( '.wpz-insta_table' ).find( 'label.featured-layout' ),
+			      $featuredLayoutsWrap = $featuredLayouts.closest( '.wpz-insta_table-row' );
+
+			if ( colNum < 3 || colNum > 6 ) {
+				$featuredLayoutsWrap.addClass( 'hidden' );
+			} else {
+				$featuredLayoutsWrap.removeClass( 'hidden' );
+				$featuredLayouts.addClass( 'hidden' );
+				$featuredLayouts.each( function() {
+					if ( $( this ).is( '.featured-layout-columns_' + colNum ) ) {
+						$( this ).removeClass( 'hidden' );
+					}
+				} );
+			}
+		}
+	} );
+	
+	$( '#_wpz-insta_featured-layout-enable' ).on( 'change', function() {
+		$( this ).closest( '.wpz-insta_table-row' ).find( '.wpz-insta_image-select' ).toggleClass( 'hidden', ! $( this ).is( ':checked' ) );
 	} );
 
 	$( '#wpz-insta_modal-dialog' ).find( '.wpz-insta_modal-dialog_ok-button, .wpz-insta_modal-dialog_close-button' ).on( 'click', function( e ) {
@@ -289,11 +320,17 @@ jQuery( function( $ ) {
 	let formSubmitted = false;
 
 	$( 'form#post .wpz-insta_tabs-content > .wpz-insta_sidebar > .wpz-insta_sidebar-left' ).find( 'input, textarea, select' ).add( 'form#post #title' ).filter( "[name][name!='']" ).not( '.preview-exclude' ).each( function( index ) {
-		formFields[ $.trim( $(this).attr('name') ) ] = $(this);
+		if ( $(this).is(':radio') ) {
+			if ( $(this).is(':checked') ) {
+				formFields[ $.trim( $(this).attr('name') ) ] = $(this);
+			}
+		} else {
+			formFields[ $.trim( $(this).attr('name') ) ] = $(this);
+		}
 	} );
 
 	$.each( formFields, function( i, val ) {
-		formInitialValues[i] = val.is(':checkbox,:radio') ? ( val.is(':checked') ? '1' : '0' ) : $.trim( '' + val.val() );
+		formInitialValues[i] = val.is(':checkbox') ? ( val.is(':checked') ? '1' : '0' ) : $.trim( '' + val.val() );
 	} );
 
 	$( 'form#post' ).on( 'submit', () => formSubmitted = true );
@@ -306,7 +343,7 @@ jQuery( function( $ ) {
 
 				if ( ! $target.is( '.preview-exclude' ) ) {
 					const key          = $target.attr('name'),
-					      currentValue = $target.is(':checkbox,:radio') ? ( $target.is(':checked') ? '1' : '0' ) : $.trim( '' + $target.val() );
+					      currentValue = $target.is(':checkbox') ? ( $target.is(':checked') ? '1' : '0' ) : $.trim( '' + $target.val() );
 
 					if ( key in formInitialValues && currentValue != formInitialValues[key] ) {
 						if ( ! ( key in formChangedValues ) ) {
