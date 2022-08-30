@@ -26,6 +26,14 @@ function add_my_styles_and_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'add_my_styles_and_scripts' );
 
+function my_scripts_method() {
+    wp_enqueue_script(
+        'custom_script',
+        get_template_directory_uri() . '/js/index.js',
+    );
+}
+add_action('wp_enqueue_scripts', 'my_scripts_method');
+
 //$custom_header = array(
 //    'default-image' => get_template_directory_uri().'/images/header-img.jpg',
 //    'width' => 1000,
