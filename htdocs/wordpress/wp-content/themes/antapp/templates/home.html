@@ -1,41 +1,104 @@
 <!-- wp:template-part {"slug":"header-small-dark","tagName":"header"} /-->
 
-<!-- wp:query {"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"layout":{"inherit":true},"tagName":"main"} -->
-<main class="wp-block-query">
-    <!-- wp:post-template {"align":"wide"} -->
-    <!-- wp:group {"layout":{"inherit":true}} -->
-    <div class="wp-block-group">
-        <!-- wp:post-title {"isLink":true,"align":"wide","fontSize":"var(--wp--custom--typography--font-size--huge, clamp(2.25rem, 4vw, 2.75rem))"} /-->
+<main class="">
+    <div class="container-fluid">
+        <div class="row service">
+            <div class="col-2"></div>
 
-        <!-- wp:post-featured-image {"isLink":true,"align":"wide","style":{"spacing":{"margin":{"top":"calc(1.75 * var(--wp--style--block-gap))"}}}} /-->
-
-        <!-- wp:columns {"align":"wide"} -->
-        <div class="wp-block-columns alignwide"><!-- wp:column {"width":"650px"} -->
-            <div class="wp-block-column" style="flex-basis:650px"><!-- wp:post-excerpt /-->
-
-                <!-- wp:post-date {"isLink":true,"format":"F j, Y","style":{"typography":{"fontStyle":"italic","fontWeight":"400"}},"fontSize":"small"} /-->
+            <div class="col-4 justify-content-center">
+                <h2>サービス紹介</h2>
+                <ul>
+                    <li> Web制作 </li>
+                    <li> アプリ開発 </li>
+                    <li> 受託開発 </li>
+                    <li> マーケティング支援 </li>
+                </ul>
+                <button>詳しくはこちら</button>
             </div>
-            <!-- /wp:column -->
 
-            <!-- wp:column {"width":""} -->
-            <div class="wp-block-column"></div>
-            <!-- /wp:column --></div>
-        <!-- /wp:columns -->
+            <div class="col-4 justify-content-center">
+                <div class="justify-content-center swiper-container-autoheight" style="background-color: #8e8e8e">
+                    image
+                </div>
+            </div>
 
-        <!-- wp:spacer {"height":112} -->
-        <div style="height:112px" aria-hidden="true" class="wp-block-spacer"></div>
-        <!-- /wp:spacer --></div>
-    <!-- /wp:group -->
-    <!-- /wp:post-template -->
+            <div class="col-2"></div>
+        </div>
 
-    <!-- wp:query-pagination {"paginationArrow":"arrow","align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
-    <!-- wp:query-pagination-previous {"fontSize":"small"} /-->
+        <div class="row pt-5 strength">
+            <div class="container-fluid">
+                <div class="row justify-content-center pt-5">
+                    <h2>我々の強み</h2>
+                </div>
 
-    <!-- wp:query-pagination-numbers /-->
+                <div class="row align-content-between pt-5">
+                    <div class="col-4 justify-content-center">
+                        <div class="text-center">
+                            <h3>01</h3>
+                            品質へのこだわり
+                        </div>
+                    </div>
+                    <div class="col-4 justify-content-center">
+                        <div class="text-center">
+                            <h3>02</h3>
+                            コストパフォーマンス
+                        </div>
+                    </div>
+                    <div class="col-4 justify-content-center">
+                        <div class="text-center">
+                            <h3>03</h3>
+                            柔軟な対応
+                        </div>
+                    </div>
+                </div>
 
-    <!-- wp:query-pagination-next {"fontSize":"small"} /-->
-    <!-- /wp:query-pagination -->
+                <div class="row justify-content-center pt-5">
+                    <button>
+                        私たちについて
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-5 strength justify-content-center">
+            <div class="container-fluid justify-content-center">
+                <div class="row justify-content-center pt-5">
+                    <h2>ポートフォリオ</h2>
+                </div>
+                <div class="row justify-content-center pt-5">
+                    <div class="justify-content-center swiper-container-autoheight" style="background-color: #8e8e8e">
+                        image
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-5 strength justify-content-center">
+            <div class="container-fluid justify-content-center">
+                <div class="row justify-content-center pt-5">
+                    <h2>お問合せ</h2>
+                </div>
+                <div class="row justify-content-center pt-5">
+                    フォーム
+                </div>
+                <div class="row justify-content-center pt-5">
+                    <button>
+                        私たちについて
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-5 strength justify-content-center">
+            <div class="container-fluid justify-content-center">
+                <div class="row justify-content-center pt-5">
+                    お役立ち資料
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </main>
-<!-- /wp:query -->
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
