@@ -146,3 +146,35 @@ Twenty Twenty-Two is distributed under the terms of the GNU GPL.
 /*	padding-left: var(--wp--custom--spacing--outer);*/
 /*}*/
 
+.home-top-header {
+    vertical-align:middle;
+}
+
+
+.home-top-text {
+    position: sticky;
+    top: 0;
+}
+
+.home-content {
+    background-color: #FFFFFF;
+    margin-top: 3rem!important;
+    margin-left: 3rem!important;
+    margin-right: 3rem!important;
+    padding-bottom: 3rem!important;
+}
+
+.trigger {
+    /*position: absolute;*/
+    top: 75vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    padding: 20px;
+}
+.box {
+    background-color: black;
+    width: 10vw;
+    height: 10vw;
+}
