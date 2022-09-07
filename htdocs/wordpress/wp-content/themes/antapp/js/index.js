@@ -64,23 +64,55 @@ gsap.from('.contact',
         }
     });
 
+// aboutusのコンテンツのフェードイン
+gsap.from('.about-antapp',
+    {
+        y: 0,
+        autoAlpha: 0,
+        delay: 0.0,
+        duration: 0.5,
+        ease: 'power2.in',
+        scrollTrigger: {
+            trigger: '.about-antapp',
+            start: 'top center'
+        }
+    });
 
-//
-// gsap.registerPlugin(ScrollTrigger);
-// gsap.fromTo('.home-content',
-//     {
-//         y: 50,
-//         autoAlpha: 0
-//     },
-//     {
-//         y: 0,
-//         autoAlpha: 1,
-//         delay: 0.6,
-//         duration: 1.2,
-//         ease: 'power2.out',
-//         scrollTrigger: {
-//             trigger: '.trigger',
-//             start: 'top center'
-//         }
-//     }
-// );
+gsap.from('.about-member',
+    {
+        y: 0,
+        autoAlpha: 0,
+        delay: 0.0,
+        duration: 0.5,
+        ease: 'power2.in',
+        scrollTrigger: {
+            trigger: '.about-member',
+            start: 'top center'
+        }
+    });
+
+gsap.from('.about-philosophy',
+    {
+        y: 0,
+        autoAlpha: 0,
+        delay: 0.0,
+        duration: 0.5,
+        ease: 'power2.in',
+        scrollTrigger: {
+            trigger: '.about-philosophy',
+            start: 'top center'
+        }
+    });
+
+gsap.from('.about-strength',
+    {
+        y: 0,
+        autoAlpha: 0,
+        delay: 0.0,
+        duration: 0.5,
+        ease: 'power2.in',
+        scrollTrigger: {
+            trigger: '.about-strength',
+            start: 'top center'
+        }
+    });

@@ -1,0 +1,50 @@
+<!-- wp:template-part {"slug":"header-small-dark","tagName":"header"} /-->
+<main class="" style="background-color: #34B151;">
+    <div class="container-fluid">
+        <script>
+            $(function () {
+                const elementHeight = $(window).height();
+                $('#home-top-wrapper').height(elementHeight).width($(window).width());
+                $('#home-top-text').css('padding-top', elementHeight / 2 + 'px');
+            });
+        </script>
+        <div id="home-top-wrapper" class="pb-5 text-home-top">
+            <div id="home-top-text" class="align-items-center text-center">
+                <h2>
+                    ポートフォリオ
+                </h2>
+            </div>
+        </div>
+
+        <div class="row home-content pt-3 about-member">
+            <div class="col-12">
+                <h2 class="justify-content-center text-center pt-5 pb-5">coming soon!!</h2>
+            </div>
+            <div class="col-12">
+                <div class="row pt-3">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <h3 class="pb-3">
+                            準備中<br/>
+                        </h3>
+                        カミングスーン<br/>
+                        kamingusuun!
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center helpful-doc home-content">
+            <div class="container-fluid justify-content-center">
+                <div class="row justify-content-center pt-5">
+                    お役立ち資料
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</main>
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

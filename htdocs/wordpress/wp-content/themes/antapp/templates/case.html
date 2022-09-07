@@ -1,0 +1,29 @@
+<!-- wp:template-part {"slug":"header-small-dark","tagName":"header"} /-->
+<main class="" style="background-color: #34B151;">
+    <div class="container-fluid">
+        <script>
+            $(function() {
+                const elementHeight = $(window).height();
+                $('#home-top-wrapper').height(elementHeight).width($(window).width());
+                $('#home-top-text').css('padding-top',  elementHeight / 2 + 'px');
+            });
+        </script>
+        <div id="home-top-wrapper" class="pb-5">
+            <div id="home-top-text" class="align-items-center text-center text-home-top">
+                <h1>
+                    課題別の事例
+                </h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center helpful-doc home-content">
+            <div class="container-fluid justify-content-center">
+                <div class="row justify-content-center pt-5">
+                    お役立ち資料
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

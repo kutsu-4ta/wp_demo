@@ -34,25 +34,25 @@ Twenty Twenty-Two is distributed under the terms of the GNU GPL.
 /* * https://github.com/WordPress/gutenberg/issues/27075*/
 /* *!*/
 
-/*a {*/
-/*	text-decoration-thickness: 1px;*/
-/*	text-underline-offset: 0.25ch;*/
-/*}*/
+a {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.25ch;
+}
 
-/*a:hover,*/
-/*a:focus {*/
-/*	text-decoration-style: dashed;*/
-/*}*/
+a:hover,
+a:focus {
+	text-decoration-style: dashed;
+}
 
-/*a:active {*/
-/*	text-decoration: none;*/
-/*}*/
+a:active {
+	text-decoration: none;
+}
 
-/*.wp-block-navigation .wp-block-navigation-item a:hover,*/
-/*.wp-block-navigation .wp-block-navigation-item a:focus {*/
-/*	text-decoration: underline;*/
-/*	text-decoration-style: solid;*/
-/*}*/
+.wp-block-navigation .wp-block-navigation-item a:hover,
+.wp-block-navigation .wp-block-navigation-item a:focus {
+	text-decoration: underline;
+	text-decoration-style: solid;
+}
 
 /*!**/
 /* * Search and File Block button styles.*/
@@ -61,15 +61,15 @@ Twenty Twenty-Two is distributed under the terms of the GNU GPL.
 /* * https://github.com/WordPress/gutenberg/issues/27760*/
 /* *!*/
 
-/*.wp-block-search__button,*/
-/*.wp-block-file .wp-block-file__button {*/
-/*	background-color: var(--wp--preset--color--primary);*/
-/*	border-radius: 0;*/
-/*	border: none;*/
-/*	color: var(--wp--preset--color--background);*/
-/*	font-size: var(--wp--preset--font-size--medium);*/
-/*	padding: calc(.667em + 2px) calc(1.333em + 2px);*/
-/*}*/
+.wp-block-search__button,
+.wp-block-file .wp-block-file__button {
+	/*background-color: var(--wp--preset--color--primary);*/
+	border-radius: 0;
+	border: none;
+	/*color: var(--wp--preset--color--background);*/
+	/*font-size: var(--wp--preset--font-size--medium);*/
+	padding: calc(.667em + 2px) calc(1.333em + 2px);
+}
 
 /*!**/
 /* * Button hover styles.*/
@@ -77,11 +77,11 @@ Twenty Twenty-Two is distributed under the terms of the GNU GPL.
 /* * https://github.com/WordPress/gutenberg/issues/27075*/
 /* *!*/
 
-/*.wp-block-search__button:hover,*/
-/*.wp-block-file .wp-block-file__button:hover,*/
-/*.wp-block-button__link:hover {*/
-/*	opacity: 0.90;*/
-/*}*/
+.wp-block-search__button:hover,
+.wp-block-file .wp-block-file__button:hover,
+.wp-block-button__link:hover {
+	opacity: 0.90;
+}
 
 /*!**/
 /* * Alignment styles.*/
@@ -146,12 +146,151 @@ Twenty Twenty-Two is distributed under the terms of the GNU GPL.
 /*	padding-left: var(--wp--custom--spacing--outer);*/
 /*}*/
 
+/*Button*/
+.btn {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    transition: .4s;
+}
+
+.btn:hover {
+    background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+
+/* form */
+.form-label{
+    text-align: right;
+    font-family: 'Source Sans Pro',arial,sans-serif;
+}
+.form-submit{
+    text-align: center;
+}
+.form-textarea{
+    font-size: 1em;
+    padding: 15px 10px 10px;
+    font-family: 'Source Sans Pro',arial,sans-serif;
+    border: 1px solid #cecece;
+    background: #ffffff;
+    color: #020202;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 600px;
+    height:250px;
+}
+
+.form-input {
+    font-size: 1em;
+    padding: 15px 10px 10px;
+    font-family: 'Source Sans Pro',arial,sans-serif;
+    border: 1px solid #cecece;
+    background: #ffffff;
+    color: #020202;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 600px;
+}
+::-webkit-input-placeholder {
+    color: #606060;
+}
+:-moz-placeholder {
+    color: #606060;
+}
+::-moz-placeholder {
+    color: #606060;
+}
+:-ms-input-placeholder {
+    color: #606060;
+}
+.button {
+    margin-top:15px;
+    margin-bottom:25px;
+    background-color:#2ABCA7;
+    padding: 12px 45px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #2ABCA7;
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: inline-block;
+    cursor: pointer;
+    width:30%;
+    color:#fff;
+}
+button:hover, .button:hover {
+    background:#19a08c;
+}
+label.error {
+    font-family:'Source Sans Pro',arial,sans-serif;
+    font-size:1em;
+    display:block;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#d89c9c;
+    width: 80%;
+    margin:auto;
+    color: #FAFAFA;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+
+
+
+/*.btn-form-submit {*/
+/*    display: inline-block;*/
+/*    padding: 7px 20px;*/
+/*    border-radius: 25px;*/
+/*    text-decoration: none;*/
+/*    color: #FFF;*/
+/*    background-image: linear-gradient(45deg, #19bcc0 0%, #34e07c 100%);*/
+/*    transition: .4s;*/
+/*}*/
+/*.btn-form-submit:hover {*/
+/*    background-image: linear-gradient(45deg, #5dd38f 0%, #115e32 100%);*/
+/*}*/
+
+
 .home-top-header {
     vertical-align:middle;
 }
 
+/*text*/
+.text-main {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
 
-.home-top-text {
+.text-sub{
+    text-overflow: ellipsis;
+}
+
+/*TODO: text-〇〇の名前にする*/
+.text-home-top {
     position: sticky;
     top: 0;
 }
