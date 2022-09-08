@@ -146,6 +146,32 @@ a:active {
 /*	padding-left: var(--wp--custom--spacing--outer);*/
 /*}*/
 
+/*header*/
+.btn-header {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    transition: .4s;
+    width: 6rem;
+    text-align: center;
+}
+.btn-header:hover {
+    background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+
+.text-header-btn {
+    vertical-align: middle;
+    font-size: 1.0em;
+}
+
+/* block */
+.main-block {
+    margin-top: 0;
+}
+
 /*Button*/
 .btn {
     display: inline-block;
