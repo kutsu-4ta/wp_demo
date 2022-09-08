@@ -1,15 +1,8 @@
 <!-- wp:template-part {"slug":"header-small-dark","tagName":"header"} /-->
 <main class="" style="background-color: #34B151;">
-    <div class="container-fluid">
-        <script>
-            $(function() {
-                const elementHeight = $(window).height();
-                $('#home-top-wrapper').height(elementHeight).width($(window).width());
-                $('#home-top-text').css('padding-top',  elementHeight / 2 + 'px');
-            });
-        </script>
-        <div id="home-top-wrapper" class="pb-5">
-            <div id="home-top-text" class="align-items-center text-center text-home-top">
+    <div id="container" class="container-fluid">
+        <div class="pb-5 wrapper-home-top">
+            <div class="align-items-center text-center text-home-top">
                 <h1>
                     サービス<br/>
                     Antappが提供する価値
@@ -18,10 +11,10 @@
                     <div class="row pt-3">
                         <div class="col-2"></div>
                         <div class="col-4">
-                            <a class="btn" href="#web-develop">web制作</a>
+                            <button id="web-develop-btn" class="btn" href="">web制作</button>
                         </div>
                         <div class="col-4">
-                            <a class="btn" href="#marcketing">マーケティング支援</a>
+                            <button id="marketing-btn" class="btn">マーケティング支援</button>
                         </div>
                         <div class="col-2"></div>
                     </div>
@@ -102,7 +95,7 @@
             </div>
 
 
-            <div id="marcketing" class="row home-content pt-3">
+            <div id="marketing" class="row home-content pt-3">
                 <div class="col-12">
                     <h2 class="pt-5">マーケティング支援</h2>
                 </div>
@@ -130,5 +123,34 @@
 
     </div>
 </main>
+<!--<script>-->
+<!--    $(function() {-->
+<!--        const elementHeight = $(window).height();-->
+<!--        $('#home-top-wrapper').height(elementHeight).width($(window).width());-->
+<!--        $('#home-top-text').css('padding-top',  elementHeight / 2 + 'px');-->
+<!--    });-->
+<!--</script>-->
+<script>
+    // クリックされた時の処理
+    $('#web-develop-btn').click(function () {
+        console.log('いいい');
+        $(window).scrollTop($('#web-develop').position().top);
+        // スクロール位置
+        let scroll_point = $('#web-develop').offset().top;
+
+        $('body').animate({
+            scrollTop: scroll_point
+        }, 900);
+    });
+</script>
+<script>
+    // クリックされた時の処理
+    $('#marketing-btn').click(function() {
+        console.log($('#marketing').offset().top);
+        $("body").animate({
+            scrollTop: $(window).scrollTop($('#marketing').offset().top)
+        }, 3000);
+    });
+</script>
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

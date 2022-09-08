@@ -275,7 +275,17 @@ label.error {
     vertical-align:middle;
 }
 
+.wrapper-home-top{
+    height: 40rem;
+}
+
 /*text*/
+.text-home-top {
+    padding-top: 20rem;
+    position: sticky;
+    top: 0;
+}
+
 .text-main {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
@@ -287,12 +297,6 @@ label.error {
 
 .text-sub{
     text-overflow: ellipsis;
-}
-
-/*TODO: text-〇〇の名前にする*/
-.text-home-top {
-    position: sticky;
-    top: 0;
 }
 
 .home-content {

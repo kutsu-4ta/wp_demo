@@ -14,7 +14,7 @@ const windowWidth = window.innerWidth;
 gsap.from('.service',
     {
         y: 0,
-        x:windowWidth/3,
+        x:-windowWidth/3,
         autoAlpha: 0,
         delay: 0.0,
         duration: 0.5,
@@ -40,7 +40,7 @@ gsap.from('.strength',
 gsap.from('.portfolio',
     {
         y: 0,
-        x:windowWidth/3,
+        x:-windowWidth/3,
         autoAlpha: 0,
         delay: 0.0,
         duration: 0.5,
