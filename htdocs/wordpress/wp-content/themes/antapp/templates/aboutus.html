@@ -4,7 +4,7 @@
     <script>
         $(function() {
             const elementHeight = $('#front-content').height();
-            $('#particles').height(elementHeight);
+            $('#particles').height(elementHeight + $('#head1').offset().top);
             // $('#particles').css('height',  elementHeight + 'px');
         });
     </script>
@@ -14,7 +14,7 @@
     <div id="front-content" class="container-fluid text-home-top front-content">
         <div class="pb-5 mb-5">
             <div class="align-items-center text-center">
-                <h1>
+                <h1 id="head1">
                     私たちについて
                 </h1>
             </div>
