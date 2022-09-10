@@ -170,6 +170,7 @@ a:active {
 /* block */
 .main-block {
     margin-top: 0;
+    z-index: -1;
 }
 
 /*Button*/
@@ -357,23 +358,14 @@ https://meyerweb.com/eric/tools/css/reset/
 
 .back-animation {
     position: absolute;
-    z-index: -10;
-    /*left: 0;*/
-    /*top: 50%;*/
-    /*padding: 0 20px;*/
+    top:0;
     width: 100%;
-    height: 1000px;
-    /*text-align: center;*/
+    z-index: -1;
+    background-color: #4ed069 !important;
 }
 
 .front-content {
-    /*position: absolute;*/
     z-index: 1;
-    /*left: 0;*/
-    /*top: 50%;*/
-    /*padding: 0 20px;*/
-    /*width: 100%;*/
-    /*text-align: center;*/
 }
 
 #particles {
@@ -383,7 +375,7 @@ https://meyerweb.com/eric/tools/css/reset/
     width: 100%;
     height: 100%;
     overflow: hidden;
-    padding-top: 0;
+    padding: 0;
 }
 
 #front-text {

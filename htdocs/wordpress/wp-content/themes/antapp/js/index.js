@@ -573,6 +573,8 @@ document.addEventListener('DOMContentLoaded', function () {
         dotColor: '#eee',
         lineColor: '#eee'
     });
-    var frontText = document.getElementById('front-text');
-    frontText.style.marginTop = -frontText.offsetHeight*15 + 'px';
+    let particles = document.getElementById('particles');
+    console.log(particles.style.height);
+    // particles.style.height = 2000 + 'px';
+    console.log(particles.style.height);
 }, false);
