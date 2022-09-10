@@ -11,10 +11,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 // ホームのコンテンツのスライドイン
 const windowWidth = window.innerWidth;
+let contentWidth = document.getElementById('content');
+console.log(contentWidth);
 gsap.from('.service',
     {
         y: 0,
-        x:-windowWidth/3,
+        x:-windowWidth/8,
         autoAlpha: 0,
         delay: 0.0,
         duration: 0.5,
@@ -27,7 +29,7 @@ gsap.from('.service',
 gsap.from('.strength',
     {
         y: 0,
-        x:-windowWidth/3,
+        x:-windowWidth/8,
         autoAlpha: 0,
         delay: 0.0,
         duration: 0.5,
@@ -40,7 +42,7 @@ gsap.from('.strength',
 gsap.from('.portfolio',
     {
         y: 0,
-        x:-windowWidth/3,
+        x:-windowWidth/8,
         autoAlpha: 0,
         delay: 0.0,
         duration: 0.5,
@@ -53,7 +55,7 @@ gsap.from('.portfolio',
 gsap.from('.contact',
     {
         y: 0,
-        x:-windowWidth/3,
+        x:-windowWidth/8,
         autoAlpha: 0,
         delay: 0.0,
         duration: 0.5,
