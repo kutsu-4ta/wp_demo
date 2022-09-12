@@ -1,0 +1,164 @@
+<!-- wp:template-part {"slug":"header-small-dark","tagName":"header"} /-->
+<main class="main-block">
+    <!--  background Animation  -->
+    <script>
+        $(function() {
+            const elementHeight = $('#front-content').height();
+            $('#particles').height(elementHeight + $('#head1').offset().top);
+            // $('#particles').css('height',  elementHeight + 'px');
+        });
+    </script>
+    <div id="particles" class="back-animation"></div>
+
+    <!--  content  -->
+    <div id="front-content" class="container-fluid text-home-top front-content">
+        <div class="pb-5 mb-5">
+            <div class="align-items-center text-center">
+                <h1 id="head1">
+                    サービス<br/>
+                    Antappが提供する価値
+                </h1>
+                <div class="container-fluid pt-5">
+                    <div class="row pt-3">
+                        <div class="col-2"></div>
+                        <div class="col-4">
+                            <button id="web-develop-btn" class="btn" href="">web制作</button>
+                        </div>
+                        <div class="col-4">
+                            <button id="marketing-btn" class="btn">マーケティング支援</button>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid pt-5">
+            <div id="web-develop" class="row home-content pt-3">
+                <div class="col-12">
+                    <h2 class="pt-5">web制作</h2>
+                </div>
+
+                <div class="col-12 justify-content-center text-center pb-2 pt-5">
+                    <h3>ホームページ制作</h3>
+                    <div>
+                        <p>Antappは「成果に繋がる」という軸をブラすことなくカスタマージャーニーに沿ったHP制作を行います。</p>
+                    </div>
+                </div>
+
+                <div class="col-3 pb-2 pt-5">
+                    <h5>
+                        HPの目的達成
+                    </h5>
+                    <p>
+                        制作するWebサイトが自社マーケティングにおいてどのような役割を担うのかを明確にします。
+                    </p>
+                </div>
+                <div class="col-3 pb-2 pt-5">
+                    <h5>
+                        カスタマージャーニー作成
+                    </h5>
+                    <p>
+                        顧客が商品購入までにどのような心理で、どのような行動をするのかを定義し顧客インサイトを見える化します
+                    </p>
+                </div>
+                <div class="col-3 pb-2 pt-5">
+                    <h5>
+                        ヒアリング工程(仮)
+                    </h5>
+                    <p>
+                        制作するサイトがマーケティングにおいてどのような目的で
+                    </p>
+                </div>
+                <div class="col-3 pb-2 pt-5">
+                    <h5>
+                        ヒアリング工程(仮)
+                    </h5>
+                    <p>
+                        制作するサイトがマーケティングにおいてどのような目的で
+                    </p>
+                </div>
+
+
+                <div class="col-2 justify-content-center text-center pb-2 pt-5">
+                    アイコン
+                </div>
+                <div class="col-4 pb-2 pt-5">
+                    <h3>アプリ開発</h3>
+                </div>
+                <div class="col-6 pb-2 pt-5">
+                    <div class="">
+                        <p>texttexttexttexttexttextt</p>
+                    </div>
+                </div>
+
+                <div class="col-2 justify-content-center text-center pb-2 pt-5">
+                    アイコン
+                </div>
+                <div class="col-4 pb-2 pt-5">
+                    <h3>社内システム構築</h3>
+                </div>
+                <div class="col-6 pb-2 pt-5">
+                    <div class="">
+                        <p>texttexttexttexttexttextt</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="marketing" class="row home-content pt-3">
+                <div class="col-12">
+                    <h2 class="pt-5">マーケティング支援</h2>
+                </div>
+
+                <div class="col-12 justify-content-center text-center pb-2 pt-5">
+                    <div>
+                        <p>texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
+                    </div>
+                </div>
+
+                <div class="col-3 pb-2 pt-5"></div>
+                <div class="col-3 pb-2 pt-5"></div>
+                <div class="col-3 pb-2 pt-5"></div>
+                <div class="col-3 pb-2 pt-5"></div>
+
+            </div>
+            <div class="row justify-content-center helpful-doc home-content">
+                <div class="container-fluid justify-content-center">
+                    <div class="row justify-content-center pt-5">
+                        お役立ち資料
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-12" style="height: 5rem">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+<script>
+    // クリックされた時の処理
+    $('#web-develop-btn').click(function () {
+        console.log('いいい');
+        $(window).scrollTop($('#web-develop').position().top);
+        // スクロール位置
+        let scroll_point = $('#web-develop').offset().top;
+
+        $('body').animate({
+            scrollTop: scroll_point
+        }, 900);
+    });
+</script>
+<script>
+    // クリックされた時の処理
+    $('#marketing-btn').click(function() {
+        console.log($('#marketing').offset().top);
+        $("body").animate({
+            scrollTop: $(window).scrollTop($('#marketing').offset().top)
+        }, 3000);
+    });
+</script>
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

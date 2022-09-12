@@ -217,8 +217,8 @@
 			]
 		},
 		"layout": {
-			"contentSize": "1400px",
-			"wideSize": "1400px"
+			"contentSize": "100%",
+			"wideSize": "100%"
 		}
 	},
 	"styles": {
@@ -340,7 +340,7 @@
 			}
 		},
 		"spacing": {
-			"blockGap": "1.5rem"
+			"blockGap": "0rem"
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--system-font)",

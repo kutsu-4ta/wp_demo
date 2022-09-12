@@ -1,41 +1,173 @@
 <!-- wp:template-part {"slug":"header-small-dark","tagName":"header"} /-->
+<main class="main-block" xmlns="http://www.w3.org/1999/html">
+    <!--  background Animation  -->
+    <script>
+        $(function() {
+            const elementHeight = $('#front-content').height();
+            $('#particles').height(elementHeight + $('#head1').offset().top);
+            // $('#particles').css('height',  elementHeight + 'px');
+        });
+    </script>
+    <div id="particles" class="back-animation"></div>
 
-<!-- wp:query {"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"layout":{"inherit":true},"tagName":"main"} -->
-<main class="wp-block-query">
-    <!-- wp:post-template {"align":"wide"} -->
-    <!-- wp:group {"layout":{"inherit":true}} -->
-    <div class="wp-block-group">
-        <!-- wp:post-title {"isLink":true,"align":"wide","fontSize":"var(--wp--custom--typography--font-size--huge, clamp(2.25rem, 4vw, 2.75rem))"} /-->
-
-        <!-- wp:post-featured-image {"isLink":true,"align":"wide","style":{"spacing":{"margin":{"top":"calc(1.75 * var(--wp--style--block-gap))"}}}} /-->
-
-        <!-- wp:columns {"align":"wide"} -->
-        <div class="wp-block-columns alignwide"><!-- wp:column {"width":"650px"} -->
-            <div class="wp-block-column" style="flex-basis:650px"><!-- wp:post-excerpt /-->
-
-                <!-- wp:post-date {"isLink":true,"format":"F j, Y","style":{"typography":{"fontStyle":"italic","fontWeight":"400"}},"fontSize":"small"} /-->
+    <!--  content  -->
+    <div id="front-content" class="container-fluid text-home-top front-content">
+        <div class="pb-5 mb-5">
+            <div class="align-items-center text-center">
+                <h1 id="head1">
+                    Web制作・マーケティング支援で売上増加<br/>
+                    Webからの出会いを作る会社
+                </h1>
             </div>
-            <!-- /wp:column -->
+        </div>
 
-            <!-- wp:column {"width":""} -->
-            <div class="wp-block-column"></div>
-            <!-- /wp:column --></div>
-        <!-- /wp:columns -->
+        <div class="container-fluid pt-5 mt-5">
+            <div class="row pt-3">
+                <div class="col-12" style="height: 10rem">
+                </div>
+            </div>
 
-        <!-- wp:spacer {"height":112} -->
-        <div style="height:112px" aria-hidden="true" class="wp-block-spacer"></div>
-        <!-- /wp:spacer --></div>
-    <!-- /wp:group -->
-    <!-- /wp:post-template -->
+            <div class="row service home-content pt-3">
+                <div class="col-12 justify-content-center text-center">
+                    <h2 class="pt-5">サービス紹介</h2>
+                </div>
+                <div class="col-6 justify-content-center text-center pb-2 pt-5">
+                    <h3>Web制作</h3>
+                    <div>
+                        <p>Text</p>
+                        <p>Text</p>
+                        <p>Text</p>
+                        <p>Text</p>
+                    </div>
+                    <a class="btn" href="/wordpress//?page_id=75/#web-develop">詳しくはこちら</a>
+                </div>
+                <div class="col-6 justify-content-center text-center b-2 pt-5">
+                    <h3>マーケティング支援</h3>
+                    <div>
+                        <p>Text</p>
+                        <p>Text</p>
+                        <p>Text</p>
+                        <p>Text</p>
+                    </div>
+                    <a class="btn" href="/wordpress//?page_id=75/#marcketing">詳しくはこちら</a>
+                </div>
+            </div>
 
-    <!-- wp:query-pagination {"paginationArrow":"arrow","align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
-    <!-- wp:query-pagination-previous {"fontSize":"small"} /-->
+            <div class="row strength home-content">
+                <div class="container-fluid">
+                    <div class="row justify-content-center pt-5">
+                        <h2>私たちの強み</h2>
+                    </div>
 
-    <!-- wp:query-pagination-numbers /-->
+                    <div class="row align-content-between pt-5">
+                        <div class="col-4 justify-content-center">
+                            <div class="text-center">
+                                <h3>01</h3>
+                                品質へのこだわり
+                            </div>
+                        </div>
+                        <div class="col-4 justify-content-center">
+                            <div class="text-center">
+                                <h3>02</h3>
+                                コストパフォーマンス
+                            </div>
+                        </div>
+                        <div class="col-4 justify-content-center">
+                            <div class="text-center">
+                                <h3>03</h3>
+                                柔軟な対応
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- wp:query-pagination-next {"fontSize":"small"} /-->
-    <!-- /wp:query-pagination -->
+                    <div class="row justify-content-center pt-3">
+                        <a class="btn" href="/wordpress/?page_id=78/#about-philosophy">私たちの強み</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row portfolio home-content justify-content-center">
+                <div class="container-fluid justify-content-center">
+                    <div class="row justify-content-center pt-5">
+                        <h2>ポートフォリオ</h2>
+                    </div>
+                    <div class="row justify-content-center pt-5">
+                        <div class="justify-content-center swiper-container-autoheight"
+                             style="background-color: #8e8e8e">
+                            image
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="row justify-content-center contact home-content">
+                <div class="container-fluid justify-content-center">
+                    <div class="row justify-content-center pt-5">
+                        <h2>お問合せ</h2>
+                    </div>
+                    <div class="row pt-5">
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                            <form method="post" action="mail.php">
+                                <div class="row pt-4">
+                                    <div class="col-6 form-label">
+                                        お名前
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-input" placeholder="例）山田太郎" required>
+                                    </div>
+                                </div>
+                                <div class="row pt-4">
+                                    <div class="col-6 form-label" required>
+                                        電話番号
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-input" placeholder="例）000-0000-0000" required>
+                                    </div>
+                                </div>
+                                <div class="row pt-4">
+                                    <div class="col-6 form-label">
+                                        メールアドレス
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-input" placeholder="例）example@gmail.com" required>
+                                    </div>
+                                </div>
+                                <div class="row pt-4">
+                                    <div class="col-6 form-label">お問い合わせ内容</div>
+                                    <div class="col-6">
+                                        <textarea class="form-textarea" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="row pt-4">
+                                    <div class="col-12 form-submit">
+                                        <button class="button" type="submit">送信</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+                    <div class="row justify-content-center pt-5">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pb-5 justify-content-center helpful-doc home-content">
+                <div class="container-fluid justify-content-center">
+                    <div class="row justify-content-center pt-5">
+                        お役立ち資料
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-12" style="height: 5rem">
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
-<!-- /wp:query -->
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

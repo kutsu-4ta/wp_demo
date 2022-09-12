@@ -1,0 +1,58 @@
+<!-- wp:template-part {"slug":"header-small-dark","tagName":"header"} /-->
+<main class="main-block">
+    <!--  background Animation  -->
+    <script>
+        $(function() {
+            const elementHeight = $('#front-content').height();
+            $('#particles').height(elementHeight + $('#head1').offset().top);
+            // $('#particles').css('height',  elementHeight + 'px');
+        });
+    </script>
+    <div id="particles" class="back-animation"></div>
+
+    <!--  content  -->
+    <div id="front-content" class="container-fluid text-home-top front-content">
+        <div class="pb-5 mb-5">
+            <div class="align-items-center text-center">
+                <h1 id="head1">
+                    ポートフォリオ
+                </h1>
+            </div>
+        </div>
+
+        <div class="row home-content pt-3 about-member">
+            <div class="col-12">
+                <h2 class="justify-content-center text-center pt-5 pb-5">coming soon!!</h2>
+            </div>
+            <div class="col-12">
+                <div class="row pt-3">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <h3 class="pb-3">
+                            準備中<br/>
+                        </h3>
+                        カミングスーン<br/>
+                        kamingusuun!
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center helpful-doc home-content">
+            <div class="container-fluid justify-content-center">
+                <div class="row justify-content-center pt-5">
+                    お役立ち資料
+                </div>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-12" style="height: 5rem">
+            </div>
+        </div>
+    </div>
+
+    </div>
+</main>
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

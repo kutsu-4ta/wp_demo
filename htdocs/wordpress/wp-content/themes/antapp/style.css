@@ -34,25 +34,28 @@ Twenty Twenty-Two is distributed under the terms of the GNU GPL.
 /* * https://github.com/WordPress/gutenberg/issues/27075*/
 /* *!*/
 
-/*a {*/
-/*	text-decoration-thickness: 1px;*/
-/*	text-underline-offset: 0.25ch;*/
-/*}*/
+a {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.25ch;
+}
 
-/*a:hover,*/
-/*a:focus {*/
-/*	text-decoration-style: dashed;*/
-/*}*/
+a:hover,
+a:focus {
+	text-decoration-style: dashed;
+}
 
-/*a:active {*/
-/*	text-decoration: none;*/
-/*}*/
-
-/*.wp-block-navigation .wp-block-navigation-item a:hover,*/
-/*.wp-block-navigation .wp-block-navigation-item a:focus {*/
-/*	text-decoration: underline;*/
-/*	text-decoration-style: solid;*/
-/*}*/
+a:active {
+	text-decoration: none;
+}
+.wp-block-navigation .wp-block-navigation-item {
+    margin-left: 1.5rem;
+    margin-left: 1.5rem;
+}
+.wp-block-navigation .wp-block-navigation-item a:hover,
+.wp-block-navigation .wp-block-navigation-item a:focus {
+	text-decoration: underline;
+	text-decoration-style: solid;
+}
 
 /*!**/
 /* * Search and File Block button styles.*/
@@ -61,15 +64,15 @@ Twenty Twenty-Two is distributed under the terms of the GNU GPL.
 /* * https://github.com/WordPress/gutenberg/issues/27760*/
 /* *!*/
 
-/*.wp-block-search__button,*/
-/*.wp-block-file .wp-block-file__button {*/
-/*	background-color: var(--wp--preset--color--primary);*/
-/*	border-radius: 0;*/
-/*	border: none;*/
-/*	color: var(--wp--preset--color--background);*/
-/*	font-size: var(--wp--preset--font-size--medium);*/
-/*	padding: calc(.667em + 2px) calc(1.333em + 2px);*/
-/*}*/
+.wp-block-search__button,
+.wp-block-file .wp-block-file__button {
+	/*background-color: var(--wp--preset--color--primary);*/
+	border-radius: 0;
+	border: none;
+	/*color: var(--wp--preset--color--background);*/
+	/*font-size: var(--wp--preset--font-size--medium);*/
+	padding: calc(.667em + 2px) calc(1.333em + 2px);
+}
 
 /*!**/
 /* * Button hover styles.*/
@@ -77,11 +80,11 @@ Twenty Twenty-Two is distributed under the terms of the GNU GPL.
 /* * https://github.com/WordPress/gutenberg/issues/27075*/
 /* *!*/
 
-/*.wp-block-search__button:hover,*/
-/*.wp-block-file .wp-block-file__button:hover,*/
-/*.wp-block-button__link:hover {*/
-/*	opacity: 0.90;*/
-/*}*/
+.wp-block-search__button:hover,
+.wp-block-file .wp-block-file__button:hover,
+.wp-block-button__link:hover {
+	opacity: 0.90;
+}
 
 /*!**/
 /* * Alignment styles.*/
@@ -115,11 +118,11 @@ Twenty Twenty-Two is distributed under the terms of the GNU GPL.
 /*body > .is-root-container > .wp-block-cover,*/
 /*body > .is-root-container > .wp-block-template-part > .wp-block-group.has-background,*/
 /*body > .is-root-container > .wp-block-template-part > .wp-block-cover,*/
-/*.is-root-container .wp-block[data-align="full"] {*/
-/*	margin-left: calc(-1 * var(--wp--custom--spacing--outer)) !important;*/
-/*	margin-right: calc(-1 * var(--wp--custom--spacing--outer)) !important;*/
-/*	width: unset;*/
-/*}*/
+.is-root-container .wp-block[data-align="full"] {
+	margin-left: calc(-1 * var(--wp--custom--spacing--outer)) !important;
+	margin-right: calc(-1 * var(--wp--custom--spacing--outer)) !important;
+	width: unset;
+}
 
 /*!* Blocks inside columns don't have negative margins. *!*/
 /*.wp-site-blocks .wp-block-columns .wp-block-column .alignfull,*/
@@ -146,3 +149,285 @@ Twenty Twenty-Two is distributed under the terms of the GNU GPL.
 /*	padding-left: var(--wp--custom--spacing--outer);*/
 /*}*/
 
+/*header*/
+.btn-header {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    transition: .4s;
+    width: 6rem;
+    text-align: center;
+}
+.btn-header:hover {
+    background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+
+.text-header-btn {
+    vertical-align: middle;
+    font-size: 1.0em;
+}
+
+/* block */
+.main-block {
+    margin-top: 0;
+    z-index: -1;
+}
+
+/*Button*/
+.btn {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    transition: .4s;
+}
+
+.btn:hover {
+    background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+
+/* form */
+.form-label{
+    text-align: right;
+    font-family: 'Source Sans Pro',arial,sans-serif;
+}
+.form-submit{
+    text-align: center;
+}
+.form-textarea{
+    font-size: 1em;
+    padding: 15px 10px 10px;
+    font-family: 'Source Sans Pro',arial,sans-serif;
+    border: 1px solid #cecece;
+    background: #ffffff;
+    color: #020202;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 600px;
+    height:250px;
+}
+
+.form-input {
+    font-size: 1em;
+    padding: 15px 10px 10px;
+    font-family: 'Source Sans Pro',arial,sans-serif;
+    border: 1px solid #cecece;
+    background: #ffffff;
+    color: #020202;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 600px;
+}
+::-webkit-input-placeholder {
+    color: #606060;
+}
+:-moz-placeholder {
+    color: #606060;
+}
+::-moz-placeholder {
+    color: #606060;
+}
+:-ms-input-placeholder {
+    color: #606060;
+}
+.button {
+    margin-top:15px;
+    margin-bottom:25px;
+    background-color:#2ABCA7;
+    padding: 12px 45px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #2ABCA7;
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: inline-block;
+    cursor: pointer;
+    width:30%;
+    color:#fff;
+}
+button:hover, .button:hover {
+    background:#19a08c;
+}
+label.error {
+    font-family:'Source Sans Pro',arial,sans-serif;
+    font-size:1em;
+    display:block;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#d89c9c;
+    width: 80%;
+    margin:auto;
+    color: #FAFAFA;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+
+
+
+/*.btn-form-submit {*/
+/*    display: inline-block;*/
+/*    padding: 7px 20px;*/
+/*    border-radius: 25px;*/
+/*    text-decoration: none;*/
+/*    color: #FFF;*/
+/*    background-image: linear-gradient(45deg, #19bcc0 0%, #34e07c 100%);*/
+/*    transition: .4s;*/
+/*}*/
+/*.btn-form-submit:hover {*/
+/*    background-image: linear-gradient(45deg, #5dd38f 0%, #115e32 100%);*/
+/*}*/
+
+
+.home-top-header {
+    vertical-align:middle;
+}
+
+.wrapper-top-text{
+    margin-bottom: 20rem !important;
+}
+
+/*text*/
+.text-home-top {
+    padding-top: 20rem;
+    position: sticky;
+    top: 0;
+}
+
+.text-main {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.text-sub{
+    text-overflow: ellipsis;
+}
+
+.home-content {
+    background-color: #FFFFFF;
+    margin-top: 3rem!important;
+    margin-left: 3rem!important;
+    margin-right: 3rem!important;
+    padding-bottom: 3rem!important;
+}
+
+.trigger {
+    /*position: absolute;*/
+    top: 75vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    padding: 20px;
+}
+.box {
+    background-color: black;
+    width: 10vw;
+    height: 10vw;
+}
+
+
+/* 背景アニメーション */
+/*
+CSS Reset
+https://meyerweb.com/eric/tools/css/reset/
+*/
+
+.back-animation {
+    position: absolute;
+    top:0;
+    width: 100%;
+    z-index: -1;
+    background-color: #73da83 !important;
+}
+
+.front-content {
+    z-index: 1;
+}
+
+#particles {
+    background: url('http://arnaudel.perso.neuf.fr/Payekhali/Fonds/1280/AS11-40-5873.jpg') top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+#front-text {
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 50%;*/
+    /*padding: 0 20px;*/
+    /*width: 100%;*/
+    /*text-align: center;*/
+}
+
+@media only screen and (max-width: 1000px) {
+    h1 {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 48px;
+    }
+    h1::after {
+        height: 8px;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    #front-text {
+        padding: 0 10px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h1::after {
+        height: 6px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 28px;
+    }
+    h1::after {
+        height: 4px;
+    }
+}
