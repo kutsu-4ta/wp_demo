@@ -572,11 +572,12 @@ gsap.from('.about-strength',
 
 document.addEventListener('DOMContentLoaded', function () {
     particleground(document.getElementById('particles'), {
-        dotColor: '#eee',
-        lineColor: '#eee'
+        dotColor: '#00ffff',
+        lineColor: '#00ffd0'
     });
     let particles = document.getElementById('particles');
     console.log(particles.style.height);
-    // particles.style.height = 2000 + 'px';
-    console.log(particles.style.height);
+
+    let frontText = document.getElementById('front-text');
+    frontText.style.marginTop = (-frontText.offsetHeight*6) + 'px';
 }, false);
