@@ -21,3 +21,4 @@ return array(
 					<!-- /wp:group --></div>
 					<!-- /wp:group -->',
 );
+do_action('after_body_open_tag');

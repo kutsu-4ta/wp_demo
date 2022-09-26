@@ -1,20 +1,21 @@
 <!-- wp:template-part {"slug":"header-small-dark","tagName":"header"} /-->
 <main class="main-block">
-    <!--  background Animation  -->
+
+    <!--  background-Animation  -->
+    <div class="container-fluid container-background">
+        <div id="particles" class="row align-items-center text-center back-animation"></div>
+    </div>
     <script>
         $(function() {
-            const elementHeight = $('#front-content').height();
-            $('#particles').height(elementHeight + $('#head1').offset().top);
-            // $('#particles').css('height',  elementHeight + 'px');
+            let frontText = document.getElementById('front-text');
+            frontText.style.marginTop = (-frontText.offsetHeight * 10) + 'px';
         });
     </script>
-    <div id="particles" class="back-animation"></div>
 
-    <!--  content  -->
-    <div id="front-content" class="container-fluid text-home-top front-content">
-        <div class="pb-5 mb-5">
-            <div class="align-items-center text-center">
-                <h1 id="head1">
+    <div class="container-fluid">
+        <div class="container pb-5">
+            <div id="front-text" class="row justify-content-center text-center">
+                <h1>
                     お役立ち資料
                 </h1>
             </div>

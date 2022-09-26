@@ -29,6 +29,19 @@ function add_my_styles_and_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'add_my_styles_and_scripts' );
 
+// カスタム背景
+$defaults = array(
+//    'default-color'          => '',
+//    'default-image'          => '',
+//    'default-repeat'         => '',
+//    'default-position-x'     => '',
+//    'default-attachment'     => '',
+//    'wp-head-callback'       => '',
+//    'admin-head-callback'    => '',
+//    'admin-preview-callback' => '',
+);
+add_theme_support( 'custom-background', $defaults );
+
 // jsの読み込み
 add_action('wp_enqueue_scripts', 'add_scripts');
 function add_scripts() {

@@ -10,114 +10,114 @@ gsap.registerPlugin(ScrollTrigger);
 // });
 
 // ホームのコンテンツのスライドイン
-const windowWidth = window.innerWidth;
-let contentWidth = document.getElementById('content');
-console.log(contentWidth);
-gsap.from('.service',
-    {
-        y: 0,
-        x:-windowWidth/8,
-        autoAlpha: 0,
-        delay: 0.0,
-        duration: 0.5,
-        ease: 'power2.in',
-        scrollTrigger: {
-            trigger: '.service',
-            start: 'top center'
-        }
-});
-gsap.from('.strength',
-    {
-        y: 0,
-        x:-windowWidth/8,
-        autoAlpha: 0,
-        delay: 0.0,
-        duration: 0.5,
-        ease: 'power2.in',
-        scrollTrigger: {
-            trigger: '.strength',
-            start: 'top center'
-        }
-    });
-gsap.from('.portfolio',
-    {
-        y: 0,
-        x:-windowWidth/8,
-        autoAlpha: 0,
-        delay: 0.0,
-        duration: 0.5,
-        ease: 'power2.in',
-        scrollTrigger: {
-            trigger: '.portfolio',
-            start: 'top center'
-        }
-    });
-gsap.from('.contact',
-    {
-        y: 0,
-        x:-windowWidth/8,
-        autoAlpha: 0,
-        delay: 0.0,
-        duration: 0.5,
-        ease: 'power2.in',
-        scrollTrigger: {
-            trigger: '.contact',
-            start: 'top center'
-        }
-    });
-
-// aboutusのコンテンツのフェードイン
-gsap.from('.about-antapp',
-    {
-        y: 0,
-        autoAlpha: 0,
-        delay: 0.0,
-        duration: 0.5,
-        ease: 'power2.in',
-        scrollTrigger: {
-            trigger: '.about-antapp',
-            start: 'top center'
-        }
-    });
-
-gsap.from('.about-member',
-    {
-        y: 0,
-        autoAlpha: 0,
-        delay: 0.0,
-        duration: 0.5,
-        ease: 'power2.in',
-        scrollTrigger: {
-            trigger: '.about-member',
-            start: 'top center'
-        }
-    });
-
-gsap.from('.about-philosophy',
-    {
-        y: 0,
-        autoAlpha: 0,
-        delay: 0.0,
-        duration: 0.5,
-        ease: 'power2.in',
-        scrollTrigger: {
-            trigger: '.about-philosophy',
-            start: 'top center'
-        }
-    });
-
-gsap.from('.about-strength',
-    {
-        y: 0,
-        autoAlpha: 0,
-        delay: 0.0,
-        duration: 0.5,
-        ease: 'power2.in',
-        scrollTrigger: {
-            trigger: '.about-strength',
-            start: 'top center'
-        }
-    });
+// const windowWidth = window.innerWidth;
+// let contentWidth = document.getElementById('content');
+// console.log(contentWidth);
+// gsap.from('.service',
+//     {
+//         y: 0,
+//         x:-windowWidth/8,
+//         autoAlpha: 0,
+//         delay: 0.0,
+//         duration: 0.5,
+//         ease: 'power2.in',
+//         scrollTrigger: {
+//             trigger: '.service',
+//             start: 'top center'
+//         }
+// });
+// gsap.from('.strength',
+//     {
+//         y: 0,
+//         x:-windowWidth/8,
+//         autoAlpha: 0,
+//         delay: 0.0,
+//         duration: 0.5,
+//         ease: 'power2.in',
+//         scrollTrigger: {
+//             trigger: '.strength',
+//             start: 'top center'
+//         }
+//     });
+// gsap.from('.portfolio',
+//     {
+//         y: 0,
+//         x:-windowWidth/8,
+//         autoAlpha: 0,
+//         delay: 0.0,
+//         duration: 0.5,
+//         ease: 'power2.in',
+//         scrollTrigger: {
+//             trigger: '.portfolio',
+//             start: 'top center'
+//         }
+//     });
+// gsap.from('.contact',
+//     {
+//         y: 0,
+//         x:-windowWidth/8,
+//         autoAlpha: 0,
+//         delay: 0.0,
+//         duration: 0.5,
+//         ease: 'power2.in',
+//         scrollTrigger: {
+//             trigger: '.contact',
+//             start: 'top center'
+//         }
+//     });
+//
+// // aboutusのコンテンツのフェードイン
+// gsap.from('.about-antapp',
+//     {
+//         y: 0,
+//         autoAlpha: 0,
+//         delay: 0.0,
+//         duration: 0.5,
+//         ease: 'power2.in',
+//         scrollTrigger: {
+//             trigger: '.about-antapp',
+//             start: 'top center'
+//         }
+//     });
+//
+// gsap.from('.about-member',
+//     {
+//         y: 0,
+//         autoAlpha: 0,
+//         delay: 0.0,
+//         duration: 0.5,
+//         ease: 'power2.in',
+//         scrollTrigger: {
+//             trigger: '.about-member',
+//             start: 'top center'
+//         }
+//     });
+//
+// gsap.from('.about-philosophy',
+//     {
+//         y: 0,
+//         autoAlpha: 0,
+//         delay: 0.0,
+//         duration: 0.5,
+//         ease: 'power2.in',
+//         scrollTrigger: {
+//             trigger: '.about-philosophy',
+//             start: 'top center'
+//         }
+//     });
+//
+// gsap.from('.about-strength',
+//     {
+//         y: 0,
+//         autoAlpha: 0,
+//         delay: 0.0,
+//         duration: 0.5,
+//         ease: 'power2.in',
+//         scrollTrigger: {
+//             trigger: '.about-strength',
+//             start: 'top center'
+//         }
+//     });
 
 // 背景アニメーション
 /*
@@ -572,12 +572,12 @@ gsap.from('.about-strength',
 
 document.addEventListener('DOMContentLoaded', function () {
     particleground(document.getElementById('particles'), {
-        dotColor: '#00ffff',
-        lineColor: '#00ffd0'
+        dotColor: '#ffffff',
+        lineColor: '#ffffff'
     });
     let particles = document.getElementById('particles');
     console.log(particles.style.height);
 
-    let frontText = document.getElementById('front-text');
-    frontText.style.marginTop = (-frontText.offsetHeight*6) + 'px';
+    // let frontText = document.getElementById('front-text');
+    // frontText.style.marginTop = (-frontText.offsetHeight*6) + 'px';
 }, false);
