@@ -3,7 +3,7 @@
  * Default header block pattern
  */
 return array(
-	'title'      => __( 'Default header', 'twentytwentytwo' ),
+	'title'      => __( 'Default header', 'antapp' ),
 	'categories' => array( 'header' ),
 	'blockTypes' => array( 'core/template-part/header' ),
 	'content'    => '<!-- wp:group {"align":"full","layout":{"inherit":true}} -->

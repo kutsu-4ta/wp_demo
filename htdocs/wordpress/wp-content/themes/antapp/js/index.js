@@ -10,35 +10,46 @@ gsap.registerPlugin(ScrollTrigger);
 // });
 
 // ホームのコンテンツのスライドイン
-// const windowWidth = window.innerWidth;
-// let contentWidth = document.getElementById('content');
-// console.log(contentWidth);
-// gsap.from('.service',
-//     {
-//         y: 0,
-//         x:-windowWidth/8,
-//         autoAlpha: 0,
-//         delay: 0.0,
-//         duration: 0.5,
-//         ease: 'power2.in',
-//         scrollTrigger: {
-//             trigger: '.service',
-//             start: 'top center'
-//         }
-// });
-// gsap.from('.strength',
-//     {
-//         y: 0,
-//         x:-windowWidth/8,
-//         autoAlpha: 0,
-//         delay: 0.0,
-//         duration: 0.5,
-//         ease: 'power2.in',
-//         scrollTrigger: {
-//             trigger: '.strength',
-//             start: 'top center'
-//         }
-//     });
+const windowWidth = window.innerWidth;
+let contentWidth = document.getElementById('content');
+console.log(contentWidth);
+gsap.from('.service-web',
+    {
+        // y: 0,
+        // x:-windowWidth/8,
+        autoAlpha: 0,
+        delay: 0.0,
+        duration: 1.0,
+        ease: 'power4.0in',
+        scrollTrigger: {
+            trigger: '.service-web',
+            start: 'top center'
+        }
+    });
+gsap.from('.service-marketing',
+    {
+        // y: 0,
+        // x:-windowWidth/8,
+        autoAlpha: 0,
+        delay: 0.0,
+        duration: 1.0,
+        ease: 'power4.0in',
+        scrollTrigger: {
+            trigger: '.service-marketing',
+            start: 'top center'
+        }
+    });
+gsap.from('.strength',
+    {
+        autoAlpha: 0,
+        delay: 0.0,
+        duration: 1.0,
+        ease: 'power4.0in',
+        scrollTrigger: {
+            trigger: '.service',
+            start: 'top center'
+        }
+    });
 // gsap.from('.portfolio',
 //     {
 //         y: 0,
@@ -195,11 +206,11 @@ gsap.registerPlugin(ScrollTrigger);
             window.addEventListener('resize', function() {
                 resizeHandler();
             }, false);
-
-            document.addEventListener('mousemove', function(e) {
-                mouseX = e.pageX;
-                mouseY = e.pageY;
-            }, false);
+            //
+            // document.addEventListener('mousemove', function(e) {
+            //     mouseX = e.pageX;
+            //     mouseY = e.pageY;
+            // }, false);
 
             if (orientationSupport && !desktop) {
                 window.addEventListener('deviceorientation', function () {

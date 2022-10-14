@@ -1,32 +1,49 @@
 <!-- wp:group {"layout":{"inherit":true}} -->
-<div class="wp-block-group">
-    <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"bottom":"var(--wp--custom--spacing--large, 8rem)","top":"var(--wp--custom--spacing--small, 1.25rem)"}}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
-    <div class="container-fluid">
+<div class="wp-block-group display-large"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"bottom":"1rem","top":"1rem","right":"2rem","left":"2rem"}},"color":{"background":"#1a4447cf"}},"textColor":"background","layout":{"type":"flex","justifyContent":"space-between"}} -->
+    <div class="wp-block-group alignwide has-background-color has-text-color has-background" style="padding-top:1rem;padding-right:2rem;padding-bottom:1rem;padding-left:2rem"><!-- wp:group {"layout":{"type":"flex"}} -->
+        <div class="wp-block-group"><!-- wp:site-logo {"width":124,"shouldSyncIcon":false} /--></div>
+        <!-- /wp:group -->
 
-        <div class="wp-block-group pt-3 pb-3 row">
-            <!-- wp:group {"layout":{"type":"flex"}} -->
-            <!-- MEMO: サイトタイトル、ロゴ  -->
-            <div class="wp-block-group">
-                <!-- wp:site-logo {"width":64} /-->
-                <!-- wp:site-title /-->
+        <!-- wp:navigation {"hasIcon":true,"overlayBackgroundColor":"primary","overlayTextColor":"background","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right"}} -->
+            <!-- wp:item {"align":"left"} -->
+                <a class="white wp-block-navigation wp-block-navigation-item" href="https://antapp-marketing.com" rel="nofollow">ホーム</a>
+            <!-- /wp:item -->
+        <!-- wp:page-list {"isNavigationChild":true,"showSubmenuIcon":true,"openSubmenusOnClick":false} /-->
+        <!-- /wp:navigation --></div>
+    <!-- /wp:group --></div>
+<!-- /wp:group -->
+</div>
+
+<!-- wp:group {"layout":{"inherit":true}} -->
+<div class="wp-block-group display-small"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"bottom":"1rem","top":"1rem","right":"2rem","left":"2rem"}},"color":{"background":"#1a4447cf"}},"textColor":"background","layout":{"type":"flex","justifyContent":"space-between"}} -->
+    <div class="wp-block-group alignwide has-background-color has-text-color has-background" style="background-color:rgba(14,166,105,0);padding-top:1rem;padding-right:2rem;padding-bottom:1rem;padding-left:2rem;"><!-- wp:group {"layout":{"type":"flex"}} -->
+            <input type="checkbox" id="drawer-checkbox" class="menu-checkbox" style="display: none;">
+            <label for="drawer-checkbox" class="drawer-icon">
+                <span></span>
+            </label>
+            <label for="drawer-checkbox" class="menu-background"></label>
+            <div class="container-fluid drawer-menu">
+                <div class="row">
+                    <div class="col-12 pl-3 pt-3 mt-5">
+                        <!-- wp:site-logo {"width":84} /-->
+                    </div>
+                    <div class="col-12 text-center">
+                        <ul class="drawer-menu-list">
+                            <!-- wp:item {"align":"left"} -->
+<!--                            <a class="white wp-block-navigation wp-block-navigation-item" style="padding: 1rem;" href="https://antapp-marketing.com" rel="nofollow">ホーム</a>-->
+                            <!-- /wp:item -->
+                            <!-- wp:page-list {"isNavigationChild":true,"showSubmenuIcon":true,"openSubmenusOnClick":false} -->
+                            <!-- /wp:page-list -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- コンテンツを追加する -->
+<!--                <div class="row">-->
+<!--                    <div class="col-12 pb-5vh">-->
+
+<!--                    </div>-->
+<!--                </div>-->
             </div>
-            <!-- /wp:group -->
-        </div>
-
-        <div class="wp-block-group pt-3 pb-3 row">
-            <!-- wp:group {"layout":{"type":"flex"}} -->
-            <!-- MEMO: ナビゲーションバー -->
-            <div class="wp-block-group">
-                <!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right"}} -->
-                <!-- wp:page-list {"isNavigationChild":true,"showSubmenuIcon":true,"openSubmenusOnClick":false} /-->
-                <!-- wp:button {"backgroundColor":"foreground","width":100} -->
-                <a type="button" class="wp-block-navigation-item__content btn-header" href="/wordpress/#contact" style="margin-left: 1.5rem">
-                    <span class="text-header-btn">
-                        お問合せ
-                    </span>
-                </a><!-- /wp:button -->
-                <!-- /wp:navigation -->
-            </div><!-- /wp:group -->
-        </div>
+        <div for="drawer-checkbox" class="menu-background" style="width: 100%; height: 100%; position: fixed;"></div><!-- /wp:group -->
     </div><!-- /wp:group -->
-</div><!-- /wp:group -->
+</div>

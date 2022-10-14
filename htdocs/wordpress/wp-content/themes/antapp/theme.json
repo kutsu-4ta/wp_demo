@@ -138,9 +138,9 @@
 		},
 		"custom": {
 			"spacing": {
-				"small": "max(1.25rem, 5vw)",
+				"small": "max(1rem, 1vw)",
 				"medium": "clamp(2rem, 8vw, calc(4 * var(--wp--style--block-gap)))",
-				"large": "clamp(4rem, 10vw, 8rem)",
+				"large": "clamp(1rem, 10vw, 1rem)",
 				"outer": "var(--wp--custom--spacing--small, 1.25rem)"
 			},
 			"typography": {
@@ -363,6 +363,11 @@
 			"name": "header-small-dark",
 			"title": "Header (Dark, small)",
 			"area": "header"
+		},
+		{
+		"name": "header-custom",
+		"title": "Header (for BlockEditor)",
+		"area": "header"
 		},
 		{
 			"name": "footer",

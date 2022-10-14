@@ -1,177 +1,637 @@
-<!-- wp:template-part {"slug":"header-small-dark","tagName":"header"} /-->
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 <main class="main-block">
-
-    <!--  background-Animation  -->
-    <div class="container-fluid container-background">
-        <div id="particles" class="row align-items-center text-center back-animation"></div>
-    </div>
-    <script>
-        $(function() {
-            let frontText = document.getElementById('front-text');
-            frontText.style.marginTop = (-frontText.offsetHeight * 10) + 'px';
-            frontText.style.marginBottom = 15 + 'rem';
-        });
-    </script>
-
-    <div class="container-fluid">
-        <div class="container pb-5">
-            <div id="front-text" class="row justify-content-center text-center">
-                <h1>
-                    サービス紹介
-                </h1>
-            </div>
-
-            <div class="row">
-                <div class="col-6 text-center pr-5">
-                    <div class="svg-wrapper">
-                        <svg height="80" width="300" xmlns="http://www.w3.org/2000/svg">
-                            <rect id="shape" height="80" width="300"/>
-                            <div id="btn-text-large">
-                                <a id="web-develop-btn" class="btn-text-font-large">web開発</a>
-                            </div>
-                        </svg>
+    <!--  PC・ノーマル  -->
+    <div class="container-fluid display-large pl-0 pr-0 mr-0 ml-0">
+        <div id="front-text" class="container">
+            <div class="container-fluid pb-5 full-screen">
+                <div class="row justify-content-center pt-2vh">
+                    <div class="col-12 text-center">
+                        <h1 class="font-mincho color-white font-heavy font-large">
+                            サービス
+                        </h1>
+                    </div>
+                    <div class="col-12 text-center font-mincho color-white font-semi-large">
+                        Antappが提供する価値
                     </div>
                 </div>
 
-                <div class="col-6">
-                    <div class="svg-wrapper pl-5">
-                        <svg height="80" width="300" xmlns="http://www.w3.org/2000/svg">
-                            <rect id="shape" height="80" width="300"/>
-                            <div id="btn-text-large">
-                                <a id="marketing-btn" class="btn-text-font-large">マーケティング支援</a>
-                            </div>
-                        </svg>
+                <div class="row pt-2vh">
+                    <div class="col-6 text-center pr-5">
+                        <div class="btn-square">
+                            <a href="#service-web">Webサイト制作</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="btn-square">
+                            <a href="#service-marketing">マーケティング支援</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="service-web" class="container-fluid home-content service pt-1vh pb-1vh ml-0 mr-0 pr-0 pl-0" style="background-color: #FFFFFF">
+            <div class="row">
+                <div class="col-12 pt-5 pb-5">
+                    <h3 class="font-semi-large font-mincho text-center">
+                        Webサイト制作
+                    </h3>
+                </div>
+            </div>
 
+            <div class="row pr-0">
+                <div class="col-2">
+                    <div class="pt-2vh pl-5" style="margin-right: -40vw; z-index: 1; position: relative;">
+                        <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/service-web-image1.svg" style="width: 50%">
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="color-white" style="padding-top: 20vh; padding-bottom: 20vh; padding-left: 15vw; background: linear-gradient(to bottom right, #00c4cc, #7c2ae8); box-shadow: 0 10px 25px 0 rgba(0,0,0,0.6);">
+                        <h4 class="font-middle font-mincho mb-3">
+                            ただあるだけのHPになっていませんか？
+                        </h4>
+                        HPはマーケティング施策において、とても重要な施策です。<br/>
+                        しかし、ただ作るだけでは効果は発揮しません。<br/>
+                        自社マーケティングの全体像から、HPがどんな役割を果たす必要があるのかを明確にして、目的に沿った制作を実施します。<br/>
+                        Antappは「成果に繋がる」という軸をブラすことなく効果の出るHPを作成します。<br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid home-content service pt-1vh pb-2vh ml-0 mr-0 pr-0 pl-0" style="background-color: #FFFFFF">
+            <div class="row" style="position: relative;">
+                <div class="col-12 pt-5 pb-5">
+                    <h3 class="font-semi-large font-mincho pl-5">
+                        制作のこだわり
+                    </h3>
+                    <sapn class="font-mincho font-middle pl-5">
+                        納品までの流れ
+                    </sapn>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/servive-web-flow-1.svg" style="width: 100%">
+                </div>
+                <div class="col-2">
+                    <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/servive-web-flow-2.svg" style="width: 100%">
+                </div>
+                <div class="col-2">
+                    <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/servive-web-flow-3.svg" style="width: 100%">
+                </div>
+                <div class="col-2">
+                    <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/servive-web-flow-4.svg" style="width: 100%">
+                </div>
+                <div class="col-2">
+                    <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/servive-web-flow-5.svg" style="width: 100%">
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row pt-3" style="position: relative;">
+                <div class="col-1"></div>
+                <div class="col-2 pr-4 pl-4">
+                    <h6>
+                        1-ヒアリング・競合調査
+                    </h6>
+                    現状の施策、顧客購買フローの把握し改善ポイントを明確化します。<br/>
+                    同時に競合調査を進めます。
 
-        <div class="container-fluid pt-5">
-            <div id="web-develop" class="row home-content pt-3">
+                </div>
+                <div class="col-2 pr-4 pl-4">
+                    <h6>
+                        2-HP戦略決定
+                    </h6>
+                    自社の勝ち筋を選定しHPの構造とデザインを決定します。<br/>
+                    ローンチ後の施策も踏まえて「点」では無く「線」になる戦略を立案します。
+                </div>
+                <div class="col-2 pr-4 pl-4">
+                    <h6>
+                        3-サイト制作
+                    </h6>
+                    成果にコミットしたWebサイトを制作します。<br/>
+                    フェーズ毎の擦り合わせを実施、修正は無制限です。
+                </div>
+                <div class="col-2 pr-4 pl-4">
+                    <h6>
+                        4-ご納品・今後の計画
+                    </h6>
+                    完成したHPを納品します。<br/>
+                    今後の検証ポイントや目標数値を共有します。
+                </div>
+                <div class="col-2 pr-4 pl-4">
+                    <h6>
+                        5-効果測定
+                    </h6>
+                    運用数値を踏まえて改善点を明確にします。<br/>
+                    また施策をブラッシュアップし成果の最大化を目指します。
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+        <div class="container-fluid home-content service pt-2vh pb-2vh ml-0 mr-0 pr-0 pl-0" style="background-color: #FFFFFF">
+            <div class="row pb-5" style="position: relative;">
+                <div class="col-6 pt-5 pb-5" style="border-right: blue solid;">
+                    <h3 class="pb-3 text-center font-semi-large font-mincho">
+                        社内システム構築
+                    </h3>
+                    <div class="ml-5 mr-3 pt-5 pb-5 pr-5 pl-5" style="height:40vh; padding-top: 20vh; padding-bottom: 20vh; color:#FFFFFF; background: linear-gradient(to bottom right, #00c4cc, #7c2ae8); box-shadow: 0 10px 25px 0 rgba(0,0,0,0.6);">
+                        <h4 class="pt-5 font-white font-mincho">
+                            業務・営業活動の効率化をサポート
+                        </h4>
+                        <div class="pt-2 font-white">
+                            顧客管理、営業管理、業務効率化の領域において<br/>
+                            （SFA・CRM・RPA） 自社専用システムを格安で構築します。<br/>
+                            クラウドツールを導入したいがコスト面でネックな企業様は是非一度ご相談ください。
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 pt-5 pb-5" style="border-left: blue solid;">
+                    <h3 class="pb-3 text-center font-semi-large font-mincho">
+                        アプリ開発
+                    </h3>
+                    <div class="ml-5 mr-5 pt-5 pb-5 pr-5 pl-5 color-white" style="height:40vh; padding-top: 20vh; padding-bottom: 20vh; background: linear-gradient(to bottom right, #00c4cc, #7c2ae8); box-shadow: 0 10px 25px 0 rgba(0,0,0,0.6);">
+                        <h4 class="pt-5 font-mincho">
+                            顧客の満足度向上、購買斡旋、業務管理
+                        </h4>
+                        <div class="pt-2">
+                            ios/Androidアプリケーションの開発を行います。<br/>
+                            企画・設計から使用後の保守・運用までワンストップでサポートいたします。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="service-marketing" class="container-fluid home-content service ml-0 mr-0 pr-0 pl-0" style="background-color: #ffffff; border-bottom: solid black; border-bottom-width: medium">
+            <div class="row">
+                <div class="col-12 pb-2 pt-5 pr-0 pl-0 mr-0 ml-0 text-center font-heavy font-semi-large">
+                    <h2 class="font-semi-large font-mincho">
+                        マーケティング支援
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid home-content service pt-1vh pb-2vh ml-0 mr-0 pr-0 pl-0" style="background-color: #FFFFFF">
+            <div class="row" style="position: relative; padding-left: 23vw; padding-right: 23vw;">
+                <div class="col-12 pt-5 pb-1 text-center">
+                    <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/service-page-marketing-background.svg" style="width: 100%; margin-bottom: -9vh; padding-left: 5vw;">
+                    <h3 class="font-middle font-mincho pb-5 mb-5 font-heavy text-center">
+                        「デジタル」と「アナログ」の掛け合わせで売上を増加
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row" style="position: relative; padding-left: 23vw; padding-right: 23vw;">
+                <div class="col-12 font-semi-middle font-mincho">
+                    情報社会により消費者の購買行動がWeb中心になりつつある昨今において<br/>
+                    Web上で情報を届ける仕組みは必ず必要です。<br/>
+                    多くの企業は消費者のWebアクションデータを血眼になって
+                    収集、分析、アプローチしています。<br/>
+                    その結果、有益な情報が届く機会が増えたことは確かです。<br/><br/>
+                    しかし、その一方で消費者は情報を取られることに敏感になり、情報を開示する心理的ハードルが徐々に上がっていると感じます。<br/>
+                    だからこそ、盲目的にデジタルマーケティングを取り入れるのではなく、<br/>
+                    デジタルとアナログの双方のメリットを取り入れて<br/>
+                    あなたの会社のお客様に沿った最適なマーケティングフローを構築することが重要だと考えます。<br/><br/>
+                    Antappでは幅広いマーケティング知識を元に<br/>
+                    一社一社に適したマーケティングフローを構築し、売上増加にコミットします。<br/>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid home-content contact pl-0 pr-0 mr-0 ml-0 pb-2vh" style="background-color: #FFFFFF">
+            <div class="row" style="position: relative;">
+                <div class="col-12 pt-5 pb-5">
+                    <h3 class="font-semi-large font-mincho text-center">
+                        ご提供できる4つの価値
+                    </h3>
+                </div>
+            </div>
+            <div class="row" style="position: relative;">
                 <div class="col-12">
-                    <h2 class="pt-5">web制作</h2>
+                    <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/service-marcketing-value1.svg" style="width: 100%; padding-top: -10vh">
                 </div>
+            </div>
+            <div class="row" style="position: relative; padding-bottom: 5vh; margin-top: -15vh">
+            <div class="col-2"></div>
+            <div class="col-4">
+                <h5 class="font-heavy">
+                    認知度の向上
+                </h5>
+                <span>
+                    コスパ良い認知度向上の施策をご提案。
+                </span>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-4">
+                <h5 class="font-heavy">
+                    集客力の向上
+                </h5>
+                <span>
+                    継続的な集客の仕組み作り。
+                </span>
+            </div>
+        </div>
 
-                <div class="col-12 justify-content-center text-center pb-2 pt-5">
-                    <h3>ホームページ制作</h3>
-                    <div>
-                        <p>Antappは「成果に繋がる」という軸をブラすことなくカスタマージャーニーに沿ったHP制作を行います。</p>
+        <div class="container-fluid home-content contact　pl-0 pr-0 mr-0 ml-0" style="position: relative; background-color: #FFFFFF">
+            <div class="row">
+                <div class="col-12 pl-0">
+                    <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/service-marcketing-value2.svg" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="position: relative; padding-bottom: 5vh; margin-top: -15vh;">
+            <div class="col-2"></div>
+            <div class="col-4">
+                <h5 class="font-heavy">
+                    商談数の増加
+                </h5>
+                <span>
+                見込み顧客の購買意欲を育てる仕組み作り。
+            </span>
+            </div>
+            <div class="col-2">
+            </div>
+            <div class="col-4">
+                <h5 class="font-heavy">
+                    受注件数の増加
+                </h5>
+                <span>
+                営業の自動フォローを行う仕組み作り。
+            </span>
+            </div>
+        </div>
+    </div>
+        <div class="container-fluid contact pt-1vh pb-3vh pl-0 pr-0 mr-0 ml-0 pb-5 mb-0" style="background-color: #FFFFFF">
+            <div class="row" style="position: relative;">
+                <div class="col-12 pt-5 pb-5">
+                    <h3 class="font-semi-large font-mincho text-center">
+                        強固なマーケティングフローを構築
+                    </h3>
+                </div>
+                <div class="col-12 text-center pr-5 pl-5">
+                    <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/service-marcketing-flow.svg" style="width: 100%">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid justify-content-center contact pl-0 pr-0 ml-0 mr-0 pt-0 pb-0 mt-0 mb-0" style="background-color: rgb(182,182,182);">
+            <a href="https://share.hsforms.com/19ynuamWATYmpEW07qVdGTQdr4k0">
+                <div class="row">
+                    <div class="col-12 text-center image-link pt-1vh pb-1vh" style="cursor: pointer;">
+                        <!-- 無料いつでも相談室 -->
+                        <img src="https://antapp-marketing.com//wp-content/themes/antapp/assets/images/banner-image1.svg" style="width: 50%">
                     </div>
                 </div>
-
-                <div class="col-3 pb-2 pt-5">
-                    <h5>
-                        HPの目的達成
-                    </h5>
-                    <p>
-                        制作するWebサイトが自社マーケティングにおいてどのような役割を担うのかを明確にします。
-                    </p>
-                </div>
-                <div class="col-3 pb-2 pt-5">
-                    <h5>
-                        カスタマージャーニー作成
-                    </h5>
-                    <p>
-                        顧客が商品購入までにどのような心理で、どのような行動をするのかを定義し顧客インサイトを見える化します
-                    </p>
-                </div>
-                <div class="col-3 pb-2 pt-5">
-                    <h5>
-                        ヒアリング工程(仮)
-                    </h5>
-                    <p>
-                        制作するサイトがマーケティングにおいてどのような目的で
-                    </p>
-                </div>
-                <div class="col-3 pb-2 pt-5">
-                    <h5>
-                        ヒアリング工程(仮)
-                    </h5>
-                    <p>
-                        制作するサイトがマーケティングにおいてどのような目的で
-                    </p>
-                </div>
-
-
-                <div class="col-2 justify-content-center text-center pb-2 pt-5">
-                    アイコン
-                </div>
-                <div class="col-4 pb-2 pt-5">
-                    <h3>アプリ開発</h3>
-                </div>
-                <div class="col-6 pb-2 pt-5">
-                    <div class="">
-                        <p>texttexttexttexttexttextt</p>
-                    </div>
-                </div>
-
-                <div class="col-2 justify-content-center text-center pb-2 pt-5">
-                    アイコン
-                </div>
-                <div class="col-4 pb-2 pt-5">
-                    <h3>社内システム構築</h3>
-                </div>
-                <div class="col-6 pb-2 pt-5">
-                    <div class="">
-                        <p>texttexttexttexttexttextt</p>
+            </a>
+        </div>
+        <div class="container-fluid contact pl-0 pr-0 ml-0 mr-0 pt-1 pb-5 mt-0 mb-0" style="background-color: rgb(182,182,182);">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="btn-round">
+                        <a class="pl-5 pr-5" href="https://share.hsforms.com/19ynuamWATYmpEW07qVdGTQdr4k0">詳細はこちら</a>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid home-content contact pl-0 pr-0 mt-0 pt-0 mb-5" style="background-color: #FFFFFF">
+            <div class="row justify-content-center pt-5">
+                <h2 class="font-heavy font-semi-large">
+                    お問合せ
+                </h2>
+            </div>
+            <div class="row text-center justify-content-center pt-1vh pb-1vh">
+                <div class="col-12 justify-content-center text-center">
+                    <div style="margin-left: 32vw;">
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                        <script>
+                            hbspt.forms.create({
+                                region: "na1",
+                                portalId: "23100624",
+                                formId: "f729ee6a-6580-4d89-a911-6d3ba957464d"
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!--　スマホ　-->
+    <div class="display-small container-fluid mr-0 ml-0 pr-0 pl-0">
+        <div class="container">
+            <div class="container-fluid pb-5 full-screen">
+                <div class="row justify-content-center pt-2vh">
+                    <div class="col-12 text-center">
+                        <h1 class="font-mincho color-white font-heavy font-large">
+                            サービス
+                        </h1>
+                    </div>
+                    <div class="col-12 text-center font-mincho color-white font-semi-large">
+                        Antappが提供する価値
+                    </div>
+                </div>
 
-            <div id="marketing" class="row home-content pt-3">
+                <div class="row pt-2vh">
+                    <div class="col-6 pl-0 pr-1">
+                        <div class="btn-square font-middle">
+                            <a href="#service-web-small">Webサイト制作</a>
+                        </div>
+                    </div>
+                    <div class="col-6 pl-1 pr-0">
+                        <div class="btn-square font-middle">
+                            <a href="#service-marketing-small">マーケティング支援</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="service-web-small" class="container-fluid service pt-5 pb-5 ml-0 mr-0 pr-0 pl-0" style="background-color: #FFFFFF">
+            <div class="row">
+                <div class="col-12 pt-1 pb-1">
+                    <h3 class="font-large font-mincho text-center">
+                        Webサイト制作
+                    </h3>
+                </div>
+            </div>
+            <div class="row pr-0">
                 <div class="col-12">
-                    <h2 class="pt-5">マーケティング支援</h2>
-                </div>
-
-                <div class="col-12 justify-content-center text-center pb-2 pt-5">
-                    <div>
-                        <p>texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
-                    </div>
-                </div>
-
-                <div class="col-3 pb-2 pt-5"></div>
-                <div class="col-3 pb-2 pt-5"></div>
-                <div class="col-3 pb-2 pt-5"></div>
-                <div class="col-3 pb-2 pt-5"></div>
-
-            </div>
-            <div class="row justify-content-center helpful-doc home-content">
-                <div class="container-fluid justify-content-center">
-                    <div class="row justify-content-center pt-5">
-                        お役立ち資料
+                    <div class="pt-5 pl-2 text-center">
+                        <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/service-web-image1.svg" style="width: 60%">
                     </div>
                 </div>
             </div>
-            <div class="row pt-3">
-                <div class="col-12" style="height: 5rem">
+            <div class="row pr-0">
+                <div class="col-12">
+                    <div class="color-white pl-2 pt-3 mt-5 pb-1vh" style="background: linear-gradient(to bottom right, #00c4cc, #7c2ae8); box-shadow: 0 10px 25px 0 rgba(0,0,0,0.6);">
+                        <h4 class="font-semi-large font-mincho mb-3" style="font-size: 1.2rem;">
+                            ただあるだけのHPになっていませんか？
+                        </h4>
+                        <p class="font-mincho font-middle pt-3">
+                        HPはマーケティング施策において、とても重要な施策です。<br/>
+                        しかし、ただ作るだけでは効果は発揮しません。<br/>
+                        自社マーケティングの全体像から、HPがどんな役割を果たす必要があるのかを明確にして、目的に沿った制作を実施します。<br/>
+                        Antappは「成果に繋がる」という軸をブラすことなく効果の出るHPを作成します。<br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid home-content service pt-1vh pb-5 ml-0 mr-0 pr-0 pl-0" style="background-color: #FFFFFF">
+            <div class="row pl-3 " style="position: relative;">
+                <div class="col-12 pt-5 pb-5">
+                    <h3 class="font-large font-mincho">
+                        制作のこだわり
+                    </h3>
+                    <sapn class="font-semi-large font-mincho pl-3">
+                        納品までの流れ
+                    </sapn>
+                </div>
+            </div>
+            <div class="row pt-3 font-mincho font-middle">
+                <div class="col-6">
+                    <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/servive-web-flow-1.svg" style="width: 100%;">
+                </div>
+                <div class="col-6 pl-0">
+                    <h6>
+                        1-ヒアリング・競合調査
+                    </h6>
+                    <p class="pl-3 pr-3">
+                        現状の施策、顧客購買フローの把握し改善ポイントを明確化します。<br/>
+                        同時に競合調査を進めます。
+                    </p>
+                </div>
+            </div>
+            <div class="row pt-3 font-mincho font-middle">
+                <div class="col-6">
+                    <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/servive-web-flow-2.svg" style="width: 100%;">
+                </div>
+                <div class="col-6 pl-0">
+                    <h6>
+                        2-HP戦略決定
+                    </h6>
+                    <p class="pl-3 pr-3">
+                        自社の勝ち筋を選定しHPの構造とデザインを決定します。<br/>
+                        ローンチ後の施策も踏まえて「点」では無く「線」になる戦略を立案します。
+                    </p>
+                </div>
+            </div>
+            <div class="row pt-3 font-mincho font-middle">
+                <div class="col-6">
+                    <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/servive-web-flow-3.svg" style="width: 100%;">
+                </div>
+                <div class="col-6 pl-0">
+                    <h6>
+                        3-サイト制作
+                    </h6>
+                    <p class="pl-3 pr-3">
+                        成果にコミットしたWebサイトを制作します。<br/>
+                        フェーズ毎の擦り合わせを実施、修正は無制限です。
+                    </p>
+                </div>
+            </div>
+            <div class="row pt-3 font-mincho font-middle">
+                <div class="col-6">
+                    <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/servive-web-flow-4.svg" style="width: 100%;">
+                </div>
+                <div class="col-6 pl-0">
+                    <h6>
+                        4-ご納品・今後の計画
+                    </h6>
+                    <p class="pl-3 pr-3">
+                        完成したHPを納品します。<br/>
+                        今後の検証ポイントや目標数値を共有します。
+                    </p>
+                </div>
+            </div>
+            <div class="row pt-3 font-mincho font-middle">
+                <div class="col-6">
+                    <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/servive-web-flow-5.svg" style="width: 100%;">
+                </div>
+                <div class="col-6 pl-0">
+                    <h6>
+                        5-効果測定
+                    </h6>
+                    <p class="pl-3 pr-3">
+                        運用数値を踏まえて改善点を明確にします。<br/>
+                        また施策をブラッシュアップし成果の最大化を目指します。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid home-content service pt-1vh pb-5 ml-0 mr-0 pr-0 pl-0" style="background-color: #FFFFFF">
+            <div class="row pb-3">
+                <div class="col-12 pt-5 pb-5">
+                    <h3 class="pb-3 text-center font-large font-mincho">
+                        社内システム構築
+                    </h3>
+                    <div class="font-middle color-white font-mincho ml-3 mr-3 pt-5 pb-5 pr-3 pl-3" style="height:40vh; padding-top: 20vh; padding-bottom: 20vh; background: linear-gradient(to bottom right, #00c4cc, #7c2ae8); box-shadow: 0 10px 25px 0 rgba(0,0,0,0.6);">
+                        <h4 class="font-semi-large">
+                            業務・営業活動の効率化<br/>をサポート
+                        </h4>
+                        <div class="pt-2">
+                            顧客管理、営業管理、業務効率化の領域において<br/>
+                            （SFA・CRM・RPA） 自社専用システムを格安で構築します。<br/>
+                            クラウドツールを導入したいがコスト面でネックな企業様は是非一度ご相談ください。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-3">
+                <div class="col-12 pt-5 pb-5">
+                    <h3 class="pb-3 text-center font-large font-mincho">
+                        アプリ開発
+                    </h3>
+                    <div class="font-middle color-white font-mincho ml-3 mr-3 pt-5 pb-5 pr-3 pl-3" style="height:40vh; padding-top: 20vh; padding-bottom: 20vh; background: linear-gradient(to bottom right, #00c4cc, #7c2ae8); box-shadow: 0 10px 25px 0 rgba(0,0,0,0.6);">
+                        <h4 class="font-semi-large">
+                            顧客の満足度向上、<br/>購買斡旋、業務管理
+                        </h4>
+                        <div class="pt-2">
+                            ios/Androidアプリケーションの開発を行います。<br/>
+                            企画・設計から使用後の保守・運用までワンストップでサポートいたします。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="service-marketing-small" class="container-fluid service ml-0 mr-0 pr-0 pl-0" style="background-color: #ffffff; border-bottom: solid black; border-bottom-width: medium">
+            <div class="row">
+                <div class="col-12 pb-2 pr-0 pl-0 mr-0 ml-0 text-center font-heavy font-semi-large">
+                    <h2 class="font-semi-large font-mincho">
+                        マーケティング支援
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid home-content service pt-3 pb-1vh ml-0 mr-0 pr-0 pl-0" style="background-color: #FFFFFF">
+            <div class="row pl-3 pr-3">
+                <div class="col-12 pb-5 pt-5 text-center">
+                    <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/service-page-marketing-background.svg" style="width: 100%; margin-bottom: -5vh; padding-left: 5vw;">
+                    <h3 class="font-middle font-mincho font-heavy text-center">
+                        「デジタル」と「アナログ」の掛け合わせで売上を増加
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row pl-3 pr-3">
+                <div class="col-12 font-middle font-mincho">
+                    情報社会により消費者の購買行動がWeb中心になりつつある昨今においてWeb上で情報を届ける仕組みは必ず必要です。<br/>
+                    多くの企業は消費者のWebアクションデータを血眼になって収集、分析、アプローチしています。<br/>
+                    その結果、有益な情報が届く機会が増えたことは確かです。<br/><br/>
+                    しかし、その一方で消費者は情報を取られることに敏感になり、情報を開示する心理的ハードルが徐々に上がっていると感じます。<br/>
+                    だからこそ、盲目的にデジタルマーケティングを取り入れるのではなく、デジタルとアナログの双方のメリットを取り入れてあなたの会社のお客様に沿った最適なマーケティングフローを構築することが重要だと考えます。<br/><br/>
+                    Antappでは幅広いマーケティング知識を元に一社一社に適したマーケティングフローを構築し、売上増加にコミットします。<br/>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid home-content contact pl-0 pr-0 mr-0 ml-0 pb-5" style="background-color: #FFFFFF">
+            <div class="row">
+                <div class="col-12 pt-5 pb-5">
+                    <h3 class="font-semi-large font-mincho text-center">
+                        ご提供できる4つの価値
+                    </h3>
+                </div>
+            </div>
+            <div class="row" style="position: relative;">
+                <div class="col-12" style="position: relative;">
+                    <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/service-marcketing-value1.svg" style="width: 100%; margin-bottom: -5rem;">
+                </div>
+            </div>
+            <div class="row" style="position: relative;">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <h5 class="font-middle font-heavy mb-0 pb-1">
+                        認知度の向上
+                    </h5>
+                    <span class="font-semi-middle pt-0">
+                        コスパ良い認知度向上の施策をご提案。
+                    </span>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <h5 class="font-middle font-heavy">
+                        集客力の向上
+                    </h5>
+                    <span class="font-semi-middle">
+                        継続的な集客の仕組み作り。
+                    </span>
+                </div>
+            </div>
+
+            <div class="container-fluid home-content contact　pl-0 pr-0 mr-0 ml-0" style="position: relative; background-color: #FFFFFF">
+                <div class="row" style="position: relative;">
+                    <div class="col-12 pl-0">
+                        <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/service-marcketing-value2.svg" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="position: relative; margin-top: -4rem;">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <h5 class="font-middle font-heavy">
+                        商談数の増加
+                    </h5>
+                    <span class="font-semi-middle">
+                        見込み顧客の購買意欲を育てる仕組み作り。
+                    </span>
+                </div>
+                <div class="col-2">
+                </div>
+                <div class="col-4">
+                    <h5 class="font-middle font-heavy">
+                        受注件数の増加
+                    </h5>
+                    <span class="font-semi-middle">
+                        営業の自動フォローを行う仕組み作り。
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid contact pt-5 pb-5 pl-0 pr-0 mr-0 ml-0 pb-5 mb-0" style="background-color: #FFFFFF">
+            <div class="row" style="position: relative;">
+                <div class="col-12 pt-5 pb-5">
+                    <h3 class="font-semi-large font-mincho text-center">
+                        強固なマーケティングフローを構築
+                    </h3>
+                </div>
+                <div class="col-12 text-center pr-3 pl-5">
+                    <img src="https://antapp-marketing.com/wp-content/themes/antapp/assets/images/service-marcketing-flow.svg" style="width: 100%">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid justify-content-center contact pl-0 pr-0 ml-0 mr-0 pt-0 pb-0 mt-0 mb-0" style="background-color: rgb(182,182,182);">
+            <a href="https://share.hsforms.com/19ynuamWATYmpEW07qVdGTQdr4k0">
+                <div class="row">
+                    <div class="col-12 text-center image-link pt-1vh pb-1vh" style="cursor: pointer;">
+                        <!-- 無料いつでも相談室 -->
+                        <img src="https://antapp-marketing.com//wp-content/themes/antapp/assets/images/banner-image1.svg" style="width: 80%">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="container-fluid contact pl-0 pr-0 ml-0 mr-0 pt-1 pb-5 mt-0 mb-0" style="background-color: rgb(182,182,182);">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="btn-round">
+                        <a class="pl-5 pr-5" href="https://share.hsforms.com/19ynuamWATYmpEW07qVdGTQdr4k0">詳細はこちら</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid home-content contact pl-0 pr-0 mt-0 pt-0 mb-5" style="background-color: #FFFFFF">
+            <div class="row justify-content-center pt-5">
+                <h2 class="font-heavy font-semi-large">
+                    お問合せ
+                </h2>
+            </div>
+            <div class="row text-center justify-content-center pt-1vh pb-1vh">
+                <div class="col-12 justify-content-center text-center ml-4">
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                    <script>
+                        hbspt.forms.create({
+                            region: "na1",
+                            portalId: "23100624",
+                            formId: "f729ee6a-6580-4d89-a911-6d3ba957464d"
+                        });
+                    </script>
                 </div>
             </div>
         </div>
     </div>
 </main>
-<script>
-    // クリックされた時の処理
-    $('#web-develop-btn').click(function () {
-        console.log('いいい');
-        $(window).scrollTop($('#web-develop').position().top);
-        // スクロール位置
-        let scroll_point = $('#web-develop').offset().top;
-
-        $('body').animate({
-            scrollTop: scroll_point
-        }, 900);
-    });
-</script>
-<script>
-    // クリックされた時の処理
-    $('#marketing-btn').click(function() {
-        console.log($('#marketing').offset().top);
-        $("body").animate({
-            scrollTop: $(window).scrollTop($('#marketing').offset().top)
-        }, 3000);
-    });
-</script>
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
