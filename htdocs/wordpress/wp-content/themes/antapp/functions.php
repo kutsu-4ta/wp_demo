@@ -15,7 +15,9 @@ require get_template_directory() . '/inc/block-patterns.php';
 define( 'MY_DIR_URL', get_stylesheet_directory_uri() );
 define( 'MY_DIR_PATH', get_stylesheet_directory() );
 
-// bootstrap.min.css の読み込み
+/* bootstrap.min.css
+ * 軽量化の為グリッドシステムのみインポートしている
+*/
 function add_my_styles_and_scripts() {
     wp_enqueue_style(
         'my-template-bs-style',
@@ -24,14 +26,14 @@ function add_my_styles_and_scripts() {
         '5.2.0'
     );
 
-    //スタイルシート style.css の読み込み
+    // style.css
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array('parent-style'));
 
 }
 add_action( 'wp_enqueue_scripts', 'add_my_styles_and_scripts' );
 
-// カスタム背景
+/* カスタム背景 */
 $defaults = array(
 //    'default-color'          => '',
 //    'default-image'          => '',
@@ -50,13 +52,12 @@ function menu_init() {
     register_nav_menus(array(
             'header' => 'ヘッダーメニュー',
             'footer' => 'フッターメニュー',
-            'drawer' => 'ドロワーメニュー',
         )
     );
 }
 add_action('after_setup_theme', 'menu_init');
 
-/* ---------- カスタム投稿タイプを追加 ---------- */
+/* カスタム投稿タイプを追加 */
 add_action( 'init', 'create_post_type' );
 
 function create_post_type()
@@ -118,19 +119,6 @@ add_action('admin_menu', function () {
         'dashiconsadmingeneric');
 });
 
-//$custom_header = array(
-//    'default-image' => get_template_directory_uri().'/images/header-img.jpg',
-//    'width' => 1000,
-//    'height' => 400,
-//    'flex-height' => true,
-//    'flex-width' => false,
-//    'uploads' => true,
-//);
-//add_theme_support( 'custom-header', $custom_header);
-//if(function_exists('register_nav_menu')) {
-//    register_nav_menu('global-menu',__( 'Global menu', 'tcd-w'));
-//}
-
 if ( ! function_exists( 'twentytwentytwo_styles' ) ) :
 
 	/**
@@ -159,49 +147,50 @@ if ( ! function_exists( 'twentytwentytwo_styles' ) ) :
 
 endif;
 
-
-// jsの読み込み
+/* JavaScript */
 add_action('wp_enqueue_scripts', 'add_scripts');
 function add_scripts() {
-    // デフォルトのjQuery削除
+    // wpデフォルトのjQuery削除
     wp_deregister_script('jquery');
     // jQuery読み込み
-    wp_register_script(
-        'jquery_script',
-        'http://code.jquery.com/jquery-1.11.1.min.js',
-        array(),
-        '1.0'
-    );
-
-    // メインのjs読み込み
-    wp_enqueue_script(
-        'main_script',
-        get_template_directory_uri() . '/js/index.js',
-        array('jquery_script'),
-        '1.0'
-    );
+    wp_register_script('jquery_script','https://code.jquery.com/jquery-1.11.1.min.js', array(),'1.0');
+    // index.jsをメインのJavaScriptファイルとして定義
+    wp_enqueue_script('index_script',  get_template_directory_uri() . '/js/index.js', array('jquery_script'),'1.0');
+    //gsap.min.js
+    $timestamp = date( 'Ymdgis', filemtime(MY_DIR_PATH . '/js/gsap/gsap.min.js' ));
+    wp_enqueue_script( 'gsap_js', MY_DIR_URL . '/js/gsap/gsap.min.js', [], $timestamp, true);
+    $timestamp = date( 'Ymdgis', filemtime(MY_DIR_PATH . '/js/gsap/ScrollTrigger.min.js' ));
+    wp_enqueue_script( 'ScrollTrigger_js', MY_DIR_URL . '/js/gsap/ScrollTrigger.min.js', [], $timestamp, true);
+    //loader.js
+    //    $timestamp = date( 'Ymdgis', filemtime(MY_DIR_PATH . '/loader.js' ));
+    //    wp_enqueue_script( 'loader_js', MY_DIR_URL . '/loader.js', ['gsap_js'], $timestamp, true);
+    // inview.js
+    $timestamp = date( 'Ymdgis', filemtime(MY_DIR_PATH . '/js/jqueryInview/jquery.inview.min.js' ));
+    wp_enqueue_script( 'jqueryInview_js', MY_DIR_URL . '/js/jqueryInview/jquery.inview.min.js', [], $timestamp, true);
+    // desvg.js
+    $timestamp = date( 'Ymdgis', filemtime(MY_DIR_PATH . '/js/desvg/desvg.js' ));
+    wp_enqueue_script( 'desvg_js', MY_DIR_URL . '/js/desvg/desvg.js', [], $timestamp, true);
 }
 
 /* index.js にdefer属性を付与 */
 add_filter('script_loader_tag', 'add_defer', 10, 2);
 function add_defer($tag, $handle) {
-    // 識別名がmain_script以外はそのまま返却
-    if ($handle !== 'main_script') {
+    // 識別名がindex_script以外はそのまま返却
+    if ($handle !== 'index_script') {
         return $tag;
     }
     // defer追加
     return str_replace(' src=', ' defer src=', $tag);
 }
 
-add_action( 'wp_enqueue_scripts', function(){
-    //gsap.min.jsの読み込み
-    $timestamp = date( 'Ymdgis', filemtime(MY_DIR_PATH . '/js/gsap/gsap.min.js' ));
-    wp_enqueue_script( 'gsap_js', MY_DIR_URL . '/js/gsap/gsap.min.js', [], $timestamp, true);
-    $timestamp = date( 'Ymdgis', filemtime(MY_DIR_PATH . '/js/gsap/ScrollTrigger.min.js' ));
-    wp_enqueue_script( 'ScrollTrigger_js', MY_DIR_URL . '/js/gsap/ScrollTrigger.min.js', [], $timestamp, true);
-//    //loader.jsの読み込み
-////    $timestamp = date( 'Ymdgis', filemtime(MY_DIR_PATH . '/loader.js' ));
-////    wp_enqueue_script( 'loader_js', MY_DIR_URL . '/loader.js', ['gsap_js'], $timestamp, true);
-});
-
 add_action( 'wp_enqueue_scripts', 'twentytwentytwo_styles' );
+
+///**
+// * CORS対策
+// * Access-Control-Allow-Originヘッダの追加
+// * 異なるドメイン同士で通信する場合は設定する
+// */
+//add_action('send_headers', 'cors_http_header');
+//function cors_http_header(){
+//    header("Access-Control-Allow-Origin: https://test.mydomain.com");
+//}
