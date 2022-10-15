@@ -1,0 +1,1136 @@
+<?xml version="1.0" standalone="no"?><!-- Generator: Gravit.io -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate"
+     viewBox="0 0 869.538 95.929" width="869.538" height="95.929">
+    <style type="text/css">
+        .svg-elem-1 {
+        stroke-dashoffset: 1932.93408203125px;
+        stroke-dasharray: 1932.93408203125px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+        }
+
+        svg.active .svg-elem-1 {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 0, 0);
+        }
+
+        .svg-elem-2 {
+        stroke-dashoffset: 483.31170654296875px;
+        stroke-dasharray: 483.31170654296875px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s;
+        }
+
+        svg.active .svg-elem-2 {
+        stroke-dashoffset: 0;
+        fill: rgb(56, 213, 211);
+        }
+
+        .svg-elem-3 {
+        stroke-dashoffset: 483.31170654296875px;
+        stroke-dasharray: 483.31170654296875px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1s;
+        }
+
+        svg.active .svg-elem-3 {
+        stroke-dashoffset: 0;
+        fill: rgb(48, 194, 235);
+        }
+
+        .svg-elem-4 {
+        stroke-dashoffset: 478.5411071777344px;
+        stroke-dasharray: 478.5411071777344px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s;
+        }
+
+        svg.active .svg-elem-4 {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 175, 252);
+        }
+
+        .svg-elem-5 {
+        stroke-dashoffset: 483.8050231933594px;
+        stroke-dasharray: 483.8050231933594px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2000000000000002s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2000000000000002s;
+        }
+
+        svg.active .svg-elem-5 {
+        stroke-dashoffset: 0;
+        fill: rgb(38, 136, 204);
+        }
+
+        .svg-elem-6 {
+        stroke-dashoffset: 501.57159423828125px;
+        stroke-dasharray: 501.57159423828125px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s;
+        }
+
+        svg.active .svg-elem-6 {
+        stroke-dashoffset: 0;
+        fill: rgb(52, 116, 242);
+        }
+
+        .svg-elem-7 {
+        stroke-dashoffset: 55.70731735229492px;
+        stroke-dasharray: 55.70731735229492px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4000000000000001s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4000000000000001s;
+        }
+
+        svg.active .svg-elem-7 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-8 {
+        stroke-dashoffset: 70.6904296875px;
+        stroke-dasharray: 70.6904296875px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s;
+        }
+
+        svg.active .svg-elem-8 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-9 {
+        stroke-dashoffset: 48.60545349121094px;
+        stroke-dasharray: 48.60545349121094px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.6s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.6s;
+        }
+
+        svg.active .svg-elem-9 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-10 {
+        stroke-dashoffset: 152.01284790039062px;
+        stroke-dasharray: 152.01284790039062px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.08s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7000000000000002s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.08s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7000000000000002s;
+        }
+
+        svg.active .svg-elem-10 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-11 {
+        stroke-dashoffset: 60.121849060058594px;
+        stroke-dasharray: 60.121849060058594px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.8s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.8s;
+        }
+
+        svg.active .svg-elem-11 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-12 {
+        stroke-dashoffset: 23.129837036132812px;
+        stroke-dasharray: 23.129837036132812px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3199999999999998s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.9000000000000001s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3199999999999998s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.9000000000000001s;
+        }
+
+        svg.active .svg-elem-12 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-13 {
+        stroke-dashoffset: 63.029998779296875px;
+        stroke-dasharray: 63.029998779296875px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.44s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.44s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2s;
+        }
+
+        svg.active .svg-elem-13 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-14 {
+        stroke-dashoffset: 84.24200439453125px;
+        stroke-dasharray: 84.24200439453125px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.56s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.1s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.56s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.1s;
+        }
+
+        svg.active .svg-elem-14 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-15 {
+        stroke-dashoffset: 236.5260009765625px;
+        stroke-dasharray: 236.5260009765625px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.68s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.2s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.68s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.2s;
+        }
+
+        svg.active .svg-elem-15 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-16 {
+        stroke-dashoffset: 182.0845947265625px;
+        stroke-dasharray: 182.0845947265625px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7999999999999998s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.3s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7999999999999998s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.3s;
+        }
+
+        svg.active .svg-elem-16 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-17 {
+        stroke-dashoffset: 85.20397186279297px;
+        stroke-dasharray: 85.20397186279297px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.92s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.4000000000000004s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.92s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.4000000000000004s;
+        }
+
+        svg.active .svg-elem-17 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-18 {
+        stroke-dashoffset: 138.219970703125px;
+        stroke-dasharray: 138.219970703125px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.04s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.5s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.04s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.5s;
+        }
+
+        svg.active .svg-elem-18 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-19 {
+        stroke-dashoffset: 215.23794555664062px;
+        stroke-dasharray: 215.23794555664062px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.16s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.6s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.16s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.6s;
+        }
+
+        svg.active .svg-elem-19 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-20 {
+        stroke-dashoffset: 150.8169708251953px;
+        stroke-dasharray: 150.8169708251953px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.28s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.7s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.28s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.7s;
+        }
+
+        svg.active .svg-elem-20 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-21 {
+        stroke-dashoffset: 223.6699676513672px;
+        stroke-dasharray: 223.6699676513672px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.4s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.8s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.4s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.8s;
+        }
+
+        svg.active .svg-elem-21 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-22 {
+        stroke-dashoffset: 209.33203125px;
+        stroke-dasharray: 209.33203125px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.52s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.9000000000000004s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.52s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.9000000000000004s;
+        }
+
+        svg.active .svg-elem-22 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-23 {
+        stroke-dashoffset: 220.64801025390625px;
+        stroke-dasharray: 220.64801025390625px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.6399999999999997s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.6399999999999997s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3s;
+        }
+
+        svg.active .svg-elem-23 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-24 {
+        stroke-dashoffset: 178.45199584960938px;
+        stroke-dasharray: 178.45199584960938px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.76s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.1000000000000005s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.76s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.1000000000000005s;
+        }
+
+        svg.active .svg-elem-24 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-25 {
+        stroke-dashoffset: 16.48900032043457px;
+        stroke-dasharray: 16.48900032043457px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.88s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.2s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 2.88s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.2s;
+        }
+
+        svg.active .svg-elem-25 {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 0, 0);
+        }
+
+        .svg-elem-26 {
+        stroke-dashoffset: 24.398880004882812px;
+        stroke-dasharray: 24.398880004882812px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.3s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.3s;
+        }
+
+        svg.active .svg-elem-26 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-27 {
+        stroke-dashoffset: 36.45283508300781px;
+        stroke-dasharray: 36.45283508300781px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.12s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.4000000000000004s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.12s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.4000000000000004s;
+        }
+
+        svg.active .svg-elem-27 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-28 {
+        stroke-dashoffset: 49.553226470947266px;
+        stroke-dasharray: 49.553226470947266px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.2399999999999998s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.5s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.2399999999999998s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.5s;
+        }
+
+        svg.active .svg-elem-28 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-29 {
+        stroke-dashoffset: 49.554561614990234px;
+        stroke-dasharray: 49.554561614990234px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.36s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.6000000000000005s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.36s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.6000000000000005s;
+        }
+
+        svg.active .svg-elem-29 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-30 {
+        stroke-dashoffset: 41.62928771972656px;
+        stroke-dasharray: 41.62928771972656px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.48s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.7s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.48s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.7s;
+        }
+
+        svg.active .svg-elem-30 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-31 {
+        stroke-dashoffset: 22.246246337890625px;
+        stroke-dasharray: 22.246246337890625px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.5999999999999996s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.8s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.5999999999999996s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.8s;
+        }
+
+        svg.active .svg-elem-31 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-32 {
+        stroke-dashoffset: 38.28615951538086px;
+        stroke-dasharray: 38.28615951538086px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.7199999999999998s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.9000000000000004s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.7199999999999998s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 3.9000000000000004s;
+        }
+
+        svg.active .svg-elem-32 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-33 {
+        stroke-dashoffset: 34.01117706298828px;
+        stroke-dasharray: 34.01117706298828px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.84s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.84s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4s;
+        }
+
+        svg.active .svg-elem-33 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-34 {
+        stroke-dashoffset: 17.5446195602417px;
+        stroke-dasharray: 17.5446195602417px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.96s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.1000000000000005s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 3.96s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.1000000000000005s;
+        }
+
+        svg.active .svg-elem-34 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-35 {
+        stroke-dashoffset: 8.726997375488281px;
+        stroke-dasharray: 8.726997375488281px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.08s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.2s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.08s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.2s;
+        }
+
+        svg.active .svg-elem-35 {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 0, 0);
+        }
+
+        .svg-elem-36 {
+        stroke-dashoffset: 17.136001586914062px;
+        stroke-dasharray: 17.136001586914062px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.2s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.3s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.2s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.3s;
+        }
+
+        svg.active .svg-elem-36 {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 0, 0);
+        }
+
+        .svg-elem-37 {
+        stroke-dashoffset: 17.136999130249023px;
+        stroke-dasharray: 17.136999130249023px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.32s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.4s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.32s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.4s;
+        }
+
+        svg.active .svg-elem-37 {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 0, 0);
+        }
+
+        .svg-elem-38 {
+        stroke-dashoffset: 11.912336349487305px;
+        stroke-dasharray: 11.912336349487305px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.4399999999999995s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.5s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.4399999999999995s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.5s;
+        }
+
+        svg.active .svg-elem-38 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-39 {
+        stroke-dashoffset: 33.1213264465332px;
+        stroke-dasharray: 33.1213264465332px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.56s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.6000000000000005s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.56s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.6000000000000005s;
+        }
+
+        svg.active .svg-elem-39 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-40 {
+        stroke-dashoffset: 55.916622161865234px;
+        stroke-dasharray: 55.916622161865234px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.68s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.7s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.68s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.7s;
+        }
+
+        svg.active .svg-elem-40 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-41 {
+        stroke-dashoffset: 17.943994522094727px;
+        stroke-dasharray: 17.943994522094727px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.8s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.8s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.8s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.8s;
+        }
+
+        svg.active .svg-elem-41 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-42 {
+        stroke-dashoffset: 10.40899658203125px;
+        stroke-dasharray: 10.40899658203125px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.92s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.9s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 4.92s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 4.9s;
+        }
+
+        svg.active .svg-elem-42 {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 0, 0);
+        }
+
+        .svg-elem-43 {
+        stroke-dashoffset: 60.83799743652344px;
+        stroke-dasharray: 60.83799743652344px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.04s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.04s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5s;
+        }
+
+        svg.active .svg-elem-43 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-44 {
+        stroke-dashoffset: 64.18399047851562px;
+        stroke-dasharray: 64.18399047851562px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.16s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.1s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.16s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.1s;
+        }
+
+        svg.active .svg-elem-44 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-45 {
+        stroke-dashoffset: 47.821990966796875px;
+        stroke-dasharray: 47.821990966796875px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.279999999999999s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.2s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.279999999999999s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.2s;
+        }
+
+        svg.active .svg-elem-45 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-46 {
+        stroke-dashoffset: 64.55599212646484px;
+        stroke-dasharray: 64.55599212646484px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.3999999999999995s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.3s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.3999999999999995s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.3s;
+        }
+
+        svg.active .svg-elem-46 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-47 {
+        stroke-dashoffset: 56.31199264526367px;
+        stroke-dasharray: 56.31199264526367px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.52s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.4s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.52s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.4s;
+        }
+
+        svg.active .svg-elem-47 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-48 {
+        stroke-dashoffset: 20.134033203125px;
+        stroke-dasharray: 20.134033203125px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.64s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.5s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.64s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.5s;
+        }
+
+        svg.active .svg-elem-48 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-49 {
+        stroke-dashoffset: 36.19203186035156px;
+        stroke-dasharray: 36.19203186035156px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.76s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.6000000000000005s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.76s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.6000000000000005s;
+        }
+
+        svg.active .svg-elem-49 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-50 {
+        stroke-dashoffset: 28.382034301757812px;
+        stroke-dasharray: 28.382034301757812px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.88s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.7s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 5.88s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.7s;
+        }
+
+        svg.active .svg-elem-50 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-51 {
+        stroke-dashoffset: 45.229942321777344px;
+        stroke-dasharray: 45.229942321777344px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.8s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.8s;
+        }
+
+        svg.active .svg-elem-51 {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 0, 0);
+        }
+
+        .svg-elem-52 {
+        stroke-dashoffset: 15.756523132324219px;
+        stroke-dasharray: 15.756523132324219px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.12s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.9s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.12s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 5.9s;
+        }
+
+        svg.active .svg-elem-52 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-53 {
+        stroke-dashoffset: 28.90899658203125px;
+        stroke-dasharray: 28.90899658203125px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.24s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.24s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6s;
+        }
+
+        svg.active .svg-elem-53 {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 0, 0);
+        }
+
+        .svg-elem-54 {
+        stroke-dashoffset: 29.084999084472656px;
+        stroke-dasharray: 29.084999084472656px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.359999999999999s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.1000000000000005s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.359999999999999s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.1000000000000005s;
+        }
+
+        svg.active .svg-elem-54 {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 0, 0);
+        }
+
+        .svg-elem-55 {
+        stroke-dashoffset: 32.27300262451172px;
+        stroke-dasharray: 32.27300262451172px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.4799999999999995s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.2s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.4799999999999995s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.2s;
+        }
+
+        svg.active .svg-elem-55 {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 0, 0);
+        }
+
+        .svg-elem-56 {
+        stroke-dashoffset: 32.449005126953125px;
+        stroke-dasharray: 32.449005126953125px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.6s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.3s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.6s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.3s;
+        }
+
+        svg.active .svg-elem-56 {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 0, 0);
+        }
+
+        .svg-elem-57 {
+        stroke-dashoffset: 112.99996948242188px;
+        stroke-dasharray: 112.99996948242188px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.72s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.4s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.72s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.4s;
+        }
+
+        svg.active .svg-elem-57 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-58 {
+        stroke-dashoffset: 18.819000244140625px;
+        stroke-dasharray: 18.819000244140625px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.84s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.5s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.84s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.5s;
+        }
+
+        svg.active .svg-elem-58 {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 0, 0);
+        }
+
+        .svg-elem-59 {
+        stroke-dashoffset: 18.819000244140625px;
+        stroke-dasharray: 18.819000244140625px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.96s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.6000000000000005s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 6.96s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.6000000000000005s;
+        }
+
+        svg.active .svg-elem-59 {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 0, 0);
+        }
+
+        .svg-elem-60 {
+        stroke-dashoffset: 28.910003662109375px;
+        stroke-dasharray: 28.910003662109375px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.08s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.7s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.08s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.7s;
+        }
+
+        svg.active .svg-elem-60 {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 0, 0);
+        }
+
+        .svg-elem-61 {
+        stroke-dashoffset: 28.910003662109375px;
+        stroke-dasharray: 28.910003662109375px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.199999999999999s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.8s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.199999999999999s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.8s;
+        }
+
+        svg.active .svg-elem-61 {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 0, 0);
+        }
+
+        .svg-elem-62 {
+        stroke-dashoffset: 41.477996826171875px;
+        stroke-dasharray: 41.477996826171875px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.319999999999999s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.9s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.319999999999999s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 6.9s;
+        }
+
+        svg.active .svg-elem-62 {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 0, 0);
+        }
+
+        .svg-elem-63 {
+        stroke-dashoffset: 67.55595397949219px;
+        stroke-dasharray: 67.55595397949219px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.4399999999999995s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.4399999999999995s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7s;
+        }
+
+        svg.active .svg-elem-63 {
+        stroke-dashoffset: 0;
+        fill: rgb(38, 136, 204);
+        }
+
+        .svg-elem-64 {
+        stroke-dashoffset: 52.57502746582031px;
+        stroke-dasharray: 52.57502746582031px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.56s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.1000000000000005s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.56s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.1000000000000005s;
+        }
+
+        svg.active .svg-elem-64 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-65 {
+        stroke-dashoffset: 15.889081001281738px;
+        stroke-dasharray: 15.889081001281738px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.68s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.2s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.68s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.2s;
+        }
+
+        svg.active .svg-elem-65 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-66 {
+        stroke-dashoffset: 9.581095695495605px;
+        stroke-dasharray: 9.581095695495605px;
+        fill: transparent;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.8s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.3s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.8s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.3s;
+        }
+
+        svg.active .svg-elem-66 {
+        stroke-dashoffset: 0;
+        fill: rgb(0, 0, 0);
+        }
+
+        .svg-elem-67 {
+        stroke-dashoffset: 119.99197387695312px;
+        stroke-dasharray: 119.99197387695312px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.92s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.4s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 7.92s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.4s;
+        }
+
+        svg.active .svg-elem-67 {
+        stroke-dashoffset: 0;
+        }
+
+        .svg-elem-68 {
+        stroke-dashoffset: 103.63995361328125px;
+        stroke-dasharray: 103.63995361328125px;
+        -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 8.04s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.5s;
+        transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 8.04s,
+        fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 7.5s;
+        }
+
+        svg.active .svg-elem-68 {
+        stroke-dashoffset: 0;
+        }
+
+    </style>
+    <defs>
+        <clipPath id="_clipPath_0jNgG9urn4B4thRXr53qA3uyPHi1zu8d">
+            <rect width="869.538" height="95.929"/>
+        </clipPath>
+    </defs>
+    <g clip-path="url(#_clipPath_0jNgG9urn4B4thRXr53qA3uyPHi1zu8d)">
+        <path d=" M 161.538 45.758 L 138.53 1.773 L 1.5 1.773 L 24.846 45.758 L 1.5 94.429 L 138.53 94.429 L 161.538 45.758 Z "
+              fill="rgb(56,213,211)" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+              stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="3"/>
+        <path d=" M 334.538 45.758 L 311.53 1.773 L 174.5 1.773 L 197.846 45.758 L 174.5 94.429 L 311.53 94.429 L 334.538 45.758 Z "
+              fill="rgb(48,194,235)" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+              stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="3"/>
+        <path d=" M 507.538 45.758 L 484.53 1.773 L 347.5 1.773 L 370.846 45.758 L 347.5 91.773 L 484.53 91.773 L 507.538 45.758 Z "
+              fill="rgb(0,175,252)" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+              stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="3"/>
+        <path d=" M 680.038 45.485 L 657.03 1.5 L 520 1.5 L 543.346 45.485 L 520 94.429 L 657.03 94.429 L 680.038 45.485 Z "
+              fill="rgb(38,136,204)" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+              stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="3"/>
+        <path d=" M 868.038 46.312 L 843.736 1.5 L 699 1.5 L 723.659 46.312 L 699 94.429 L 843.736 94.429 L 868.038 46.312 Z "
+              fill="rgb(52,116,242)" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+              stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="3"/>
+        <g id="Group">
+            <path d=" M 47.364 78.219 L 44 76.537 L 50.727 59.719 C 50.554 58.329 51.193 57.05 52.409 56.355 C 53.483 55.741 54.38 55.891 55.773 56.355 C 56.798 56.878 56.621 57.233 55.773 59.719 C 55.498 60.523 54.852 61.02 54.091 61.4 L 47.364 78.219 Z "
+                  fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <path d=" M 49.045 46.329 C 49.045 40.295 53.944 35.397 59.977 35.397 C 66.011 35.397 70.909 40.295 70.909 46.329 C 70.909 52.362 66.011 57.261 59.977 57.261 C 53.944 57.261 49.045 52.362 49.045 46.329 Z "
+                  fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="3"/>
+            <path d=" M 52.56 46.329 C 52.56 42.235 55.884 38.912 59.977 38.912 C 64.071 38.912 67.395 42.235 67.395 46.329 C 67.395 50.422 64.071 53.746 59.977 53.746 C 55.884 53.746 52.56 50.422 52.56 46.329 Z "
+                  fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="3"/>
+            <path d=" M 241.586 76.374 L 216.359 76.374 L 216.359 57.738 Q 219.55 50.058 228.131 49.79 Q 236.713 49.522 238.222 51.472 L 257.256 36.207 Q 260.151 33.593 261.768 34.653 Q 263.524 35.805 261.768 39.699 L 241.586 58.199 L 241.586 76.374 Z "
+                  fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <path d=" M 219.722 38.858 C 219.722 33.753 223.867 29.608 228.972 29.608 C 234.078 29.608 238.222 33.753 238.222 38.858 C 238.222 43.963 234.078 48.108 228.972 48.108 C 223.867 48.108 219.722 43.963 219.722 38.858 Z "
+                  fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                  stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
+            <path d=" M 238.222 38.017 Q 234.908 38.489 233.177 38.017 Q 231.085 37.447 228.131 34.653 Q 226.342 37.343 224.768 38.017 Q 223.093 38.735 219.722 38.017"
+                  fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <rect x="417.214" y="66.084" width="20.763" height="9.752" transform="matrix(1,0,0,1,0,0)" fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <rect x="408.844" y="75.835" width="37.505" height="3.616" transform="matrix(1,0,0,1,0,0)" fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <rect x="567.308" y="14.305" width="69.385" height="47.878" transform="matrix(1,0,0,1,0,0)" fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <path d=" M 561 75.361 L 643 75.361 L 636.692 62.183 L 567.469 62.664 L 561 75.361 Z " fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <rect x="747" y="57.31" width="17.386" height="24.216" transform="matrix(1,0,0,1,0,0)" fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <rect x="799.159" y="30.882" width="17.386" height="50.724" transform="matrix(1,0,0,1,0,0)" fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+        </g>
+        <g id="Group">
+            <path d=" M 57.455 57.576 L 57.455 81.582 L 111.273 81.582 L 111.273 24.4 L 101.358 14.309 L 57.455 14.309 L 57.455 34.491"
+                  fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <path d=" M 244.95 54.835 L 244.95 56.517 L 292.041 56.517 L 292.041 24.562 L 244.95 24.562 L 244.95 45.56"
+                  fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <path d=" M 397 16.441 L 397 66.084 L 458.192 66.084 L 458.192 16.441 L 397 16.441 Z " fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <rect x="397" y="20.541" width="61.192" height="42.474" transform="matrix(1,0,0,1,0,0)" fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <rect x="567.308" y="18.52" width="69.385" height="39.939" transform="matrix(1,0,0,1,0,0)" fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <rect x="561" y="75.361" width="82" height="6.226" transform="matrix(1,0,0,1,0,0)" fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <line x1="806.887" y1="30.706" x2="806.887" y2="16.217" vector-effect="non-scaling-stroke" stroke-width="1"
+                  stroke="rgb(0,0,0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <path d=" M 814.614 16.217 L 806.887 20.081 L 806.887 14.286 L 814.614 16.217 Z " fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+        </g>
+        <g id="Group">
+            <path d=" M 101.182 24.4 L 101.182 14.309 L 111.273 24.4 L 101.182 24.4 Z " fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <path d=" M 67.546 31.513 C 67.546 27.336 70.937 23.945 75.114 23.945 C 79.291 23.945 82.682 27.336 82.682 31.513 C 82.682 35.69 79.291 39.081 75.114 39.081 C 70.937 39.081 67.546 35.69 67.546 31.513 Z "
+                  fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                  stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="3"/>
+            <path d=" M 87.728 31.968 C 87.728 27.791 91.119 24.4 95.296 24.4 C 99.473 24.4 102.864 27.791 102.864 31.968 C 102.864 36.145 99.473 39.537 95.296 39.537 C 91.119 39.537 87.728 36.145 87.728 31.968 Z "
+                  fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                  stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="3"/>
+            <path d=" M 69.227 63.082 L 75.955 63.082 L 75.955 76.212 L 69.314 76.212 L 69.227 63.082 Z " fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <path d=" M 96.137 70.266 L 100.341 70.266 L 100.341 76.212 L 96.191 76.212 L 96.137 70.266 Z " fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <path d=" M 87.728 63.082 L 92.773 63.082 L 92.773 76.212 L 87.792 76.212 L 87.728 63.082 Z " fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <path d=" M 79.318 65.22 L 84.364 65.22 L 84.364 76.212 L 79.383 76.212 L 79.318 65.22 Z " fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <path d=" M 70.909 37.399 L 75.955 32.354 L 70.909 25.627" fill="none" vector-effect="non-scaling-stroke"
+                  stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round" stroke-linecap="round"
+                  stroke-miterlimit="3"/>
+            <line x1="82.682" y1="32.354" x2="75.955" y2="32.354" vector-effect="non-scaling-stroke" stroke-width="1"
+                  stroke="rgb(0,0,0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <line x1="87.728" y1="32.354" x2="102.864" y2="32.354" vector-effect="non-scaling-stroke" stroke-width="1"
+                  stroke="rgb(0,0,0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <line x1="94.455" y1="24.4" x2="94.455" y2="39.537" vector-effect="non-scaling-stroke" stroke-width="1"
+                  stroke="rgb(0,0,0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <path d=" M 228.837 55.361 L 227.155 53.679 L 228.837 51.997 L 230.79 53.679 L 228.837 55.361 Z "
+                  fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <path d=" M 228.795 55.292 L 227.155 65.383 L 228.795 70.428 L 230.568 65.383 L 228.795 55.292 Z "
+                  fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <path d=" M 268.495 36.515 C 268.495 31.779 272.34 27.934 277.076 27.934 C 281.812 27.934 285.657 31.779 285.657 36.515 C 285.657 41.25 281.812 45.095 277.076 45.095 C 272.34 45.095 268.495 41.25 268.495 36.515 Z "
+                  fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                  stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="3"/>
+            <path d=" M 271.859 29.608 L 276.905 36.207 L 273.541 43.063" fill="none" vector-effect="non-scaling-stroke"
+                  stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round" stroke-linecap="round"
+                  stroke-miterlimit="3"/>
+            <line x1="276.905" y1="36.207" x2="285.314" y2="36.207" vector-effect="non-scaling-stroke" stroke-width="1"
+                  stroke="rgb(0,0,0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <rect x="410.817" y="27.504" width="3.948" height="25.471" transform="matrix(1,0,0,1,0,0)" fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <rect x="442.4" y="25.831" width="3.948" height="27.144" transform="matrix(1,0,0,1,0,0)" fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <rect x="434.505" y="34.012" width="3.948" height="18.963" transform="matrix(1,0,0,1,0,0)" fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <rect x="426.609" y="25.645" width="3.948" height="27.33" transform="matrix(1,0,0,1,0,0)" fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <rect x="418.713" y="29.767" width="3.948" height="23.208" transform="matrix(1,0,0,1,0,0)" fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <rect x="607.256" y="45.843" width="4.205" height="4.862" transform="matrix(1,0,0,1,0,0)" fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <rect x="624.077" y="37.814" width="4.205" height="12.891" transform="matrix(1,0,0,1,0,0)" fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <rect x="615.667" y="41.719" width="4.205" height="8.986" transform="matrix(1,0,0,1,0,0)" fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <line x1="748.932" y1="47.201" x2="787.568" y2="27.808" vector-effect="non-scaling-stroke" stroke-width="1"
+                  stroke="rgb(0,0,0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <path d=" M 781.773 23.945 L 787.568 27.808 L 787.568 34.6" fill="none" vector-effect="non-scaling-stroke"
+                  stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round" stroke-linecap="round"
+                  stroke-miterlimit="3"/>
+        </g>
+        <g id="Group">
+            <line x1="74.273" y1="44.582" x2="101.182" y2="44.582" vector-effect="non-scaling-stroke" stroke-width="1"
+                  stroke="rgb(0,0,0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <line x1="101.358" y1="49.628" x2="74.273" y2="49.628" vector-effect="non-scaling-stroke" stroke-width="1"
+                  stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="3"/>
+            <line x1="70.909" y1="54.673" x2="101.182" y2="54.673" vector-effect="non-scaling-stroke" stroke-width="1"
+                  stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="3"/>
+            <line x1="101.358" y1="58.037" x2="70.909" y2="58.037" vector-effect="non-scaling-stroke" stroke-width="1"
+                  stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="3"/>
+            <path d=" M 243.268 19.517 L 293.723 19.517 L 293.723 24.562 L 243.268 24.562 L 243.268 19.517 Z "
+                  fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <line x1="249.995" y1="27.926" x2="266.814" y2="27.926" vector-effect="non-scaling-stroke" stroke-width="1"
+                  stroke="rgb(0,0,0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <line x1="249.995" y1="31.29" x2="266.814" y2="31.29" vector-effect="non-scaling-stroke" stroke-width="1"
+                  stroke="rgb(0,0,0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <line x1="258.404" y1="48.108" x2="285.314" y2="48.108" vector-effect="non-scaling-stroke" stroke-width="1"
+                  stroke="rgb(0,0,0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <line x1="285.314" y1="51.997" x2="258.404" y2="51.997" vector-effect="non-scaling-stroke" stroke-width="1"
+                  stroke="rgb(0,0,0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <line x1="408.844" y1="56.404" x2="448.322" y2="56.404" vector-effect="non-scaling-stroke" stroke-width="1"
+                  stroke="rgb(0,0,0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <path d=" M 584.128 50.705 L 596.744 39.535 L 600.949 43.741 L 611.462 31.125 L 609.359 28.862 L 617.769 26.92 L 615.667 35.33 L 611.462 31.125"
+                  fill="rgb(38,136,204)" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <path d=" M 576.079 31.125 C 576.079 26.683 579.686 23.076 584.128 23.076 C 588.57 23.076 592.177 26.683 592.177 31.125 C 592.177 35.567 588.57 39.174 584.128 39.174 C 579.686 39.174 576.079 35.567 576.079 31.125 Z "
+                  fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                  stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
+            <path d=" M 579.923 24.817 L 584.128 31.125 L 590.436 31.125" fill="none" vector-effect="non-scaling-stroke"
+                  stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round" stroke-linecap="round"
+                  stroke-miterlimit="3"/>
+            <line x1="584.128" y1="31.125" x2="579.923" y2="37.433" vector-effect="non-scaling-stroke" stroke-width="1"
+                  stroke="rgb(0,0,0)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="3"/>
+            <rect x="781.773" y="39.399" width="17.386" height="41.61" transform="matrix(1,0,0,1,0,0)" fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+            <rect x="764.386" y="48.093" width="17.386" height="33.434" transform="matrix(1,0,0,1,0,0)" fill="none"
+                  vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)" stroke-linejoin="round"
+                  stroke-linecap="round" stroke-miterlimit="3"/>
+        </g>
+    </g>
+</svg>
