@@ -51,8 +51,8 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
     }
 }
 
-/* １０２５以上　ノートパソコン、デスクトップ */
-@media (min-width: 1025px) and (max-width: 1999px) {
+/* 480以上　ノートパソコン、デスクトップ */
+@media (min-width: 480px) and (max-width: 1999px) {
     .display-wide {
         display: none;
     }
@@ -80,27 +80,23 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
     }
 
     .font-large {
-        font-size: 2.5rem;
+        font-size: 3.8vw;
     }
 
     .font-semi-large {
-        font-size: 2.5rem;
+        font-size: 3.2vw;
     }
 
     .font-middle {
-        font-size: 1.5rem;
+        font-size: 2.2vw;
     }
 
     .font-semi-middle{
-        font-size: 1.2rem;
+        font-size: 1.7vw;
     }
 
     .font-small {
-        font-size: 0.8rem;
-    }
-
-    .font-xs {
-        font-size: 0.7rem;
+        font-size: 1.0vw;
     }
 
     .slogan-background-middle {
@@ -150,7 +146,6 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
     .pb-5vh {
         padding-bottom: 50vh;
     }
-
     .mt-1vh {
         margin-top: 10vh;
     }
@@ -169,41 +164,7 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
         margin-top: 50vh;
     }
 }
-/* ４８１以上１０２４以下　タブレット*/
-@media (min-width: 481px) and (max-width: 1024px) {
-    .display-wide {
-        display: none;
-    }
 
-    .display-large {
-        display: none;
-    }
-
-    .display-small {
-        display: none;
-    }
-
-    .font-heavy {
-        font-weight: 600;
-        color: #c04ab0;
-    }
-
-    .font-large {
-        font-size: 3.5rem;
-    }
-
-    .font-semi-large {
-        font-size: 2.5rem;
-    }
-
-    .font-middle {
-        font-size: 1.5rem;
-    }
-
-    .slogan-background {
-        margin-bottom: -7vh;
-    }
-}
 /* ０から４８０　スマホ)*/
 @media (min-width: 0px) and (max-width: 480px) {
     .display-wide {
@@ -231,11 +192,10 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 
     .drawer-menu {
         position: fixed;
-        top: 0;
+        top: -100vh;
         right: 0;
         height: 10px;
         width: 100%;
-        opacity: 0;
         transition: all 0.5s ease-in-out 0s;
         background-color: rgba(10, 1, 1, 0.85);
         overflow: visible;
@@ -260,7 +220,8 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
     }
 
     .menu-checkbox:checked ~ .drawer-menu {
-        opacity: 1.0;
+        /*opacity: 1.0;*/
+        top: 0;
     }
 
     .drawer-icon {
@@ -348,10 +309,9 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 
     .drawer-menu {
         position: fixed;
-        top: 0;
+        top: -100vh;
         right: 0;
         width: 100%;
-        opacity: 0;
         background-color: rgba(0, 0, 0, 0.93);
         z-index: 20;
         height: 100vh;
@@ -509,6 +469,7 @@ body {
 /* header iten */
 .wp-block-navigation .wp-block-navigation-item {
     color: #000000;
+    font-size: 1.3vw;
     margin-left: 1.5rem;
     margin-left: 1.5rem;
     padding: 1px;
@@ -2351,6 +2312,12 @@ svg.active .svg-elem-service-marketing-value-21 {
     -webkit-clip-path: url(#svgPath);
     clip-path: url(#svgPath);
 }
+
+.mask-small {
+    -webkit-clip-path: url(#svg-path-small);
+    clip-path: url(#svg-path-small);
+}
+
 
 /***************************************************
  * opening Animation
