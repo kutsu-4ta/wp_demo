@@ -1,61 +1,87 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 <main class="main-block" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-
-    <!--  background-Animation  -->
-<!--    <div class="container-fluid container-background">-->
-<!--        <div id="particles" class="row align-items-center text-center back-animation" style="opacity: 0.5;"></div>-->
-<!--    </div>-->
-<!--    <script>-->
-<!--        $(function() {-->
-<!--            let frontText = document.getElementById('front-text');-->
-<!--            frontText.style.marginTop = (-frontText.offsetHeight * 6) + 'px';-->
-<!--        });-->
-<!--    </script>-->
-
-
-        <!-- PCノーマル　-->
+    <!-- PCノーマル　-->
     <div class="display-large container-fluid mr-0 ml-0 pr-0 pl-0">
-        <div id="front-text" class="container-fluid full-screen pl-5 pr-5">
-            <div class="video-back"></div>
-            <div class="video-bg-container">
-                <video loop muted autoplay class="bg-video">
-                    <source src="https://antapp-marketing.com//wp-content/themes/antapp/assets/videos/sample3.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="video-mask"></div>
-
-
-            <div class="container-fluid full-screen">
-<!--                <div class="row justify-content-end pb-5 pr-0" style="height: 15vh;">-->
-<!--                    <div class="pt-4 mr-5 ml-5">-->
-<!--                        <input type="checkbox" id="pop-up">-->
-<!--                        <div class="window pop-up-wrapper">-->
-<!--                            <label class="close" for="pop-up">×</label>-->
-<!--                            <div class="text-center font-heavy">-->
-<!--                                パイロットユーザ募集中！！<br/>-->
-<!--                                残り3枠-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-                <div class="row justify-content-center text-center pb-2 pt-2vh mt-5">
-                    <h1 class="font-mincho color-white font-heavy font-large">
-                        Webサイト制作・マーケティング支援で<br/>
-                        売上増加
-                    </h1>
-                </div>
-                <div class="row pb-5 justify-content-center text-center font-mincho font-heavy font-middle color-white ">
-                    Webからの出会いを作る会社
-                </div>
-                <div class="row justify-content-center pt-3 mb-5">
-                    <div class="btn-square">
-                        <a href="https://antapp-marketing.com/?page_id=34">無料相談はこちら</a>
+        <div class="back-container" style="height: 100vh;">
+            <div class="container-fluid full-screen home-top-wrapper">
+                <div class="row">
+                    <div class="col-5 pb-2 pt-2vh pl-0 pr-0">
                     </div>
-
+                    <div class="col-7 pl-0 pr-0">
+                        <div style="width: 100%; margin-top: 15vh;">
+                            <div>
+                                <video loop muted autoplay class="mask">
+                                    <source src="https://antapp-marketing.com//wp-content/themes/antapp/assets/videos/sample3.mp4" type="video/mp4">
+                                    <!--                        <source src="http://localhost:3000/wordpress/wp-content/themes/antapp/assets/videos/sample3.mp4" type="video/mp4">-->
+                                </video>
+                                <svg>
+                                    <clipPath id="svgPath">
+                                        <path d=" M 806.371 152.033 L 781.854 138.374 C 760.148 126.281 727.496 129.92 708.984 146.495 L 294.584 517.542 C 276.072 534.117 268.971 529.024 278.736 506.175 L 415.309 186.602 C 425.074 163.754 441.435 163.529 451.823 186.101 L 586.136 477.936 C 596.525 500.508 625.132 518.833 649.979 518.833 L 731.896 518.833 C 756.743 518.833 768.405 500.544 757.922 478.016 L 555.17 42.318 C 544.687 19.79 516.003 1.5 491.155 1.5 L 409.239 1.5 C 384.391 1.5 355.378 19.633 344.49 41.968 L 5.64 737.032 C -5.249 759.367 6.084 777.5 30.932 777.5 L 112.848 777.5 C 137.696 777.5 173.032 764.195 191.709 747.806 L 811.86 203.638 C 830.536 187.25 828.077 164.126 806.371 152.033 Z "/>
+                                    </clipPath>
+                                </svg>
+                            </div>
+                            <img src="http://localhost:3000/wordpress/wp-content/themes/antapp/assets/images/sample1.svg" class="svg">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid home-content ml-0 mr-0 pr-0 pl-0 pt-2vh pb-1vh" style="background-color: rgba(255,255,255,0.7); padding-right: 0;">
+        <div class="container-fluid full-screen mb-0 mr-0 ml-0" style="position: fixed; padding: 0;">
+
+<!-- 縦移動バージョン -->
+<!--                        <div class="back-container back1" style="height: 200vw;">-->
+<!--                                <div style="height: 100vh; width: 100vw; background-color: rgba(204,0,0,0);">-->
+<!--                                    <img src="http://localhost:3000/wordpress/wp-content/themes/antapp/assets/images/sample1.svg" class="svg">-->
+<!--                                </div>-->
+<!--                                <div style="height: 100vh; width: 100vw; background-color: rgba(44,0,204,0);">-->
+<!--                                    <img src="http://localhost:3000/wordpress/wp-content/themes/antapp/assets/images/sample2.svg" class="svg">-->
+<!--                                </div>-->
+<!--                        </div>-->
+
+<!-- フェードバージョン -->
+<!--            <div class="back-container back1" style="z-index: -4;">-->
+<!--&lt;!&ndash;                <img src="https://antapp-marketing.com//wp-content/themes/antapp/assets/images/home-background.svg" class="svg">&ndash;&gt;-->
+<!--                <img src="http://localhost:3000/wordpress/wp-content/themes/antapp/assets/images/sample1.svg" class="svg">-->
+<!--            </div>-->
+<!--            <div class="back-container back2"style="z-index: -5; background-color: blue;">-->
+<!--                &lt;!&ndash;                <img src="https://antapp-marketing.com//wp-content/themes/antapp/assets/images/home-background.svg" class="svg">&ndash;&gt;-->
+<!--            </div>-->
+
+
+            <div class="container-fluid full-screen home-top-wrapper">
+                <div class="row">
+                    <div class="col-5 pb-2 pt-2vh pl-0 pr-0">
+                        <div class="container-fluid home-top">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="text-center">
+                                        <h1 class="font-mincho font-heavy font-large">
+                                            Webサイト制作<br/>マーケティング支援で<br/>売上増加
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 text-center font-mincho font-heavy font-middle  pl-5 pb-5">
+                                    <p>Webからの出会いを作る会社</p>
+                                </div>
+                            </div>
+                            <div class="row pt-3 mb-5">
+                                <div class="col-12 pl-5 text-center">
+                                    <div class="btn-square">
+                                        <a href="https://antapp-marketing.com/?page_id=34">無料相談はこちら</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7 pl-0 pr-0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-top-spacer full-screen"></div>
+        <div class="front-content container-fluid home-slogan ml-0 mr-0 pr-0 pl-0 mt-2vh pt-2vh pb-1vh" style="background-color: rgba(245,245,245,0.7); padding-right: 0; position: relative;">
             <div class="row pt-1vh pr-5 pl-5 pt-0">
                 <div class="col-4 justify-content-center text-center">
                     <img class="pt-4 pb-0 pr-1 pl-1" src="https://antapp-marketing.com//wp-content/themes/antapp/assets/images/slogan-logo-middle.svg" style="width: 100%; margin-top: 13rem">
@@ -78,7 +104,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid home-content ml-0 mr-0 pr-0 pl-0 pt-0 pb-0 mt-1vh">
+        <div class="container-fluid ml-0 mr-0 pr-0 pl-0 pt-0 pb-0 mt-1vh">
             <div class="row full-screen" style="background-color: rgba(255,255,255,0.7); padding-right: 0; position: relative;">
                 <div class="col-6">
                     <div class="pl-5 pt-3vh pb-5" style="text-align-last: center;">
@@ -123,7 +149,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid pl-0 pr-0 ml-0 mr-0 pb-5" style="background-color: rgba(255,255,255,0.7);">
+        <div class="container-fluid pl-0 pr-0 ml-0 mr-0 pb-5" style="background-color: rgba(255,255,255,0.7); position: relative;">
             <div class="row justify-content-center mt-1vh pt-1vh">
                 <h2 class="font-mincho font-heavy font-semi-large">私たちの強み</h2>
             </div>
@@ -189,7 +215,7 @@
                 </div>
             </div>
         </div>
-        <div class="home-content container-fluid justify-content-center contact pl-0 pr-0 ml-0 mr-0 pt-0 pb-0 mt-2vh mb-0" style="background-color: rgb(182,182,182);">
+        <div class=" container-fluid justify-content-center contact pl-0 pr-0 ml-0 mr-0 pt-0 pb-0 mt-2vh mb-0" style="background-color: rgb(182,182,182); position: relative;">
             <a href="https://antapp-marketing.com/?page_id=34">
                 <div class="row">
                     <div class="col-12 text-center image-link pt-1vh pb-1vh" style="cursor: pointer;">
@@ -208,7 +234,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid home-content contact pl-0 pr-0 mt-0 pt-0 mb-5" style="background-color: #FFFFFF">
+        <div class="container-fluid  contact pl-0 pr-0 mt-0 pt-0 mb-5" style="background-color: #FFFFFF; position: relative;"">
             <div class="row justify-content-center pt-5">
                 <h2 class="font-heavy font-semi-large">
                     お問合せ
@@ -234,14 +260,11 @@
         <!--　スマホ　-->
     <div class="display-small container-fluid mr-0 ml-0 pr-0 pl-0">
         <div class="container-fluid full-screen pl-1 pr-1">
-                <div class="video-back"></div>
                 <div class="video-bg-container">
                     <video loop muted autoplay playsinline class="bg-video">
                         <source src="https://antapp-marketing.com//wp-content/themes/antapp/assets/videos/sample3.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="video-mask"></div>
-
 
                 <div class="container-fluid full-screen">
 <!--                    <div class="row justify-content-end pb-5 pr-0" style="height: 15vh;">-->
@@ -273,7 +296,7 @@
                     </div>
                 </div>
             </div>
-        <div class="container-fluid home-content ml-0 mr-0 pr-0 pl-0 pt-5 pb-5 mt-5 mb-5" style="background-color: rgba(255,255,255,0.7);">
+        <div class="container-fluid  ml-0 mr-0 pr-0 pl-0 pt-5 pb-5 mt-5 mb-5" style="background-color: rgba(255,255,255,0.7);">
                 <div class="row">
                     <div class="col-12 font-mincho mb-5">
                         <img  class="pt-0 pb-0 pr-0 pl-0 slogan-background" src="https://antapp-marketing.com//wp-content/themes/antapp/assets/images/slogan-background-middle.svg" style="width: 100%;">
@@ -297,7 +320,7 @@
                     </div>
                 </div>
             </div>
-        <div class="container-fluid home-content pb-0 pl-0 pr-0 service">
+        <div class="container-fluid  pb-0 pl-0 pr-0 service">
             <div class="row pl-1 pr-1 mt-5" style="background-color: rgba(255,255,255,0.7);">
                 <div class="col-12 pt-5 pb-5">
                     <div style="text-align-last: center;">
@@ -348,7 +371,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid home-content strength pl-0 pr-0 ml-0 mr-0 mt-5 mb-0" style="background-color: rgba(255,255,255,0.7);">
+        <div class="container-fluid  strength pl-0 pr-0 ml-0 mr-0 mt-5 mb-0" style="background-color: rgba(255,255,255,0.7);">
             <div class="row justify-content-center pt-1vh">
                 <h2 class="font-mincho font-heavy font-semi-large">私たちの強み</h2>
             </div>
@@ -401,7 +424,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid pl-0 pr-0 ml-0 mr-0 pt-0 pb-0 mt-5 mb-0 home-content justify-content-center contact" style="background-color: rgb(182,182,182);">
+        <div class="container-fluid pl-0 pr-0 ml-0 mr-0 pt-0 pb-0 mt-5 mb-0  justify-content-center contact" style="background-color: rgb(182,182,182);">
             <a href="https://antapp-marketing.com/?page_id=34">
                 <div class="row pl-4 pr-4">
                     <div class="col-12 text-center image-link pt-5 pb-5" style="cursor: pointer;">
@@ -411,7 +434,7 @@
                 </div>
             </a>
         </div>
-        <div class="container-fluid home-content contact pl-0 pr-0 mt-0 pt-0 mb-5" style="background-color: #FFFFFF">
+        <div class="container-fluid  contact pl-0 pr-0 mt-0 pt-0 mb-5" style="background-color: #FFFFFF">
             <div class="row justify-content-center pt-5">
                 <h2 class="font-heavy font-semi-large">
                     お問合せ

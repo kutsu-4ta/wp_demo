@@ -66,12 +66,12 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
     }
 
     .has-background {
-        background: rgba(255, 255, 255, 0);
+        background: rgba(245, 245, 245, 0);
         transition: all 0.5s ease-in-out 0s;
     }
 
     .has-background:hover {
-        background: rgba(13, 58, 24, 0.47);
+        background: rgb(255, 255, 255);
         transition: all 0.5s ease-in-out 0s;
     }
 
@@ -161,6 +161,12 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 
     .mt-3vh {
         margin-top: 30vh;
+    }
+    .mt-4vh {
+        margin-top: 40vh;
+    }
+    .mt-5vh {
+        margin-top: 50vh;
     }
 }
 /* ４８１以上１０２４以下　タブレット*/
@@ -484,6 +490,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+.front-content{
+    z-index: 10;
+}
+
 .full-screen {
     height: 100vh;
 }
@@ -498,7 +508,7 @@ body {
 
 /* header iten */
 .wp-block-navigation .wp-block-navigation-item {
-    color: #FFFFFF;
+    color: #000000;
     margin-left: 1.5rem;
     margin-left: 1.5rem;
     padding: 1px;
@@ -512,7 +522,7 @@ body {
     outline-color: #04ea35;
     outline-offset: 1px;
     text-shadow: none;
-    color: #04ea35;
+    color: #23b94d;
     transition: all 1.0s cubic-bezier(0.2, 1, 0.2, 1);
 }
 
@@ -623,8 +633,6 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
     padding-right: var(--wp--custom--spacing--outer);
     padding-left: var(--wp--custom--spacing--outer);
 }
-
-/*header*/
 
 /*footer*/
 #footer a {
@@ -926,16 +934,6 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 /*    background-image: linear-gradient(45deg, #5dd38f 0%, #115e32 100%);*/
 /*}*/
 
-.home-content {
-    position: relative;
-    /*background-color: #FFFFFF;*/
-    /*margin-top: 3rem!important;*/
-    /*padding-bottom: 3rem!important;*/
-    /*border: solid;*/
-    /*border-color: #0000cc;*/
-}
-
-
 .wrapper-top-text{
     margin-bottom: 20rem !important;
 }
@@ -966,91 +964,11 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
     padding: 20px;
 }
 
-/* 背景アニメーション */
-/*
-CSS Reset
-https://meyerweb.com/eric/tools/css/reset/
-*/
-
-/*.back-animation {*/
-/*    position: absolute;*/
-/*    top:0;*/
-/*    width: 100%;*/
-/*    z-index: -1;*/
-/*    !*background-color: #73da83 !important;*!*/
-/*}*/
-
-/*#particles {*/
-/*    background: url('http://arnaudel.perso.neuf.fr/Payekhali/Fonds/1280/AS11-40-5873.jpg') top center;*/
-/*    background-size: cover;*/
-/*    background-repeat: no-repeat;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    overflow: hidden;*/
-/*    padding: 0;*/
-/*}*/
-
-/*#front-text {*/
-/*    position: relative;*/
-/*    margin-bottom: 23rem;*/
-/*}*/
-
-/*@media only screen and (max-width: 1000px) {*/
-/*    h1 {*/
-/*        font-size: 70px;*/
-/*    }*/
-/*}*/
-
-/*@media only screen and (max-width: 800px) {*/
-/*    h1 {*/
-/*        font-size: 48px;*/
-/*    }*/
-/*    h1::after {*/
-/*        height: 8px;*/
-/*    }*/
-/*}*/
-
-/*@media only screen and (max-width: 568px) {*/
-/*    #front-text {*/
-/*        padding: 0 10px;*/
-/*    }*/
-/*    h1 {*/
-/*        font-size: 30px;*/
-/*    }*/
-/*    h1::after {*/
-/*        height: 6px;*/
-/*    }*/
-/*    p {*/
-/*        font-size: 18px;*/
-/*    }*/
-/*    .btn {*/
-/*        font-size: 16px;*/
-/*    }*/
-/*}*/
-
-/*@media only screen and (max-width: 320px) {*/
-/*    h1 {*/
-/*        font-size: 28px;*/
-/*    }*/
-/*    h1::after {*/
-/*        height: 4px;*/
-/*    }*/
-/*}*/
-
-.video-bg-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
-}
 .bg-video {
     position: relative;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 0;
 }
 /*@media (min-aspect-ratio: 16/9) {*/
 /*    .bg-video {*/
@@ -1074,15 +992,16 @@ https://meyerweb.com/eric/tools/css/reset/
 /*    }*/
 /*}*/
 
-.video-mask {
-    position: absolute;
+.back-container {
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    overflow: hidden;
     z-index: -50;
-    background-color: rgba(2, 2, 2, 0.67);
+    margin: 0;
+    padding: 0;
+    background-color: rgba(245, 245, 245, 100);
 }
 
 .video-back {
@@ -1122,52 +1041,52 @@ https://meyerweb.com/eric/tools/css/reset/
     height: 15vh;
 }
 
-/* ノートパソコン */
-@media (min-width: 1025px) and (max-width: 1999px) {
-    .window {
+/*!* ノートパソコン *!*/
+/*@media (min-width: 1025px) and (max-width: 1999px) {*/
+/*    .window {*/
 
-        width: 20vw;
-        max-width: 60vw;
-        height: 15vh;
-        background-color: #bdefd0;
-        border-radius: 0.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /*position: relative;*/
-        border: solid #000000;
-        /*border-width: 10px;*/
-        box-shadow: 0 10px 25px 0 rgba(77, 77, 77, 0.4);
-        /* 固定 */
-        position: fixed;
-        z-index: 2000;
-        left: 74vw;
-    }
-}
-/* スマホ */
-@media (min-width: 0px) and (max-width: 480px) {
-    .window {
-        width: 100%;
-        max-width: 80vw;
-        height: 15vh;
-        background-color: #bdefd0;
-        border-radius: 0.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        border: solid #000000;
-        /*border-width: medium;*/
-        box-shadow: 0 10px 25px 0 rgba(77, 77, 77, 0.4);
-    }
-}
-.close {
-    cursor:pointer;
-    position: absolute;
-    top: 0.1rem;
-    right: 1rem;
-    font-size: 2rem;
-}
+/*        width: 20vw;*/
+/*        max-width: 60vw;*/
+/*        height: 15vh;*/
+/*        background-color: #bdefd0;*/
+/*        border-radius: 0.5rem;*/
+/*        display: flex;*/
+/*        justify-content: center;*/
+/*        align-items: center;*/
+/*        !*position: relative;*!*/
+/*        border: solid #000000;*/
+/*        !*border-width: 10px;*!*/
+/*        box-shadow: 0 10px 25px 0 rgba(77, 77, 77, 0.4);*/
+/*        !* 固定 *!*/
+/*        position: fixed;*/
+/*        z-index: 2000;*/
+/*        left: 74vw;*/
+/*    }*/
+/*}*/
+/*!* スマホ *!*/
+/*@media (min-width: 0px) and (max-width: 480px) {*/
+/*    .window {*/
+/*        width: 100%;*/
+/*        max-width: 80vw;*/
+/*        height: 15vh;*/
+/*        background-color: #bdefd0;*/
+/*        border-radius: 0.5rem;*/
+/*        display: flex;*/
+/*        justify-content: center;*/
+/*        align-items: center;*/
+/*        position: relative;*/
+/*        border: solid #000000;*/
+/*        !*border-width: medium;*!*/
+/*        box-shadow: 0 10px 25px 0 rgba(77, 77, 77, 0.4);*/
+/*    }*/
+/*}*/
+/*.close {*/
+/*    cursor:pointer;*/
+/*    position: absolute;*/
+/*    top: 0.1rem;*/
+/*    right: 1rem;*/
+/*    font-size: 2rem;*/
+/*}*/
 
 /*TODO: SVGアニメーションはファイル分ける*/
 /***************************************************
@@ -2422,3 +2341,10 @@ svg.active .svg-elem-service-marketing-value-21 {
     fill: rgb(0, 0, 0);
 }
 
+
+
+@import url(https://fonts.googleapis.com/css?family=Knewave);
+.mask {
+    -webkit-clip-path: url(#svgPath);
+    clip-path: url(#svgPath);
+}
