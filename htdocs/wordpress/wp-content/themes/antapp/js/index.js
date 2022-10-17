@@ -1,20 +1,45 @@
-function hello(){
-    console.log('hello');
-}
-
 window.addEventListener('load', function(){
-    console.log('deSVG loaded');
     deSVG('.svg', true);
 });
 
 gsap.registerPlugin(ScrollTrigger);
 
-// ローディング時のアニメーション
-// window.addEventListener("load", function () {
-//     gsap.to(".box", {rotation: 27, x: 100, duration: 1});
-// });
+function noscroll(e){
+    e.preventDefault();
+}
 
-console.log($(".service-web-title2"));
+// ローディング時
+window.addEventListener('DOMContentLoaded', function() {
+    console.log('ready');
+    if(location.search == 'undefined' || location.search.length == 0)
+    {
+        document.addEventListener('touchmove', noscroll, {passive: false});
+        document.addEventListener('wheel', noscroll, {passive: false});
+        gsap.to('.loading-container',
+            {
+                autoAlpha: 0,
+                delay: 2.0,
+                duration: 0.2,
+                ease: 'power4.0in',
+            });
+        setTimeout(function(){
+            document.removeEventListener('touchmove', noscroll);
+            document.removeEventListener('wheel', noscroll);
+        },2000);
+    }
+    console.log('loaded');
+})
+
+
+$('#off').on('click', function(){
+    document.addEventListener('touchmove', noscroll, {passive: false});
+    document.addEventListener('wheel', noscroll, {passive: false});
+});
+
+$('#on').on('click', function(){
+    document.removeEventListener('touchmove', noscroll);
+    document.removeEventListener('wheel', noscroll);
+});
 
 
 // SVGアニメーション
@@ -63,9 +88,9 @@ gsap.from('.service-web-flow-text',
 
 
 const back_anime = gsap.timeline({
-    toggleActions: 'reverse', //デフォルトの指定
+    toggleActions: 'reverse',
     scrollTrigger: {
-        trigger: ".home-top-spacer", //アニメーションが始まるトリガーとなる要素
+        trigger: ".home-top-spacer",
         start: "top top",
         end: "bottom top",
         scrub: 1.5,
@@ -79,60 +104,35 @@ back_anime.fromTo(".home-top",
         autoAlpha: 0,
         y:20,
     });
-// back_anime.fromTo(".circle",
-//     {
-//         // autoAlpha: 1,
-//         x: 0,
-//         y: 0,
-//     }, {
-//         // autoAlpha: 0,
-//         x:window.innerWidth / 7,
-//         y:100,
-//     });
-// back_anime.fromTo(".back1",
-//     {
-//         // autoAlpha: 1,
-//         x:0,
-//         y:0,
-//     }, {
-//         // autoAlpha: 0,
-//         x: - (window.innerWidth),
-//         y: -window.innerHeight / 2
-//     });
-// back_anime.fromTo(".back2",
-//     {
-//         autoAlpha: 0,
-//         x: - (window.innerWidth),
-//     }, {
-//         autoAlpha: 1,
-//         x:0,
-//     });
-
+back_anime.fromTo(".back-container",
+    {
+        // autoAlpha: 1,
+        x:0,
+        // y:0
+    }, {
+        // autoAlpha: 0,
+        x:-window.innerWidth/2,
+        // y:-window.innerHeight
+    });
 
 // const back_anime2 = gsap.timeline({
-//     toggleActions: 'reverse', //デフォルトの指定
+//     toggleActions: 'reverse',
 //     scrollTrigger: {
-//         trigger: ".service-web", //アニメーションが始まるトリガーとなる要素
-//         start: "top top",
-//         end: "bottom top",
+//         trigger: ".service-container",
+//         start: "top bottom",
+//         end: "bottom bottom",
 //         scrub: 1.5,
 //     }
 // });
-// back_anime2.fromTo(".circle",
+// back_anime2.fromTo(".video-container",
 //     {
-//         x:window.innerWidth / 7,
-//         y:100,
+//         // autoAlpha: 1,
+//         scale: 1,
 //     }, {
-//         x:- window.innerWidth / 5,
-//         y: window.innerWidth / 10,
-//     });
-// back_anime2.fromTo(".back1",
-//     {
-//         x: - (window.innerWidth),
-//         y: -window.innerHeight / 2
-//     }, {
-//         x: (window.innerWidth / 2),
-//         y: -window.innerHeight / 2
+//         // autoAlpha: 0,
+//         // x:-window.innerWidth/2,
+//         // y:-window.innerHeight
+//         scale: 4,
 //     });
 
 gsap.from('.service-web',
