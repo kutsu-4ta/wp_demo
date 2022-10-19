@@ -161,14 +161,40 @@ gsap.from('.service-marketing',
     });
 gsap.from('.strength',
     {
-        y: 10,
+        y: 20,
         autoAlpha: 0,
         autoAlpha: 0,
         delay: 0.0,
         duration: 2.0,
         ease: 'power4.0in',
         scrollTrigger: {
-            trigger: '.service',
+            trigger: '.strength',
             start: 'top center'
         }
+    });
+
+
+// スマホ版アニメーション
+const back_anime_mobile = gsap.timeline({
+    toggleActions: 'reverse',
+    scrollTrigger: {
+        trigger: ".slogan-mobile",
+        start: "top bottom",
+        end: "bottom bottom",
+        scrub: 1.5,
+    }
+});
+back_anime_mobile.fromTo(".home-top-mobile",
+    {
+        autoAlpha: 1,
+        y:0,
+    }, {
+        autoAlpha: 0,
+        y:20,
+    });
+back_anime_mobile.fromTo(".back-container",
+    {
+        x:0,
+    }, {
+        x:-window.innerWidth/2,
     });
