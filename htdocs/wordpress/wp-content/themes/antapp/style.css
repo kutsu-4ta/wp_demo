@@ -65,16 +65,6 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
         display: none;
     }
 
-    .has-background {
-        background: rgba(245, 245, 245, 0);
-        transition: all 0.5s ease-in-out 0s;
-    }
-
-    .has-background:hover {
-        background: rgb(255, 255, 255);
-        transition: all 0.5s ease-in-out 0s;
-    }
-
     .font-heavy {
         font-weight: 600;
     }
@@ -178,6 +168,16 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
     .video-container {
         width: 100%;
         padding-top:12vh;
+    }
+
+    .has-background {
+        background: rgba(231, 231, 231, 0.8);
+        transition: all 0.5s ease-in-out 0s;
+    }
+
+    .has-background:hover {
+        background: rgb(255, 255, 255);
+        transition: all 0.5s ease-in-out 0s;
     }
 
     .wp-block-page-list {
