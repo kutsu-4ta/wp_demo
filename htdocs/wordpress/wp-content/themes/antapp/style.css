@@ -179,6 +179,41 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
         width: 100%;
         padding-top:12vh;
     }
+
+    .wp-block-page-list {
+        display: flex;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    .wp-block-page-list li {
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+    }
+
+    .wp-block-page-list li a {
+        padding: 0.5vw;
+        text-decoration: none;
+        color: #000000;
+        margin-right: 0.5vw;
+        margin-left: 0.5vw;
+        outline-offset: 20px;
+        cursor: pointer;
+    }
+
+    .wp-block-page-list li a:active {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .wp-block-page-list li a:hover {
+        outline: 1px solid;
+        outline-color: #04ea35;
+        outline-offset: 2px;
+        text-shadow: none;
+        color: #1b933d;
+        transition: all 1.0s cubic-bezier(0.2, 1, 0.2, 1);
+    }
 }
 
 /* ０から４８０　スマホ)*/
@@ -502,31 +537,6 @@ body {
     font-size: 1.5rem;
 }
 
-/* header iten */
-.wp-block-navigation .wp-block-navigation-item {
-    color: #000000;
-    font-size: 1.3vw;
-    margin-left: 1.5rem;
-    margin-left: 1.5rem;
-    padding: 1px;
-    outline-offset: 20px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.wp-block-navigation .wp-block-navigation-item:hover {
-    outline: 1px solid;
-    outline-color: #04ea35;
-    outline-offset: 1px;
-    text-shadow: none;
-    color: #23b94d;
-    transition: all 1.0s cubic-bezier(0.2, 1, 0.2, 1);
-}
-
-.wp-block-navigation .wp-block-navigation-item a:hover,
-.wp-block-navigation .wp-block-navigation-item a:focus {
-    text-decoration: none;
-}
 
 /*!**/
 /* * Search and File Block button styles.*/
