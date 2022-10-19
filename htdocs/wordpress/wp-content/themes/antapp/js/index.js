@@ -159,22 +159,44 @@ gsap.from('.service-marketing',
             start: 'top center'
         }
     });
-gsap.from('.strength',
+
+const strength_anime = gsap.timeline({
+    toggleActions: 'none',
+    scrollTrigger: {
+        trigger: ".strength",
+        start: "top center",
+        end: "bottom bottom",
+        // scrub: 1.5,
+    }
+});
+strength_anime.fromTo(".strength01",
     {
-        y: 20,
         autoAlpha: 0,
+        y:20,
+    }, {
+        autoAlpha: 1,
+        y:0,
+    });
+strength_anime.fromTo(".strength02",
+    {
         autoAlpha: 0,
-        delay: 0.0,
-        duration: 2.0,
-        ease: 'power4.0in',
-        scrollTrigger: {
-            trigger: '.strength',
-            start: 'top center'
-        }
+        y:20,
+    }, {
+        autoAlpha: 1,
+        y:0,
+    });
+strength_anime.fromTo(".strength03",
+    {
+        autoAlpha: 0,
+        y:20,
+    }, {
+        autoAlpha: 1,
+        y:0,
     });
 
-
 // スマホ版アニメーション
+if($(window).width() <= 480){
+console.log('mobile loaded')
 const back_anime_mobile = gsap.timeline({
     toggleActions: 'reverse',
     scrollTrigger: {
@@ -198,3 +220,4 @@ back_anime_mobile.fromTo(".back-container",
     }, {
         x:-window.innerWidth/2,
     });
+}

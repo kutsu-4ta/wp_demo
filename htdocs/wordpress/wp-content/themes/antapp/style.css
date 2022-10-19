@@ -88,11 +88,11 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
     }
 
     .font-middle {
-        font-size: 2.2vw;
+        font-size: 2.0vw;
     }
 
     .font-semi-middle{
-        font-size: 1.7vw;
+        font-size: 1.4vw;
     }
 
     .font-small {
@@ -182,7 +182,7 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 }
 
 /* ０から４８０　スマホ)*/
-@media (min-width: 0px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 479px) {
     .display-wide {
         display: none;
     }
@@ -225,17 +225,17 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
         display: none;
     }
 
-    .drawer-menu {
-        position: fixed;
-        top: -100vh;
-        right: 0;
-        height: 10px;
-        width: 100%;
-        transition: all 0.5s ease-in-out 0s;
-        background-color: rgba(10, 1, 1, 0.85);
-        overflow: visible;
-        z-index: 20;
-    }
+    /*.drawer-menu {*/
+    /*    position: fixed;*/
+    /*    top: -100vh;*/
+    /*    right: 0;*/
+    /*    height: 10px;*/
+    /*    width: 100%;*/
+    /*    transition: all 0.5s ease-in-out 0s;*/
+    /*    !*background-color: rgba(211, 211, 211, 0.85);*!*/
+    /*    overflow: visible;*/
+    /*    z-index: 20;*/
+    /*}*/
 
     .drawer-menu .a {
         text-decoration: none;
@@ -321,17 +321,17 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 
     a {
         text-decoration: none;
-        color: #ffffff;
+        color: #000000;
     }
 
     a:active {
         text-decoration: none;
-        color: #ffffff;
+        color: #000000;
     }
 
     a:hover {
         text-decoration: none;
-        color: #ffffff;
+        color: #000000;
     }
 
     ul {
@@ -347,10 +347,11 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
         top: -100vh;
         right: 0;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.93);
-        z-index: 20;
         height: 100vh;
-        overflow-y: scroll;
+        background-color: rgba(245, 245, 245, 100);
+        z-index: 20;
+        transition: all 0.5s ease-in-out 0s;
+        overflow: visible;
     }
 
     .drawer-menu-list {
@@ -619,9 +620,6 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 
 .wp-block-navigation__responsive-container.is-menu-open {
 	padding-top: var(--wp--custom--spacing--outer);
-	/*padding-bottom: var(--wp--custom--spacing--large);*/
-	/*padding-right: var(--wp--custom--spacing--outer);*/
-	/*padding-left: var(--wp--custom--spacing--outer);*/
     width: max-content;
     margin-left: auto;
     transform: translateY(2rem);
