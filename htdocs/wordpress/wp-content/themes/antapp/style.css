@@ -25,11 +25,6 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
         display: none;
     }
 
-    .font-heavy {
-        font-weight: 600;
-        color: #c07111;
-    }
-
     .font-large {
         font-size: 2.5rem;
     }
@@ -65,12 +60,8 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
         display: none;
     }
 
-    .font-heavy {
-        font-weight: 600;
-    }
-
     .font-large {
-        font-size: 3.8vw;
+        font-size: 3.4vw;
     }
 
     .font-semi-large {
@@ -87,6 +78,10 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 
     .font-small {
         font-size: 1.0vw;
+    }
+
+    .font-heavy{
+        font-weight: 600;
     }
 
     .slogan-background-middle {
@@ -542,6 +537,20 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+h1 {
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+}
+
+.wp-block-post-title a {
+    text-decoration: none;
+    font-size: 2.0vw;
+}
+
 .front-content{
     z-index: 10;
 }
@@ -706,9 +715,9 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
     color: #FFFFFF;
 }
 
-.font-mincho {
-    font-family: Serif;
-}
+/*.font-mincho {*/
+/*    font-family: Serif;*/
+/*}*/
 
 /* form */
 /*.form-label{*/
@@ -937,12 +946,12 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
     color: #FFFFFF;
     transition: 0.1s ease-in-out;
     font-weight: 600;
-    background: #43b659;
+    background: #f6ed17;
     /*border-radius: 8px;*/
-    border-bottom: solid 0.1rem #115e32;
+    border-bottom: solid 0.1rem #7e780a;
 }
 .btn-square a:hover {
-    border-bottom: solid 0rem #3a6743;
+    border-bottom: solid 0rem #ffffff;
     transform: translateY(0.2rem);
     text-decoration: none;
 }
