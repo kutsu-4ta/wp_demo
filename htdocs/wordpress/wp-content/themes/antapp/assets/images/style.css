@@ -1,0 +1,650 @@
+/*
+Theme Name: Antapp
+Author: Antapp Team
+Description: Antappのカスタムテーマ
+Requires at least: 5.9
+Tested up to: 6.0
+Requires PHP: 5.6
+Version: 1.2
+License: GNU General Public License v2 or later
+Text Domain: antapp
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments
+*/
+
+/*
+ * Font smoothing.
+ * This is a niche setting that will not be available via Global Styles.
+ * https://github.com/WordPress/gutenberg/issues/35934
+ */
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+.full-screen {
+    height: 100vh;
+}
+
+.half-screen {
+    height: 50vh;
+}
+
+.pt-1vh {
+    padding-top: 10vh;
+}
+
+.pt-2vh {
+    padding-top: 20vh;
+}
+
+.pt-3vh {
+    padding-top: 30vh;
+}
+
+.pt-4vh {
+    padding-top: 40vh;
+}
+
+.pt-5vh {
+    padding-top: 50vh;
+}
+
+.pb-1vh {
+    padding-bottom: 10vh;
+}
+
+.pb-2vh {
+    padding-bottom: 20vh;
+}
+
+.pb-3vh {
+    padding-bottom: 30vh;
+}
+
+.pb-4vh {
+    padding-bottom: 40vh;
+}
+
+.pb-5vh {
+    padding-bottom: 50vh;
+}
+
+.mt-1vh {
+    margin-top: 10vh;
+}
+
+.mt-2vh {
+    margin-top: 20vh;
+}
+
+.mt-3vh {
+    margin-top: 30vh;
+}
+
+.h3 .font-middle{
+    font-size: 1.5rem;
+}
+/*a {*/
+/*	!*text-decoration-thickness: 1px;*!*/
+/*	!*text-underline-offset: 0.25ch;*!*/
+/*}*/
+
+/*a:hover,*/
+/*a:focus {*/
+/*	!*text-decoration-style: dashed;*!*/
+/*}*/
+
+/*a:active {*/
+/*	!*text-decoration: none;*!*/
+/*}*/
+
+/* ナビゲーションバーアイテム */
+.wp-block-navigation .wp-block-navigation-item {
+    margin-left: 1.5rem;
+    margin-left: 1.5rem;
+    padding: 1px;
+    outline-offset: 20px;
+    cursor: pointer;
+}
+
+.wp-block-navigation .wp-block-navigation-item:hover {
+    outline: 1px solid;
+    outline-color: #04ea35;
+    outline-offset: 1px;
+    text-shadow: none;
+    color: #04ea35;
+    transition: all 1.0s cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+.wp-block-navigation .wp-block-navigation-item a:hover,
+.wp-block-navigation .wp-block-navigation-item a:focus {
+    text-decoration: none;
+}
+
+/*!**/
+/* * Search and File Block button styles.*/
+/* * Necessary until the following issues are resolved in Gutenberg:*/
+/* * https://github.com/WordPress/gutenberg/issues/36444*/
+/* * https://github.com/WordPress/gutenberg/issues/27760*/
+/* *!*/
+
+.wp-block-search__button,
+.wp-block-file .wp-block-file__button {
+	/*background-color: var(--wp--preset--color--primary);*/
+	border-radius: 0;
+	border: none;
+	/*color: var(--wp--preset--color--background);*/
+	/*font-size: var(--wp--preset--font-size--medium);*/
+	padding: calc(.667em + 2px) calc(1.333em + 2px);
+}
+
+/*!**/
+/* * Button hover styles.*/
+/* * Necessary until the following issue is resolved in Gutenberg:*/
+/* * https://github.com/WordPress/gutenberg/issues/27075*/
+/* *!*/
+
+.wp-block-search__button:hover,
+.wp-block-file .wp-block-file__button:hover,
+.wp-block-button__link:hover {
+	opacity: 0.90;
+}
+
+/*
+ * Alignment styles.
+ * These rules are temporary, and should not be relied on or
+ * modified too heavily by themes or plugins that build on
+ * Twenty Twenty-Two. These are meant to be a precursor to
+ * a global solution provided by the Block Editor.
+ *
+ * Relevant issues:
+ * https://github.com/WordPress/gutenberg/issues/35607
+ * https://github.com/WordPress/gutenberg/issues/35884
+ */
+
+.wp-site-blocks,
+body > .is-root-container,
+.edit-post-visual-editor__post-title-wrapper,
+.wp-block-group.alignfull,
+.wp-block-group.has-background,
+.wp-block-cover.alignfull,
+.is-root-container .wp-block[data-align="full"] > .wp-block-group,
+.is-root-container .wp-block[data-align="full"] > .wp-block-cover {
+	padding-left: var(--wp--custom--spacing--outer);
+	padding-right: var(--wp--custom--spacing--outer);
+}
+
+.wp-site-blocks .alignfull,
+.wp-site-blocks > .wp-block-group.has-background,
+.wp-site-blocks > .wp-block-cover,
+.wp-site-blocks > .wp-block-template-part > .wp-block-group.has-background,
+.wp-site-blocks > .wp-block-template-part > .wp-block-cover,
+body > .is-root-container > .wp-block-cover,
+body > .is-root-container > .wp-block-template-part > .wp-block-group.has-background,
+body > .is-root-container > .wp-block-template-part > .wp-block-cover,
+.is-root-container .wp-block[data-align="full"] {
+	margin-left: calc(-1 * var(--wp--custom--spacing--outer)) !important;
+	margin-right: calc(-1 * var(--wp--custom--spacing--outer)) !important;
+	width: unset;
+}
+
+/* Blocks inside columns don't have negative margins. */
+.wp-site-blocks .wp-block-columns .wp-block-column .alignfull,
+.is-root-container .wp-block-columns .wp-block-column .wp-block[data-align="full"],
+/* We also want to avoid stacking negative margins. */
+.wp-site-blocks .alignfull:not(.wp-block-group) .alignfull,
+.is-root-container .wp-block[data-align="full"] > *:not(.wp-block-group) .wp-block[data-align="full"] {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width: inherit;
+}
+
+/*
+ * Responsive menu container padding.
+ * This ensures the responsive container inherits the same
+ * spacing defined above. This behavior may be built into
+ * the Block Editor in the future.
+ */
+
+.wp-block-navigation__responsive-container.is-menu-open {
+	padding-top: var(--wp--custom--spacing--outer);
+	padding-bottom: var(--wp--custom--spacing--large);
+	padding-right: var(--wp--custom--spacing--outer);
+	padding-left: var(--wp--custom--spacing--outer);
+}
+
+/*header*/
+.btn-header {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    transition: .4s;
+    width: 6rem;
+    text-align: center;
+}
+.btn-header:hover {
+    background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+
+.text-header-btn {
+    vertical-align: middle;
+    font-size: 1.0em;
+}
+
+/*footer*/
+#footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* block */
+.main-block {
+    margin-top: 0;
+    z-index: -1;
+}
+
+/*Button*/
+.btn {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    transition: .4s;
+}
+
+.btn:hover {
+    background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+
+.color-white {
+    color: #FFFFFF;
+}
+
+.font-mincho {
+    font-family: Serif;
+}
+
+.font-heavy {
+    font-weight: 600;
+}
+
+.font-large {
+    font-size: 3.5rem;
+}
+
+.font-semi-large {
+    font-size: 2.5rem;
+}
+
+.font-middle {
+    font-size: 1.5rem;
+}
+
+/* form */
+.form-label{
+    text-align: right;
+    font-family: 'Source Sans Pro',arial,sans-serif;
+}
+.form-submit{
+    text-align: center;
+}
+.form-textarea{
+    font-size: 1em;
+    padding: 15px 10px 10px;
+    font-family: 'Source Sans Pro',arial,sans-serif;
+    border: 1px solid #cecece;
+    background: #ffffff;
+    color: #020202;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 600px;
+    height:250px;
+}
+
+.form-input {
+    font-size: 1em;
+    padding: 15px 10px 10px;
+    font-family: 'Source Sans Pro',arial,sans-serif;
+    border: 1px solid #cecece;
+    background: #ffffff;
+    color: #020202;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 600px;
+}
+::-webkit-input-placeholder {
+    color: #606060;
+}
+:-moz-placeholder {
+    color: #606060;
+}
+::-moz-placeholder {
+    color: #606060;
+}
+:-ms-input-placeholder {
+    color: #606060;
+}
+.button {
+    margin-top:15px;
+    margin-bottom:25px;
+    background-color:#2ABCA7;
+    padding: 12px 45px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #2ABCA7;
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: inline-block;
+    cursor: pointer;
+    width:30%;
+    color:#fff;
+}
+button:hover, .button:hover {
+    background:#19a08c;
+}
+label.error {
+    font-family:'Source Sans Pro',arial,sans-serif;
+    font-size:1em;
+    display:block;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#d89c9c;
+    width: 80%;
+    margin:auto;
+    color: #FAFAFA;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+
+
+/*button アニメーション*/
+/*
+    Spot is the span on the inside of the href that
+    fills the parent and makes the hover and link work
+    for the entire div
+*/
+
+.spot {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+/*
+    This is the outer svg wrapper that the SVG itself will
+    fill. Multiple svg-wrapper classes can be put side by side.
+*/
+
+.svg-wrapper {
+    margin-top: 0;
+    position: relative;
+    width: 150px;
+    /*make sure to use same height/width as in the html*/
+    height: 40px;
+    display: inline-block;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+.svg-wrapper-large {
+    margin-top: 0;
+    /*position: relative;*/
+    width: 300px;
+    /*make sure to use same height/width as in the html*/
+    height: 80px;
+    display: inline-block;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+#shape {
+    stroke-width: 6px;
+    fill: transparent;
+    stroke: #1061ff;
+    stroke-dasharray: 85 400;
+    stroke-dashoffset: -220;
+    transition: 1s all ease;
+}
+
+#btn-text {
+    margin-top: -35px;
+    text-align: center;
+    color: #000000;
+}
+
+#btn-text-large {
+    margin-top: -60px;
+    width:300px;
+    text-align: center;
+    color: #000000;
+}
+
+.btn-text-font-large {
+    font-size: 23px;
+    padding-top: -27px
+}
+
+#btn-text a {
+    color: #1061ff;
+    text-decoration: none;
+}
+#btn-text a:hover {
+    color: #04ea35;
+    text-decoration: none;
+    transition: all 2.0s cubic-bezier(0.2, 1, 0.2, 1);
+}
+/*
+    Changing the shape on hover. I change the color of the stroke,
+make it thinner, then set it to again wrap around the entire parent element.
+*/
+.svg-wrapper:hover #shape {
+    stroke-dasharray: 50 0;
+    stroke-width: 3px;
+    stroke-dashoffset: 0;
+    stroke: #04ea35;
+}
+
+
+/*.btn-form-submit {*/
+/*    display: inline-block;*/
+/*    padding: 7px 20px;*/
+/*    border-radius: 25px;*/
+/*    text-decoration: none;*/
+/*    color: #FFF;*/
+/*    background-image: linear-gradient(45deg, #19bcc0 0%, #34e07c 100%);*/
+/*    transition: .4s;*/
+/*}*/
+/*.btn-form-submit:hover {*/
+/*    background-image: linear-gradient(45deg, #5dd38f 0%, #115e32 100%);*/
+/*}*/
+
+.home-content {
+    position: relative;
+    /*background-color: #FFFFFF;*/
+    /*margin-top: 3rem!important;*/
+    /*padding-bottom: 3rem!important;*/
+    /*border: solid;*/
+    /*border-color: #0000cc;*/
+}
+
+
+.wrapper-top-text{
+    margin-bottom: 20rem !important;
+}
+
+/*text*/
+.container-background {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.text-main {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.trigger {
+    /*position: absolute;*/
+    top: 75vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+/* 背景アニメーション */
+/*
+CSS Reset
+https://meyerweb.com/eric/tools/css/reset/
+*/
+
+/*.back-animation {*/
+/*    position: absolute;*/
+/*    top:0;*/
+/*    width: 100%;*/
+/*    z-index: -1;*/
+/*    !*background-color: #73da83 !important;*!*/
+/*}*/
+
+/*#particles {*/
+/*    background: url('http://arnaudel.perso.neuf.fr/Payekhali/Fonds/1280/AS11-40-5873.jpg') top center;*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    overflow: hidden;*/
+/*    padding: 0;*/
+/*}*/
+
+/*#front-text {*/
+/*    position: relative;*/
+/*    margin-bottom: 23rem;*/
+/*}*/
+
+/*@media only screen and (max-width: 1000px) {*/
+/*    h1 {*/
+/*        font-size: 70px;*/
+/*    }*/
+/*}*/
+
+/*@media only screen and (max-width: 800px) {*/
+/*    h1 {*/
+/*        font-size: 48px;*/
+/*    }*/
+/*    h1::after {*/
+/*        height: 8px;*/
+/*    }*/
+/*}*/
+
+/*@media only screen and (max-width: 568px) {*/
+/*    #front-text {*/
+/*        padding: 0 10px;*/
+/*    }*/
+/*    h1 {*/
+/*        font-size: 30px;*/
+/*    }*/
+/*    h1::after {*/
+/*        height: 6px;*/
+/*    }*/
+/*    p {*/
+/*        font-size: 18px;*/
+/*    }*/
+/*    .btn {*/
+/*        font-size: 16px;*/
+/*    }*/
+/*}*/
+
+/*@media only screen and (max-width: 320px) {*/
+/*    h1 {*/
+/*        font-size: 28px;*/
+/*    }*/
+/*    h1::after {*/
+/*        height: 4px;*/
+/*    }*/
+/*}*/
+
+.video-bg-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+.bg-video {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+@media (min-aspect-ratio: 16/9) {
+    .bg-video {
+        /*height: 300%;*/
+        /*top: -100%;*/
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .bg-video {
+        /*width: 300%;*/
+        /*left: -100%;*/
+        /*max-width: initial;*/
+    }
+}
+@media all and (max-width: 767px) {
+    /*.video-bg-container {*/
+    /*    background: url('poster.jpg') no-repeat 50% / cover;*/
+    /*}*/
+    /*.bg-video {*/
+    /*    display: none;*/
+    /*}*/
+}
+
+.video-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -50;
+    background-color: rgba(255, 255, 255, 0.16);
+}

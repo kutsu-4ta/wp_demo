@@ -10,22 +10,29 @@
 			]
 		},
 		{
-			"name": "page-large-header",
-			"title": "Page (Large Header)",
+			"name": "feature",
+			"title": "feature",
 			"postTypes": [
 				"page"
 			]
 		},
 		{
-			"name": "single-no-separators",
-			"title": "Single Post (No Separators)",
+			"name": "about",
+			"title": "about",
 			"postTypes": [
-				"post"
+				"page"
 			]
 		},
 		{
-			"name": "page-no-separators",
-			"title": "Page (No Separators)",
+			"name": "blog",
+			"title": "blog",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "contact",
+			"title": "contact",
 			"postTypes": [
 				"page"
 			]
@@ -138,7 +145,7 @@
 		},
 		"custom": {
 			"spacing": {
-				"small": "max(1.25rem, 5vw)",
+				"small": "0",
 				"medium": "clamp(2rem, 8vw, calc(4 * var(--wp--style--block-gap)))",
 				"large": "clamp(4rem, 10vw, 8rem)",
 				"outer": "var(--wp--custom--spacing--small, 1.25rem)"
@@ -218,7 +225,7 @@
 		},
 		"layout": {
 			"contentSize": "650px",
-			"wideSize": "1000px"
+			"wideSize": "100%"
 		}
 	},
 	"styles": {
@@ -352,16 +359,6 @@
 		{
 			"name": "header",
 			"title": "Header",
-			"area": "header"
-		},
-		{
-			"name": "header-large-dark",
-			"title": "Header (Dark, large)",
-			"area": "header"
-		},
-		{
-			"name": "header-small-dark",
-			"title": "Header (Dark, small)",
 			"area": "header"
 		},
 		{

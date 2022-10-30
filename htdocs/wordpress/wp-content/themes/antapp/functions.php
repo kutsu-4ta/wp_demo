@@ -59,7 +59,6 @@ add_action('after_setup_theme', 'menu_init');
 
 /* カスタム投稿タイプを追加 */
 add_action( 'init', 'create_post_type' );
-
 function create_post_type()
 {
     // 「お役立ち記事」のカスタム投稿追加
