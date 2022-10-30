@@ -695,6 +695,26 @@ h1 {
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.37);
 }
 
+
+.my-link-circle {
+	color: #0c0c0c;
+	background-color: #dfdfdf;
+	border: solid #cecece;
+	border-width: thin;
+	border-radius: 50%;
+	display: flex;
+	margin: auto;
+	padding: 3vw;
+	width: fit-content;
+	cursor: pointer;
+	box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
+}
+
+.my-link-circle:hover {
+	text-decoration: none;
+	color: blue;
+}
+
 .wrapper-top-text{
 	margin-bottom: 20rem !important;
 }
