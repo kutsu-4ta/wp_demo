@@ -724,6 +724,30 @@ h1 {
 	color: #000000;
 }
 
+/* 白い四角ボタン */
+.btn-square-white a {
+	width: fit-content;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 15rem;
+	padding: 0.6rem 1.5rem;
+	color: #000000;
+	transition: 0.1s ease-in-out;
+	font-weight: 600;
+	background: #ffffff;
+	/*border-radius: 8px;*/
+	border-bottom: solid 0.1rem #070707;
+}
+.btn-square-white a:hover {
+	border-bottom: solid 0rem #ffffff;
+	transform: translateY(0.2rem);
+	text-decoration: none;
+	color: #000000;
+}
+
 .my-tile {
 	cursor: pointer;
 	display: flex;
