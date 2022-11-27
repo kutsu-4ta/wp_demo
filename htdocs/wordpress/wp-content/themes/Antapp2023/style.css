@@ -153,7 +153,7 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 
 /* 2000以上　ワイドモニター */
 @media (min-width: 2000px) {
-	.display-wide {
+	.display-middle {
 		display: none;
 	}
 	.display-small {
@@ -169,6 +169,41 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 	.display-small {
 		display: none;
 	}
+
+	/* フォントサイズとか */
+	.font-title {
+		font-size:  2.8vw;
+	}
+
+	.font-semi-title {
+		font-size: 1.8vw;
+	}
+
+	.font-sub-title {
+		font-size: 1.7vw;
+	}
+
+	.font-sentence-title {
+		font-size: 1.4vw;
+	}
+
+	.font-sentence {
+		font-size: 1.0vw;
+	}
+
+	.font-sub-sentence{
+		font-size: 0.8vw;
+	}
+
+	.font-small-sentence {
+		font-size: 1.0vw;
+	}
+
+	.font-heavy{
+		font-weight: 600;
+	}
+	/* /フォントとか */
+
 }
 /* 479以下　スマホ */
 @media (min-width: 0px) and (max-width: 479px) {
@@ -338,39 +373,43 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 		color: #34e07c;
 	}
 	/*　/ドロワー */
+
+	/* フォントサイズとか */
+	.font-title {
+		font-size:  4.8vw;
+	}
+
+	.font-semi-title {
+		font-size: 4.4vw;
+	}
+
+	.font-sub-title {
+		font-size: 4.2vw;
+	}
+
+	.font-sentence-title {
+		font-size: 4.0vw;
+	}
+
+	.font-sentence {
+		font-size: 3.8vw;
+	}
+
+	.font-sub-sentence{
+		font-size: 3.5vw;
+	}
+
+	.font-small-sentence {
+		font-size: 3.0vw;
+	}
+
+	.font-heavy{
+		font-weight: 600;
+	}
+	/* /ドロワー */
 }
 
-.font-title {
-	font-size:  2.8vw;
-}
 
-.font-semi-title {
-	font-size: 1.8vw;
-}
-
-.font-sub-title {
-	font-size: 1.7vw;
-}
-
-.font-sentence-title {
-	font-size: 1.4vw;
-}
-
-.font-sentence {
-	font-size: 1.0vw;
-}
-
-.font-sub-sentence{
-	font-size: 0.8vw;
-}
-
-.font-small-sentence {
-	font-size: 1.0vw;
-}
-
-.font-heavy{
-	font-weight: 600;
-}
 
 .slogan-background-middle {
 	margin-bottom: -7vh;
@@ -762,6 +801,18 @@ h1 {
 }
 
 .back-container {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -50;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(245, 245, 245, 100);
+}
+
+.back-container-m {
 	position: fixed;
 	top: 0;
 	right: 0;

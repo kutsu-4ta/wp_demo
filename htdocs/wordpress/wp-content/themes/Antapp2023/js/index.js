@@ -200,7 +200,7 @@ console.log('mobile loaded')
 const back_anime_mobile = gsap.timeline({
     toggleActions: 'reverse',
     scrollTrigger: {
-        trigger: ".slogan-mobile",
+        trigger: ".home-about-mobile",
         start: "top bottom",
         end: "bottom bottom",
         scrub: 1.5,
@@ -218,6 +218,6 @@ back_anime_mobile.fromTo(".back-container",
     {
         x:0,
     }, {
-        x:-window.innerWidth/2,
+        x:-window.innerWidth/3,
     });
 }
