@@ -151,6 +151,15 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 	padding-left: var(--wp--custom--spacing--outer);
 }
 
+/* 2000以上　ワイドモニター */
+@media (min-width: 2000px) {
+	.display-wide {
+		display: none;
+	}
+	.display-small {
+		display: none;
+	}
+}
 
 /* 480以上　ノートパソコン、デスクトップ */
 @media (min-width: 480px) and (max-width: 1999px) {
@@ -332,11 +341,11 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 }
 
 .font-title {
-	font-size: 3.0vw;
+	font-size:  2.8vw;
 }
 
 .font-semi-title {
-	font-size: 2.0vw;
+	font-size: 1.8vw;
 }
 
 .font-sub-title {
@@ -763,6 +772,82 @@ h1 {
 	padding: 0;
 	background-color: rgba(245, 245, 245, 100);
 }
+
+/* external css: flickity.css */
+
+.carousel {
+	background: #9d9d9d;
+}
+
+.carousel-cell {
+	width: 66%;
+	height: 200px;
+	margin-right: 10px;
+	background: #a4a4a4;
+	border-radius: 5px;
+	counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+	display: block;
+	text-align: center;
+	line-height: 200px;
+	font-size: 80px;
+	color: #000000;
+}
+
+/*矢印が右に移動する*/
+.btnarrow4{
+	/*矢印と下線の基点とするためrelativeを指定*/
+	position: relative;
+	/*形状*/
+	display: inline-block;
+	padding: 0 20px;
+	color: #333;
+	text-decoration: none;
+	outline: none;
+}
+
+/*矢印と下線の形状*/
+.btnarrow4::before{
+	content: '';
+	/*絶対配置で下線の位置を決める*/
+	position: absolute;
+	bottom:-8px;
+	left:15%;
+	/*下線の形状*/
+	width: 85%;
+	height: 1px;
+	background:#333;
+	/*アニメーションの指定*/
+	transition: all .3s;
+}
+
+.btnarrow4::after{
+	content: '';
+	/*絶対配置で矢印の位置を決める*/
+	position: absolute;
+	bottom:-3px;
+	right:0;
+	/*矢印の形状*/
+	width: 15px;
+	height:1px;
+	background:#333;
+	transform: rotate(35deg);
+	/*アニメーションの指定*/
+	transition: all .3s;
+}
+
+/*hoverした際の移動*/
+.btnarrow4:hover::before{
+	left:20%;
+}
+
+.btnarrow4:hover::after{
+	right:-5%;
+}
+
 
 /*TODO: SVGアニメーションはファイル分ける*/
 /***************************************************

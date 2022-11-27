@@ -71,6 +71,13 @@ function add_my_styles_and_scripts() {
         '5.2.0'
     );
 
+    wp_enqueue_style(
+        'flickity-css',
+        get_template_directory_uri() . '/css/flickity.css',
+        array(),
+        '2.3.0'
+        );
+
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array('parent-style'));
 
@@ -106,6 +113,10 @@ function add_scripts() {
     // desvg.js
     $timestamp = date( 'Ymdgis', filemtime(MY_DIR_PATH . '/js/desvg/desvg.js' ));
     wp_enqueue_script( 'desvg_js', MY_DIR_URL . '/js/desvg/desvg.js', [], $timestamp, true);
+
+    // flickity.js
+    $timestamp = date( 'Ymdgis', filemtime(MY_DIR_PATH . '/js/flickity/flickity.pkgd.js' ));
+    wp_enqueue_script( 'flickity_js', MY_DIR_URL . '/js/flickity/flickity.pkgd.js', [], $timestamp, true);
 }
 
 /**
@@ -261,8 +272,6 @@ function custom_orderby_columns( $vars ) {
 
 }
 add_filter( 'request', 'custom_orderby_columns' );
-
-
 
 // Add block patterns
 require get_template_directory() . '/inc/block-patterns.php';
