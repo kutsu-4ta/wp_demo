@@ -40,13 +40,14 @@ body {
  */
 
 a {
-	text-decoration-thickness: 1px;
-	text-underline-offset: 0.25ch;
+	/*text-decoration-thickness: 1px;*/
+	/*text-underline-offset: 0.25ch;*/
 }
 
 a:hover,
 a:focus {
-	text-decoration-style: dashed;
+	color: blue;
+	/*text-decoration-style: dashed;*/
 }
 
 a:active {
@@ -172,7 +173,7 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 
 	/* フォントサイズとか */
 	.font-title {
-		font-size:  2.8vw;
+		font-size:  2.5vw;
 	}
 
 	.font-semi-title {
@@ -587,14 +588,8 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 	color: #1b933d;
 	transition: all 1.0s cubic-bezier(0.2, 1, 0.2, 1);
 }
-
-h1 {
-	font-family: "Helvetica Neue",
-	Arial,
-	"Hiragino Kaku Gothic ProN",
-	"Hiragino Sans",
-	Meiryo,
-	sans-serif;
+.font-serif {
+	font-family: Serif;
 }
 
 .wp-block-post-title a {
@@ -712,19 +707,18 @@ h1 {
 	padding: 0.6rem 1.5rem;
 	color: #000000;
 	transition: 0.1s ease-in-out;
-	font-weight: 600;
-	background: #f6ed17;
-	/*border-radius: 8px;*/
-	border-bottom: solid 0.1rem #070707;
+	font-weight: 500;
+	background: #FFF176;
+	border-radius: 20px;
+	border: solid 1.5px #070707;
+	text-decoration: none;
 }
 .btn-square a:hover {
-	border-bottom: solid 0rem #ffffff;
-	transform: translateY(0.2rem);
+	background: #faf5c7;
 	text-decoration: none;
-	color: #000000;
 }
 
-/* 白い四角ボタン */
+/* 青い四角ボタン */
 .btn-square-white a {
 	width: fit-content;
 	position: relative;
@@ -736,16 +730,19 @@ h1 {
 	padding: 0.6rem 1.5rem;
 	color: #000000;
 	transition: 0.1s ease-in-out;
-	font-weight: 600;
-	background: #ffffff;
-	/*border-radius: 8px;*/
-	border-bottom: solid 0.1rem #070707;
+	font-weight: 500;
+	background: #66da97;
+	border-radius: 20px;
+	border: solid 1.5px #070707;
+	/*box-shadow: 0px 4px 10px rgba(52, 52, 52, 0.37);*/
+	text-decoration: none;
 }
 .btn-square-white a:hover {
-	border-bottom: solid 0rem #ffffff;
-	transform: translateY(0.2rem);
+	/*box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);*/
+	/*transform: translateY(0.5px);*/
+	background: #97ecb6;
 	text-decoration: none;
-	color: #000000;
+
 }
 
 .my-tile {
@@ -879,7 +876,7 @@ h1 {
 	/*形状*/
 	display: inline-block;
 	padding: 0 20px;
-	color: #333;
+	color: #2e8da3;
 	text-decoration: none;
 	outline: none;
 }
@@ -895,6 +892,7 @@ h1 {
 	width: 85%;
 	height: 1px;
 	background:#333;
+	color: #2e8da3;
 	/*アニメーションの指定*/
 	transition: all .3s;
 }
@@ -910,6 +908,7 @@ h1 {
 	height:1px;
 	background:#333;
 	transform: rotate(35deg);
+	color: #2e8da3;
 	/*アニメーションの指定*/
 	transition: all .3s;
 }
