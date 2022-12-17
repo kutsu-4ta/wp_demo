@@ -1,0 +1,126 @@
+<?xml version="1.0" standalone="no"?><!-- Generator: Gravit.io -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate"
+     viewBox="0 0 525 196" width="525" height="196">
+    <defs>
+        <clipPath id="_clipPath_unBUrdipTyzzdVyrihIRvSO8gfQyEAUW">
+            <rect width="525" height="196"/>
+        </clipPath>
+    </defs>
+    <g clip-path="url(#_clipPath_unBUrdipTyzzdVyrihIRvSO8gfQyEAUW)">
+        <g style="isolation:isolate" id="feature-service">
+            <g style="isolation:isolate" id="Layer 7">
+                <path d=" M 24 99.534 L 0 0 L 162.616 0 L 187 100.183 L 163 196 L 0 196 L 24 99.534 Z "
+                      fill="rgb(129,201,217)"/>
+                <path d=" M 193 99.534 L 169 0 L 331.616 0 L 356 100.183 L 332 196 L 169 196 L 193 99.534 Z "
+                      fill="rgb(122,204,201)"/>
+                <path d=" M 362 99.534 L 338 0 L 500.616 0 L 525 100.183 L 501 196 L 338 196 L 362 99.534 Z "
+                      fill="rgb(129,217,183)"/>
+                <g transform="matrix(1,0,0,1,18.833,18)">
+                    <text transform="matrix(1,0,0,1,26.462,20.88)"
+                          style="font-family:&quot;M PLUS 2&quot;;font-weight:400;font-size:18px;font-style:normal;fill:#000000;stroke:none;">
+                        1. 現状分析
+                    </text>
+                </g>
+                <g transform="matrix(1,0,0,1,185.45,18)">
+                    <text transform="matrix(1,0,0,1,26.462,20.88)"
+                          style="font-family:&quot;M PLUS 2&quot;;font-weight:400;font-size:18px;font-style:normal;fill:#000000;stroke:none;">
+                        2. 戦略立案
+                    </text>
+                </g>
+                <g transform="matrix(1,0,0,1,353.808,18)">
+                    <text transform="matrix(1,0,0,1,5.092,20.88)"
+                          style="font-family:&quot;M PLUS 2&quot;;font-weight:400;font-size:18px;font-style:normal;fill:#000000;stroke:none;">
+                        3. 施策実行/検証
+                    </text>
+                </g>
+                <g transform="matrix(1,0,0,1,19,121)">
+                    <text transform="matrix(1,0,0,1,49.5,13.92)"
+                          style="font-family:&quot;M PLUS 2&quot;;font-weight:400;font-size:12px;font-style:normal;fill:#000000;stroke:none;">
+                        売上分解
+                    </text>
+                    <text transform="matrix(1,0,0,1,27.75,31.296)"
+                          style="font-family:&quot;M PLUS 2&quot;;font-weight:400;font-size:12px;font-style:normal;fill:#000000;stroke:none;">
+                        KPIツリーの作成
+                    </text>
+                    <text transform="matrix(1,0,0,1,1.5,48.672)"
+                          style="font-family:&quot;M PLUS 2&quot;;font-weight:400;font-size:12px;font-style:normal;fill:#000000;stroke:none;">
+                        マーケティングフローの整
+                    </text>
+                    <text transform="matrix(1,0,0,1,19.5,66.048)"
+                          style="font-family:&quot;M PLUS 2&quot;;font-weight:400;font-size:12px;font-style:normal;fill:#000000;stroke:none;">
+                        ボトルネックの特定
+                    </text>
+                </g>
+                <g transform="matrix(1,0,0,1,185.45,126)">
+                    <text transform="matrix(1,0,0,1,49.5,13.92)"
+                          style="font-family:&quot;M PLUS 2&quot;;font-weight:400;font-size:12px;font-style:normal;fill:#000000;stroke:none;">
+                        競合分析
+                    </text>
+                    <text transform="matrix(1,0,0,1,49.5,31.296)"
+                          style="font-family:&quot;M PLUS 2&quot;;font-weight:400;font-size:12px;font-style:normal;fill:#000000;stroke:none;">
+                        顧客分析
+                    </text>
+                    <text transform="matrix(1,0,0,1,7.5,48.672)"
+                          style="font-family:&quot;M PLUS 2&quot;;font-weight:400;font-size:12px;font-style:normal;fill:#000000;stroke:none;">
+                        施策ロードマップの作成
+                    </text>
+                </g>
+                <g transform="matrix(1,0,0,1,354.808,121)">
+                    <text transform="matrix(1,0,0,1,51.75,13.92)"
+                          style="font-family:&quot;M PLUS 2&quot;;font-weight:400;font-size:12px;font-style:normal;fill:#000000;stroke:none;">
+                        KPI設定
+                    </text>
+                    <text transform="matrix(1,0,0,1,61.5,31.296)"
+                          style="font-family:&quot;M PLUS 2&quot;;font-weight:400;font-size:12px;font-style:normal;fill:#000000;stroke:none;">
+                        実行
+                    </text>
+                    <text transform="matrix(1,0,0,1,49.5,48.672)"
+                          style="font-family:&quot;M PLUS 2&quot;;font-weight:400;font-size:12px;font-style:normal;fill:#000000;stroke:none;">
+                        効果測定
+                    </text>
+                    <text transform="matrix(1,0,0,1,37.5,66.048)"
+                          style="font-family:&quot;M PLUS 2&quot;;font-weight:400;font-size:12px;font-style:normal;fill:#000000;stroke:none;">
+                        施策の見直し
+                    </text>
+                </g>
+                <g id="Group">
+                    <path d=" M 68 77.978 C 68 66.4 77.4 57 88.978 57 C 100.556 57 109.955 66.4 109.955 77.978 C 109.955 89.556 100.556 98.955 88.978 98.955 C 77.4 98.955 68 89.556 68 77.978 Z "
+                          fill="none" vector-effect="non-scaling-stroke" stroke-width="4" stroke="rgb(0,0,0)"
+                          stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
+                    <path d=" M 89.014 72.898 L 89.685 72.898 C 90.77 72.898 91.651 73.779 91.651 74.864 L 91.651 87.376 C 91.651 88.461 90.77 89.342 89.685 89.342 L 89.014 89.342 C 87.929 89.342 87.048 88.461 87.048 87.376 L 87.048 74.864 C 87.048 73.779 87.929 72.898 89.014 72.898 Z "
+                          fill="rgb(0,0,0)" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                          stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
+                    <path d=" M 78.475 76.39 L 79.589 76.39 C 80.552 76.39 81.333 77.172 81.333 78.135 L 81.333 87.597 C 81.333 88.56 80.552 89.342 79.589 89.342 L 78.475 89.342 C 77.512 89.342 76.73 88.56 76.73 87.597 L 76.73 78.135 C 76.73 77.172 77.512 76.39 78.475 76.39 Z "
+                          fill="rgb(0,0,0)" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                          stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
+                    <path d=" M 98.873 66.802 L 98.873 66.802 C 100.144 66.802 101.175 67.833 101.175 69.103 L 101.175 87.04 C 101.175 88.31 100.144 89.342 98.873 89.342 L 98.873 89.342 C 97.603 89.342 96.572 88.31 96.572 87.04 L 96.572 69.103 C 96.572 67.833 97.603 66.802 98.873 66.802 Z "
+                          fill="rgb(0,0,0)" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(0,0,0)"
+                          stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
+                    <line x1="104.289" y1="93.057" x2="119.746" y2="108.613" vector-effect="non-scaling-stroke"
+                          stroke-width="4" stroke="rgb(0,0,0)" stroke-linejoin="miter" stroke-linecap="round"
+                          stroke-miterlimit="3"/>
+                </g>
+                <g id="Group">
+                    <path d=" M 235.49 82.806 C 235.49 69.215 246.525 58.18 260.116 58.18 C 273.708 58.18 284.743 69.215 284.743 82.806 C 284.743 96.398 273.708 107.433 260.116 107.433 C 246.525 107.433 235.49 96.398 235.49 82.806 Z "
+                          fill="none" vector-effect="non-scaling-stroke" stroke-width="3" stroke="rgb(0,0,0)"
+                          stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
+                    <path d=" M 254.548 76.61 L 267.845 71.706 C 270.83 70.605 272.34 72.127 271.215 75.103 L 266.366 87.926 C 266.076 88.692 265.222 89.554 264.459 89.85 L 251.284 94.968 C 248.317 96.12 246.792 94.627 247.88 91.637 L 252.651 78.517 C 252.93 77.748 253.781 76.893 254.548 76.61 Z "
+                          fill="rgb(0,0,0)"/>
+                    <path d=" M 256.361 83.352 C 256.361 81.588 257.794 80.155 259.558 80.155 C 261.323 80.155 262.755 81.588 262.755 83.352 C 262.755 85.117 261.323 86.549 259.558 86.549 C 257.794 86.549 256.361 85.117 256.361 83.352 Z "
+                          fill="rgb(122,204,201)"/>
+                </g>
+                <path d=" M 411 79 L 424.186 69.581 C 424.635 69.26 425.347 69.284 425.774 69.633 L 435.226 77.367 C 435.653 77.716 436.339 77.707 436.756 77.345 L 451 65"
+                      fill="none" vector-effect="non-scaling-stroke" stroke-width="4" stroke="rgb(0,0,0)"
+                      stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="3"/>
+                <path d=" M 412.08 87 L 415.92 87 C 416.516 87 417 87.484 417 88.08 L 417 99.92 C 417 100.516 416.516 101 415.92 101 L 412.08 101 C 411.484 101 411 100.516 411 99.92 L 411 88.08 C 411 87.484 411.484 87 412.08 87 Z "
+                      fill="rgb(0,0,0)"/>
+                <path d=" M 423.19 84 L 426.81 84 C 427.467 84 428 84.533 428 85.19 L 428 99.81 C 428 100.467 427.467 101 426.81 101 L 423.19 101 C 422.533 101 422 100.467 422 99.81 L 422 85.19 C 422 84.533 422.533 84 423.19 84 Z "
+                      fill="rgb(0,0,0)"/>
+                <path d=" M 434.118 86 L 437.882 86 C 438.499 86 439 86.501 439 87.118 L 439 99.882 C 439 100.499 438.499 101 437.882 101 L 434.118 101 C 433.501 101 433 100.499 433 99.882 L 433 87.118 C 433 86.501 433.501 86 434.118 86 Z "
+                      fill="rgb(0,0,0)"/>
+                <path d=" M 444.384 78 L 447.616 78 C 448.38 78 449 78.62 449 79.384 L 449 99.616 C 449 100.38 448.38 101 447.616 101 L 444.384 101 C 443.62 101 443 100.38 443 99.616 L 443 79.384 C 443 78.62 443.62 78 444.384 78 Z "
+                      fill="rgb(0,0,0)"/>
+            </g>
+        </g>
+    </g>
+</svg>
