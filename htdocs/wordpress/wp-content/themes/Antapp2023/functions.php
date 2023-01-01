@@ -78,6 +78,7 @@ function add_my_styles_and_scripts() {
         '2.3.0'
         );
 
+    wp_enqueue_style('path-css', get_template_directory_uri() . '/css/path.css');
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array('parent-style'));
 

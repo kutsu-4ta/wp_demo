@@ -134,65 +134,65 @@ back_anime.fromTo(".back-container",
 //         // y:-window.innerHeight
 //         scale: 4,
 //     });
-
-gsap.from('.service-web',
-    {
-        y: 20,
-        autoAlpha: 0,
-        delay: 0.0,
-        duration: 2.0,
-        ease: 'power4.0in',
-        scrollTrigger: {
-            trigger: '.service-web',
-            start: 'top center'
-        }
-    });
-gsap.from('.service-marketing',
-    {
-        y: 20,
-        autoAlpha: 0,
-        delay: 0.0,
-        duration: 2.0,
-        ease: 'power4.0in',
-        scrollTrigger: {
-            trigger: '.service-marketing',
-            start: 'top center'
-        }
-    });
-
-const strength_anime = gsap.timeline({
-    toggleActions: 'none',
-    scrollTrigger: {
-        trigger: ".strength",
-        start: "top center",
-        end: "bottom bottom",
-        // scrub: 1.5,
-    }
-});
-strength_anime.fromTo(".strength01",
-    {
-        autoAlpha: 0,
-        y:20,
-    }, {
-        autoAlpha: 1,
-        y:0,
-    });
-strength_anime.fromTo(".strength02",
-    {
-        autoAlpha: 0,
-        y:20,
-    }, {
-        autoAlpha: 1,
-        y:0,
-    });
-strength_anime.fromTo(".strength03",
-    {
-        autoAlpha: 0,
-        y:20,
-    }, {
-        autoAlpha: 1,
-        y:0,
-    });
+//
+// gsap.from('.service-web',
+//     {
+//         y: 20,
+//         autoAlpha: 0,
+//         delay: 0.0,
+//         duration: 2.0,
+//         ease: 'power4.0in',
+//         scrollTrigger: {
+//             trigger: '.service-web',
+//             start: 'top center'
+//         }
+//     });
+// gsap.from('.service-marketing',
+//     {
+//         y: 20,
+//         autoAlpha: 0,
+//         delay: 0.0,
+//         duration: 2.0,
+//         ease: 'power4.0in',
+//         scrollTrigger: {
+//             trigger: '.service-marketing',
+//             start: 'top center'
+//         }
+//     });
+//
+// const strength_anime = gsap.timeline({
+//     toggleActions: 'none',
+//     scrollTrigger: {
+//         trigger: ".strength",
+//         start: "top center",
+//         end: "bottom bottom",
+//         // scrub: 1.5,
+//     }
+// });
+// strength_anime.fromTo(".strength01",
+//     {
+//         autoAlpha: 0,
+//         y:20,
+//     }, {
+//         autoAlpha: 1,
+//         y:0,
+//     });
+// strength_anime.fromTo(".strength02",
+//     {
+//         autoAlpha: 0,
+//         y:20,
+//     }, {
+//         autoAlpha: 1,
+//         y:0,
+//     });
+// strength_anime.fromTo(".strength03",
+//     {
+//         autoAlpha: 0,
+//         y:20,
+//     }, {
+//         autoAlpha: 1,
+//         y:0,
+//     });
 
 // スマホ版アニメーション
 if($(window).width() <= 480){
@@ -214,10 +214,21 @@ back_anime_mobile.fromTo(".home-top-mobile",
         autoAlpha: 0,
         y:20,
     });
-back_anime_mobile.fromTo(".back-container",
+back_anime_mobile.fromTo(".back-container-mobile",
     {
         x:0,
     }, {
         x:-window.innerWidth/3,
     });
 }
+
+
+$('#drawer-checkbox').on('click', function() {
+    let isOpen = document.getElementsByClassName('is-menu-open');
+    console.log(isOpen.length);
+    if(isOpen.length === 0){
+        $('#modal-1').toggleClass('is-menu-open has-modal-open');
+    }else{
+        $('#modal-1').removeClass('is-menu-open has-modal-open');
+    }
+});
