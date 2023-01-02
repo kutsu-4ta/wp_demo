@@ -60,6 +60,10 @@ a:active {
 	text-decoration-style: solid;
 }
 
+.wp-block-navigation__responsive-container, .wp-block-navigation-link a{
+	text-decoration: none !important;
+}
+
 /*
  * Search and File Block button styles.
  * Necessary until the following issues are resolved in Gutenberg:
@@ -163,7 +167,7 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 	}
 }
 /* 480以上　ノートパソコン、デスクトップ */
-@media (min-width: 480px) and (max-width: 1999px) {
+@media (min-width: 600px) and (max-width: 1999px) {
 	.display-wide {
 		display: none;
 	}
@@ -206,6 +210,17 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 	}
 	/* /フォントとか */
 
+	/* 基本のコンテナ */
+	.content-container {
+		background-color: rgba(245,245,245,0.95);
+		position: relative;
+		margin: 2vh 0 0;
+		padding: 1vh 15vw;
+	}
+
+	.content-flex-container {
+		position:fixed;
+	}
 /*	ヘッダー　スタイル　*/
 	.wp-block-template-part {
 		padding-left: 2rem;
@@ -240,7 +255,7 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 
 }
 /* 479以下　スマホ */
-@media (min-width: 0px) and (max-width: 479px) {
+@media (min-width: 0px) and (max-width: 599px) {
 	.display-wide {
 		display: none;
 	}
@@ -272,6 +287,18 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 		width: 100vw;
 		-webkit-clip-path: url(#svg-mask-small);
 		clip-path: url(#svg-mask-small);
+	}
+
+	/* 基本のコンテナ */
+	.content-container {
+		background-color: rgba(245,245,245,0.95);
+		position: relative;
+		margin: 2vh 0 0;
+		padding: 1vh 5vw;
+	}
+
+	.content-flex-container {
+		position:fixed;
 	}
 
 	/* ドロワー */
@@ -423,25 +450,6 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 	}
 
 	/*	ヘッダー　スタイル　*/
-
-
-	/*header {*/
-	/*	width: -webkit-fill-available !important;*/
-	/*	position: inherit !important;*/
-	/*}*/
-
-	/*.wp-block-navigation__responsive-container, .is-menu-open, .has-modal-open {*/
-	/*	position: fixed;*/
-	/*	top: -100vh;*/
-	/*	right: 0;*/
-	/*	width: 100%;*/
-	/*	height: 100vh;*/
-	/*	background-color: rgba(245, 245, 245, 100);*/
-	/*	!*z-index: 20;*!*/
-	/*	transition: all 0.5s ease-in-out 0s;*/
-	/*	overflow: visible;*/
-	/*}*/
-
 	.wp-block-navigation__responsive-container-close, .wp-block-navigation__responsive-container-open, .wp-block-site-logo {
 		display: none !important;
 	}
@@ -466,14 +474,21 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 		align-self: center !important;
 	}
 
+	.wp-block-navigation__responsive-container {
+		z-index:5 !important;
+		background-color: rgba(245, 245, 245, 100);
+		height: 100vh !important;
+		opacity: 0.9 !important;
+		position: fixed;
+		top: -100vh;
+		transition: all 0.5s ease-in-out 0s !important;
+	}
+
 	.wp-block-navigation__responsive-container-content {
 		align-items: center !important;
 		padding-top: 20vh !important;
 	}
 
-	.wp-block-navigation__responsive-container {
-		z-index:5 !important;
-	}
 	/*　/ドロワー */
 
 	/* フォントサイズとか */

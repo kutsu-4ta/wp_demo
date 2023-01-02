@@ -223,12 +223,49 @@ back_anime_mobile.fromTo(".back-container-mobile",
 }
 
 
-$('#drawer-checkbox').on('click', function() {
-    let isOpen = document.getElementsByClassName('is-menu-open');
-    console.log(isOpen.length);
-    if(isOpen.length === 0){
+// リサイズ
+let resizeWindow = function resizeWindow() {
+    if($(window).width() < 600) {
         $('#modal-1').toggleClass('is-menu-open has-modal-open');
     }else{
-        $('#modal-1').removeClass('is-menu-open has-modal-open');
+        $('#modal-1').removeClass('is-menu-open has-modal-open is_open');
     }
-});
+}
+
+
+window.addEventListener('resize', resizeWindow);
+
+//　スマホのナビゲーションバー
+// スクロール位置初期化
+let y = 0;
+if($(window).width() < 600) {
+    $('#modal-1').toggleClass('is-menu-open has-modal-open');
+    $('#drawer-checkbox').on('click', function () {
+
+        let isOpen = document.getElementsByClassName('is_open');
+
+        if (isOpen.length === 0) {
+            y = window.scrollY;
+            $('#modal-1').toggleClass('is_open');
+            $('#modal-1').css({
+                'top': '0vh',
+            });
+
+            // スクロールオフ
+            $('#content').css({
+                'position': 'fixed',
+                'top': -y +100,
+            });
+
+
+        } else {
+            $('#modal-1').removeClass('is_open');
+            $('#modal-1').css({
+                'top': '-100vh',
+            });
+            // スクロールオン
+            $('#content').css('position','inherit');
+            $(window).scrollTop(y).val();
+        }
+    });
+}
